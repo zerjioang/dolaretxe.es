@@ -1,0 +1,62 @@
+<template>
+  <div class="block-18 text-center py-4 mb-4" :class="colorClass">
+     <div class="text">
+        <div class="icon d-flex justify-content-center align-items-center">
+           <span class="colored" :class="icon"></span>
+        </div>
+        <span class="center-feature">
+          <p class="box-text">{{text}}</p>
+        </span>
+     </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'featurebox-component',
+  props: {
+    text: {
+        type: String,
+        default: ""
+    },
+    icon: {
+        type: String,
+        default: "flaticon-idea"
+    },
+    colorClass: {
+        type: String,
+        default: "bg-primary"
+    }
+  },
+  methods: {
+  },
+  data: () => {
+    return {
+    }
+  },
+  created(){
+    console.log("featurebox::created")
+  },
+  mounted(){
+    console.log("featurebox::mounted")
+  },
+  components:{
+  }
+}
+</script>
+
+<style type="text/css" scoped="true">
+.center-feature {
+  color: white !important;;
+  font-size: 20px !important;
+  font-weight: bold;
+}
+.colored {
+  color: white;
+  font-size: 40px;
+}
+.box-text {
+  margin: 8px;
+  max-width: 95%;
+}
+</style>

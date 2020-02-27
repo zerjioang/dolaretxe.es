@@ -1,0 +1,5 @@
+orange: #f9901a
+red: #f6474b
+purple: #b879ae
+#39b6db
+#89c030
