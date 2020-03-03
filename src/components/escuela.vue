@@ -1,7 +1,7 @@
 <template>
    <div>
       <pagetitle page="Escuela"/>
-      <section class="ftco-section ftco-no-pt ftco-no-pb">
+      <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
          <div class="container">
             <div class="row no-gutters">
                <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" :style="{'background-image': 'url(' + bgAbout  + ')'}">

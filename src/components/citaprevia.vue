@@ -1,14 +1,13 @@
 <template>
   <div>
     <pagetitle page="Cita previa" :image="bgImage" />
-    <br></br>
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-md-12 py-md-5 ftco-animate">
-                    <div class="heading-section mb-5 pt-5 pl-md-5">
-                        <div class="pr-md-5 mr-md-5">
-                            <h2 class="mb-4">Solicitar cita previa</h2>
+                <div class="col-md-12 ftco-animate">
+                    <div class="heading-section">
+                        <div>
+                            <h2>Solicitar cita previa</h2>
                         </div>
 
                         <p class="justified">

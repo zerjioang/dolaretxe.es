@@ -6,6 +6,7 @@
         </div>
         <span class="center-feature">
           <p class="box-text">{{text}}</p>
+          <p v-if="subtitle" class="box-subtitle">{{subtitle}}</p>
         </span>
      </div>
   </div>
@@ -18,6 +19,10 @@ export default {
     text: {
         type: String,
         default: ""
+    },
+    subtitle: {
+        type: String,
+        default: undefined
     },
     icon: {
         type: String,
@@ -58,5 +63,11 @@ export default {
 .box-text {
   margin: 8px;
   max-width: 95%;
+}
+.box-subtitle {
+  margin: 8px;
+  max-width: 95%;
+  font-size: 18px !important;
+  font-weight: normal;
 }
 </style>

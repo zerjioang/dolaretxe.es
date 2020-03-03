@@ -31,7 +31,7 @@
             </a>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownAbout">
               <a class="dropdown-item" href="#" v-on:click="goto($event, 'contact')">Contacto</a>
-              <a class="dropdown-item" href="#" v-on:click="goto($event, 'citaprevia')">Cita Previa</a>
+              <a v-show="false" class="dropdown-item" href="#" v-on:click="goto($event, 'citaprevia')">Cita Previa</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#" v-on:click="goto($event, 'trabajo')">Trabaja con nosotros
               </a>
@@ -69,6 +69,10 @@ export default {
         }
   		],
       serviceItems: [
+        {
+          to: "galeria",
+          text: "Fotos"
+        },
         {
           to: "escuela",
           text: "Escuela"

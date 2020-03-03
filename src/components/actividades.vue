@@ -5,7 +5,7 @@
     <section class="ftco-section ftco-no-pt ftco-no-pb">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-md-12 py-md-5 ftco-animate">
+                <div class="col-md-12 ftco-animate pb-5">
                 </div>
             </div>
           </div>

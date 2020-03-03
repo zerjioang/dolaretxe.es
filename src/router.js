@@ -37,6 +37,11 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "about" */ '@/views/fotos.vue')
     },
     {
+      path: '/galeria',
+      name: 'galeria',
+      component: () => import(/* webpackChunkName: "about" */ '@/views/fotos.vue')
+    },
+    {
       path: '/unicef',
       name: 'unicef',
       component: () => import(/* webpackChunkName: "about" */ '@/views/unicef.vue')

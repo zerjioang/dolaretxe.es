@@ -1,10 +1,10 @@
 <template>
-<section class="ftco-section ftco-no-pt ftco-no-pb">
+<section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
  <div class="container">
     <div class="row no-gutters">
-       <div class="col-md-12 wrap-about py-md-5 ftco-animate">
-          <div class="heading-section pl-md-5">
-             <div class="pr-md-5 mr-md-5">
+       <div class="col-md-12 wrap-about ftco-animate pb-5">
+          <div class="heading-section">
+             <div>
                 <h2>Escuela Amiga de UNICEF</h2>
                 <h5>Comprometidos con la Infancia</h5>
              </div>

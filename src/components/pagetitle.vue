@@ -1,6 +1,9 @@
 <template>
-  <!--:style="{'background-image': 'url(' + image  + ')'}" -->
-  <section class="hero-wrap hero-wrap-2 js-fullheight hero-bg-color" data-stellar-background-ratio="0.5">
+  <section
+    class="hero-wrap hero-wrap-2 js-fullheight"
+    v-bind:class="{ 'hero-bg-color': (image == undefined) }"
+    :style="{'background-image': 'url(' + image  + ')'}"
+    data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -31,7 +34,7 @@ export default {
   props: {
     image: {
       type: String | Object,
-      default: () => require('@/assets/images/noheader.png')
+      default: () => undefined
     },
     page: {
       type: String,
@@ -60,4 +63,12 @@ export default {
 </script>
 
 <style type="text/css" scoped="true">
+  .gray {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  .blur {
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+  }
 </style>

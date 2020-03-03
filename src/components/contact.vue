@@ -1,8 +1,7 @@
 <template>
    <div>
       <pagetitle page="Sobre nosotros"/>
-
-      <section class="ftco-section ftco-no-pt ftco-no-pb mt-4">
+      <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
          <div class="container">
             <div class="row no-gutters">
                <div class="col-md-12 ftco-animate">
@@ -22,21 +21,22 @@
                      </p>
                      <h5>Reserva de plaza</h5>
                      <p class="justified">
-                        Para realizar la reserva de plaza deberían enviar a la dirección de contacto <a href="mailto:info@dolaretxe.es">info@dolaretxe.es</a> los siguientes documentos:
+                        Para realizar la reserva de plaza deberían enviar a la dirección de contacto <a href="mailto:info@dolaretxe.es">info@dolaretxe.es</a> los siguientes documentos
                      </p>
-                     <ul>
-                        <li>Ficha de matriculación de Dolaretxe completada
-                        <li>La última hoja de la normas de funcionamiento firmada</li>
-                        <li>Fotocopia del DNI de los padres</li>
-                        <li>Fotocopia del libro de familia</li>
-                     </ul>
+                     <div class="row">
+                       <div v-for="c in contactList" :key="c.id" class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="justify-content-center counter-wrap ftco-animate">
+                          <featureBox :text="c.text" :icon="c.icon" :colorClass="c.class"/>
+                        </div>
+                      </div> <!-- end of v-for -->
+                     </div> <!-- end of row -->
                   </div>
                </div>
             </div>
          </div>
       </section>
 
-      <section class="ftco-section ftco-no-pt ftco-no-pb mt-4">
+      <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
          <div class="container">
             <div class="row no-gutters">
                <div class="col-md-12 ftco-animate">
@@ -75,7 +75,7 @@
       <iframe class="img-responsive vr-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.6611082492964!2d-2.920260001981129!3d43.25852385975998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6e2cf49d4cdbeba!2sEscuela%20Infantil%20%C2%B7%20DOLARETXE%20%C2%B7%20Haur%20Eskola!5e0!3m2!1ses!2ses!4v1576769681457!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="true">
       </iframe>
 
-      <section class="ftco-section ftco-no-pt ftco-no-pb mt-4">
+      <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
          <div class="container">
             <div class="row no-gutters">
                <div class="col-md-12 ftco-animate">
@@ -90,18 +90,21 @@
                     Descubre la mejor forma de llegar a Dolaretxe Escuela Infantil Haur Eskola ya sea por Metro Bilbao, andando o en coche.
                  </p>
                  <div class="row">
-                   <div class="col-md-4">
+                   <div class="col-xs-12 col-sm-12 col-md-4 ftco-animate">
+                    <img class="location-icon" :src="require('@/assets/images/metrobilbao.png')">
                     <h4 class="title-location">Desde la salida de Metro Unamuno</h4>
                     <h5 class="subtitle-location">4 min (300 m)</h5>
                      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d726.4168301790091!2d-2.9206890707569078!3d43.258393675383246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0xd4e4fc942c3aa05%3A0x7121fd28a048061b!2sEstacion%20Metro%2C%20Unamuno%20Miguel%20Plaza%2C%20Bilbao!3m2!1d43.258618299999995!2d-2.9216335!4m5!1s0xd4e4fca2737235f%3A0xe6e2cf49d4cdbeba!2sEscuela%20Infantil%20%C2%B7%20DOLARETXE%20%C2%B7%20Haur%20Eskola%2C%20Prim%20Kalea%2C%2011%2C%20bajo%2C%2048006%20Bilbo%2C%20BI!3m2!1d43.258397599999995!2d-2.9186365999999997!5e0!3m2!1ses!2ses!4v1582829545050!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                    </div>
-                   <div class="col-md-4">
+                   <div class="col-xs-12 col-sm-12 col-md-4 ftco-animate">
+                    <img class="location-icon-svg" :src="require('@/assets/images/elevator.svg')">
                     <h4 class="title-location">Desde el ascensor de Iturribide</h4>
                     <h5 class="subtitle-location">3 min (180 m)</h5>
                      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d513.6543904717803!2d-2.919089253443456!3d43.25837898997004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d43.258494!2d-2.9208532!4m5!1s0xd4e4fca2737235f%3A0xe6e2cf49d4cdbeba!2sEscuela%20Infantil%20%C2%B7%20DOLARETXE%20%C2%B7%20Haur%20Eskola%2C%20Prim%20Kalea%2C%2011%2C%20bajo%2C%2048006%20Bilbo%2C%20BI!3m2!1d43.258397599999995!2d-2.9186365999999997!5e0!3m2!1ses!2ses!4v1582829682561!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                    </div>
-                   <div class="col-md-4">
-                    <h4 class="title-location">Por la calle Prim dirección unamuno</h4>
+                   <div class="col-xs-12 col-sm-12 col-md-4 ftco-animate">
+                    <img class="location-icon-svg" :src="require('@/assets/images/street.svg')">
+                    <h4 class="title-location">Por la calle Prim dirección Unamuno</h4>
                     <h5 class="subtitle-location">3 min (180 m)</h5>
                      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2905.686556261801!2d-2.920236434442079!3d43.257990585913994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d43.2575894!2d-2.9174968999999997!4m5!1s0xd4e4fca2737235f%3A0xe6e2cf49d4cdbeba!2sEscuela%20Infantil%20%C2%B7%20DOLARETXE%20%C2%B7%20Haur%20Eskola%2C%20Prim%20Kalea%2C%2011%2C%20bajo%2C%2048006%20Bilbo%2C%20BI!3m2!1d43.258397599999995!2d-2.9186365999999997!5e0!3m2!1ses!2ses!4v1582829347347!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                    </div>
@@ -112,7 +115,7 @@
          </div>
       </section>
 
-      <section class="ftco-section ftco-no-pt ftco-no-pb mt-4">
+      <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
          <div class="container">
             <div class="row no-gutters">
                <div class="col-md-12 ftco-animate">
@@ -150,9 +153,58 @@ export default {
   },
   data: () => {
     return {
-    	bgExample01,
+      bgExample01,
       insta01,
       insta02,
+      contactList: [
+        {
+          id:0,
+          icon: 'flaticon-document',
+          class: 'bg-dlrtx-1',
+          text: 'Ficha de matriculación completada',
+        },
+        {
+          id:1,
+          icon: 'flaticon-document',
+          class: 'bg-dlrtx-2',
+          text: 'Hoja de las normas del centro firmada'
+        },
+        {
+          id:2,
+          icon: 'flaticon-user',
+          class: 'bg-dlrtx-3',
+          text: 'Fotocopia del DNI de los padres o madres',
+        },
+        {
+          id:3,
+          icon: 'flaticon-user-1',
+          class: 'bg-dlrtx-4',
+          text: 'Fotocopia del libro de familia'
+        }
+      ],
+      socialList: [
+        {
+          id:0,
+          icon: 'flaticon-document',
+          class: 'bg-dlrtx-1',
+          text: 'Siguenos en Facebook',
+          link: 'https://www.facebook.com/dolaretxehaurreskola'
+        },
+        {
+          id:1,
+          icon: 'flaticon-document',
+          class: 'bg-dlrtx-2',
+          text: 'Siguenos en Instagram',
+          link: 'https://www.instagram.com/dolaretxe'
+        },
+        {
+          id:2,
+          icon: 'flaticon-user',
+          class: 'bg-dlrtx-3',
+          text: 'Envianos un WhatsApp',
+          link: 'https://api.whatsapp.com/send?phone=34946004558&text=Hola%20me%20gustar%C3%ADa%20solicitar%20una%20cita%20para%20conocer%20la%20guarde'
+        },
+      ]
     }
   },
   created(){
@@ -165,8 +217,9 @@ export default {
   components:{
     pagetitle: ()=> import('@/components/pagetitle'),
     fbbutton: ()=> import('@/components/fbbutton'),
-    whatsappbutton: ()=> import('@/components/whatsappbutton')
-  }
+    whatsappbutton: ()=> import('@/components/whatsappbutton'),
+    featureBox: () => import('@/components/featureBox'),
+  } 
 }
 </script>
 
@@ -213,5 +266,16 @@ export default {
   }
   .subtitle-location {
     font-size: 15px;
+  }
+  .location-icon {
+    margin: 20px;
+    max-width: 150px;
+  }
+  .location-icon-svg {
+    margin: 20px;
+    max-width: 80px;
+  }
+  iframe {
+    width: 100%;
   }
 </style>

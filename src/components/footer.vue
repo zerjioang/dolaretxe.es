@@ -2,8 +2,10 @@
 	<footer class="ftco-footer ftco-bg-dark ftco-section dolar-gradient-orangred-darken-1">
 	    <cookie-law theme="dark-lime" buttonText="Aceptar">
 	    	<div slot="message">
-				<p class="justified">
-					Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener <router-link to="cookies">más información</router-link>.
+				<p class="justified cookie">
+					Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración mediante los ajustes de su navegador u obtener <router-link :to="{ name: 'cookies' }">
+						<span style="color: white;">más información</span>
+					</router-link>.
 				</p>
 			</div>
 	    </cookie-law>
