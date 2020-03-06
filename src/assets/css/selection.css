@@ -1,0 +1,11 @@
+/* Custom Selection Color */
+
+::selection {
+    background: #ef5735 !important;
+	color: #fff;
+}
+
+::-moz-selection {
+    background: #ef5735 !important;
+	color: #fff;
+}

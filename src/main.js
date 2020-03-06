@@ -29,6 +29,8 @@ import '@/assets/css/flaticon.css'
 import '@/assets/css/icomoon.css'
 import '@/assets/css/style.css'
 import '@/assets/css/shared.css'
+// customize cursor selection colors 
+import '@/assets/css/selection.css'
 
 require('@/assets/js/jquery-migrate-3.0.1.min.js');
 // require('@/assets/js/jquery.easing.1.3.js');
