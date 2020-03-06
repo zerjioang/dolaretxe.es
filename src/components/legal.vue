@@ -1,6 +1,6 @@
 <template>
    <div>
-      <pagetitle page="Aviso Legal" :image="bgImage"/>
+      <pagetitle page="Aviso Legal"/>
       <br></br>
       <section class="ftco-section ftco-no-pt ftco-no-pb">
          <div class="container">
@@ -69,11 +69,8 @@ export default {
   ],
   methods: {
   },
-  data: () => {
-    return {
-    	bgImage: require('../assets/images/bg_2.jpg')
-    }
-  },
+  data: () => ({
+  }),
   created(){
     console.log("legal::created")
   },

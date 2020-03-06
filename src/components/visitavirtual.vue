@@ -1,8 +1,7 @@
 <template>
   <div>
     <pagetitle page="Visita Virtual" :image="image"/>
-    <br>
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <section class="ftco-section ftco-no-pt ftco-no-pb pa-5">
       <div class="container">
         <div class="row no-gutters">
           <div class="col-xs-12 col-md-6 col-lg-6 p-md-5 img img-2 d-flex justify-content-center align-items-center">

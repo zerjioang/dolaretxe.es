@@ -29,9 +29,10 @@
           </div>
       </section>
       <div class="col-md-12 wrap-about ftco-animate">
-        <div v-masonry origin-left="false" transition-duration="1s" item-selector=".item">
+        <div v-masonry="containerId" origin-left="false" transition-duration="1s" fit-width="true" horizontal-order="true" item-selector=".item">
           <div v-masonry-tile class="item" v-for="item in block.images">
-            <img class="image-popup img img-resposive masonry-img" :src="item" :href="item"/>
+            <img class="image-popup img img-resposive
+             masonry-img" v-lazy="item" :href="item"/>
           </div>
         </div> 
       </div>
@@ -48,9 +49,20 @@ import Vue from 'vue';
 import {VueMasonryPlugin} from 'vue-masonry';
 Vue.use(VueMasonryPlugin)
 
-import template from '@/mixins/template'
+const noImage = require('@/assets/images/noimage.png')
 
-const bgImage = require('@/assets/images/bg_2.jpg');
+// import lazy loader for images
+import VueLazyload from 'vue-lazyload'
+
+// or with options
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  error: noImage,
+  loading: noImage,
+  attempt: 3  
+})
+
+import template from '@/mixins/template';
 const protasList = [
   require('@/assets/images/gallery/protagonistas/profile1.jpg'),
   require('@/assets/images/gallery/protagonistas/profile2.jpg'),
@@ -201,7 +213,7 @@ export default {
   },
   data: () => {
     return {
-      containerId: 'aa',
+      containerId: 1,
       galeria: [
         {
           id: 0,
@@ -237,11 +249,10 @@ export default {
     }
   },
   methods: {
-    print(){
-      const data = generateImageList('@/assets/images/gallery/protagonistas/profile', '.jpg', 34);
-      for (var i = 0; i < data.length; i++) {
-        console.log("require('"+data[i]+"'),")
-      }
+    forceUpdate() {
+      console.log("forcing update")
+      this.$redrawVueMasonry(this.containerId);
+      this.$forceUpdate();  // Notice we have to use a $ here
     }
   },
   created(){
@@ -250,7 +261,10 @@ export default {
   mounted(){
     console.log("fotos::mounted")
     this.jQueryInit();
-    this.print();
+    this.$Lazyload.$on('loaded', (bindType, el, naturalHeight, naturalWidth, $parent, src, loading, error, formCache) => {
+      console.log("lazy loaded")
+      this.forceUpdate();
+    })
   },
   components:{
     pagetitle: ()=> import('@/components/pagetitle'),

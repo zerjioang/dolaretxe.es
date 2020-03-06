@@ -260,7 +260,6 @@
 
 import template from '@/mixins/template'
 
-const bgImage = require('@/assets/images/bg_2.jpg');
 const bgStackO1 = require('@/assets/images/stack_01.png');
 const bgStackO2 = require('@/assets/images/stack_02.png');
 const bgAbout = require('@/assets/images/about.jpg');
@@ -272,7 +271,6 @@ export default {
   },
   data: () => {
     return {
-    	bgImage,
     	bgStackO1,
     	bgStackO2,
     	bgAbout

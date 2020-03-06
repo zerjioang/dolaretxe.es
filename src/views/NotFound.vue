@@ -1,25 +1,6 @@
 <template>
   <div>
-    <section class="hero-wrap hero-wrap-2 js-fullheight" :style="{'background-image': 'url(' + bgNotfound  + ')'}" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
-          <div class="col-md-9 ftco-animate pb-5">
-            <h1 class="mb-3 bread">Dolaretxe Haur Eskola</h1>
-            <p class="breadcrumbs">
-              <span class="mr-2">
-                <router-link :to="{'name':'home'}">Inicio 
-                  <i class="ion-ios-arrow-forward"></i>
-                </router-link>
-              </span>
-              <span>Página no encontrada 
-                <i class="ion-ios-arrow-forward"></i>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <pagetitle page="Página no encontrada"/>
     <section class="ftco-section ftco-no-pt ftco-no-pb">
       <div class="container">
         <div class="row no-gutters">
@@ -59,6 +40,7 @@ export default {
     this.jQueryInit();
   },
   components:{
+    pagetitle: ()=> import('@/components/pagetitle'),
   }
 }
 </script>

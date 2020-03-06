@@ -1,6 +1,6 @@
 <template>
    <div>
-      <pagetitle page="Política de Cookies" :image="bgImage"/>
+      <pagetitle page="Política de Cookies"/>
       <br></br>
       <section class="ftco-section ftco-no-pt ftco-no-pb">
          <div class="container">
@@ -82,11 +82,8 @@ export default {
   ],
   methods: {
   },
-  data: () => {
-    return {
-    	bgImage: require('../assets/images/bg_2.jpg')
-    }
-  },
+  data: () => ({
+  }),
   created(){
     console.log("cookies::created")
   },

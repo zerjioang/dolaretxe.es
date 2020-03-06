@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pagetitle page="Cita previa" :image="bgImage" />
+    <pagetitle page="Cita previa"/>
     <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
         <div class="container">
             <div class="row no-gutters">
@@ -63,7 +63,6 @@ export default {
   },
   data: () => {
     return {
-    	bgImage: require('../assets/images/bg_2.jpg')
     }
   },
   created(){

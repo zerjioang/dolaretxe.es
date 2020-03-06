@@ -1,31 +1,35 @@
+
+
 <template>
-  <div>
-    <pagetitle page="Trabaja con nosotros" :image="bgImage" />
-    <section class="ftco-section ftco-no-pt ftco-no-pb mt-5 pb-5">
-        <div class="container">
+   <div>
+      <pagetitle page="Trabaja con nosotros" />
+      <section class="ftco-section ftco-no-pt ftco-no-pb mt-5 pb-5">
+         <div class="container">
             <div class="row no-gutters">
-                <div class="col-md-12 wrap-about ftco-animate">
-                    <div class="heading-section">
-                        <div>
-                            <h2 class="mb-4">Trabaja con nosotros</h2>
-                        </div>
-                        <p class="text-center">
-                          <img class="icon" :src="require('@/assets/images/cv.svg')">
-                        </p>
-                        <p class="justified">
-                            En Dolaretxe estamos encantados de conocerte y recibir tu CV. Lamentablemente actualmente no disponemos de plazas libres. Por favor, añade esta sección a favoritos en tu navegador y consultala proximamente para conocer las novedades.
-                        </p>
-                        <p class="justified">
-                          Tambien puedes enviarnos un email a <a href="mailto:info@dolaretxe.com">info@dolaretxe.com</a> con tus datos y adjuntando tu CV y lo recibiremos encantados para futuros procesos.
-                        </p>
-                        <br>
-                        <br>
-                    </div>
-                </div>
+               <div class="col-md-12 ftco-animate">
+                  <div class="heading-section">
+                     <div>
+                        <h2 class="mb-4">Trabaja con nosotros</h2>
+                     </div>
+                     <p class="text-center">
+                        <img class="icon" :src="require('@/assets/images/cv.svg')">
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-6 ftco-animate">
+                  <p class="justified spaced">
+                     En Dolaretxe estamos encantados de conocerte y recibir tu CV. Lamentablemente actualmente no disponemos de plazas libres. Por favor, añade esta sección a favoritos en tu navegador y consultala proximamente para conocer las novedades.
+                  </p>
+               </div>
+               <div class="col-md-6 ftco-animate">
+                  <p class="justified spaced">
+                     Tambien puedes enviarnos un email a <a href="mailto:info@dolaretxe.com">info@dolaretxe.com</a> con tus datos y adjuntando tu CV y lo recibiremos encantados para futuros procesos.
+                  </p>
+               </div>
             </div>
-          </div>
-    </section>
-  </div>
+         </div>
+   </section>
+   </div>
 </template>
 
 <script>
@@ -37,11 +41,8 @@ export default {
   extends: template,
   methods: {
   },
-  data: () => {
-    return {
-    	bgImage: require('../assets/images/bg_2.jpg')
-    }
-  },
+  data: () => ({
+  }),
   created(){
     console.log("trabajo::created")
   },
@@ -64,5 +65,8 @@ export default {
   .icon {
     max-width: 200px;
     padding: 20px;
+  }
+  .spaced {
+    padding: 15px;
   }
 </style>

@@ -1,23 +1,18 @@
 <template>
   <div>
-    <pagetitle page="Compromiso UNICEF" :image="bgImage" />
+    <pagetitle page="Compromiso UNICEF"/>
     <sectionUnicef/>
   </div>
 </template>
 
 <script>
 
-const bgImage = require('@/assets/images/bg_2.jpg');
-
 export default {
   name: 'unicef-component',
   methods: {
   },
-  data: () => {
-    return {
-      bgImage,
-    }
-  },
+  data: () => ({
+  }),
   created(){
     console.log("compromiso-unicef::created")
   },

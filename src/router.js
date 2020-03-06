@@ -15,7 +15,12 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "about" */ '@/views/Index.vue')
     },
     {
-      path: '/escuela',
+      path: '/es',
+      name: 'home',
+      component: () => import(/* webpackChunkName: "about" */ '@/views/Index.vue')
+    },
+    {
+      path: '/es/escuela',
       name: 'escuela',
       component: () => import(/* webpackChunkName: "about" */ '@/views/escuela.vue')
     },
@@ -26,34 +31,34 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "about" */ '@/views/escuela.vue')
     },
     {
-      path: '/fotos',
+      path: '/es/fotos',
       name: 'fotos',
       component: () => import(/* webpackChunkName: "about" */ '@/views/fotos.vue')
     },
     {
       //add link for retrocompatibility
-      path: '/visita',
+      path: '/es/visita',
       name: 'fotos-old',
       component: () => import(/* webpackChunkName: "about" */ '@/views/fotos.vue')
     },
     {
-      path: '/galeria',
+      path: '/es/galeria',
       name: 'galeria',
       component: () => import(/* webpackChunkName: "about" */ '@/views/fotos.vue')
     },
     {
-      path: '/unicef',
+      path: '/es/unicef',
       name: 'unicef',
       component: () => import(/* webpackChunkName: "about" */ '@/views/unicef.vue')
     },
     {
       //add link for retrocompatibility
-      path: '/visitavirtual',
+      path: '/es/visitavirtual',
       name: 'visitavirtual',
       component: () => import(/* webpackChunkName: "about" */ '@/views/visitavirtual.vue')
     },
     {
-      path: '/jornadas',
+      path: '/es/jornadas',
       name: 'jornadas',
       component: () => import(/* webpackChunkName: "about" */ '@/views/jornadas.vue')
     },
@@ -64,7 +69,7 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "about" */ '@/views/jornadas.vue')
     },
     {
-      path: '/actividades',
+      path: '/es/actividades',
       name: 'actividades',
       component: () => import(/* webpackChunkName: "about" */ '@/views/actividades.vue')
     },
@@ -75,17 +80,17 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "about" */ '@/views/actividades.vue')
     },
     {
-      path: '/contacto/citaprevia',
+      path: '/es/contacto/citaprevia',
       name: 'citaprevia',
       component: () => import(/* webpackChunkName: "about" */ '@/views/citaprevia.vue')
     },
     {
-      path: '/contacto/trabajo',
+      path: '/es/contacto/trabajo',
       name: 'trabajo',
       component: () => import(/* webpackChunkName: "about" */ '@/views/trabajo.vue')
     },
     {
-      path: '/contacto',
+      path: '/es/contacto',
       name: 'contact',
       component: () => import(/* webpackChunkName: "about" */ '@/views/contact.vue')
     },
@@ -96,7 +101,7 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "about" */ '@/views/contact.vue')
     },
     {
-      path: '/legal/aviso',
+      path: '/es/legal/aviso',
       name: 'legal',
       component: () => import(/* webpackChunkName: "about" */ '@/views/legal/aviso.vue')
     },
@@ -107,17 +112,12 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "about" */ '@/views/legal/aviso.vue')
     },
     {
-      path: '/legal/cookies',
+      path: '/es/legal/cookies',
       name: 'cookies',
       component: () => import(/* webpackChunkName: "about" */ '@/views/legal/cookies.vue')
     },
     {
-      path: '/legal/privacy',
-      name: 'privacy-en',
-      component: () => import(/* webpackChunkName: "about" */ '@/views/legal/privacy.vue')
-    },
-    {
-      path: '/legal/privacidad',
+      path: 'es/legal/privacidad',
       name: 'privacy',
       component: () => import(/* webpackChunkName: "about" */ '@/views/legal/privacy.vue')
     },
