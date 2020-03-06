@@ -8035,7 +8035,7 @@ h1, h2, h3, h4, h5,
   z-index: 3; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000000 !important;
+      background: #d1e8f1 !important;
       position: relative;
       top: 0; } }
   .ftco-navbar-light .navbar-brand {
@@ -8056,13 +8056,13 @@ h1, h2, h3, h4, h5,
     font-weight: 400;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #000000; }
+      color: #fb3d11; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 0;
-        color: #fff; } }
+        color: #fb3d11; } }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
     border: none;
     background: #fff;
@@ -8117,7 +8117,7 @@ h1, h2, h3, h4, h5,
       color: #fb3d11; } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: #fb3d11 !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
@@ -8742,11 +8742,11 @@ h1, h2, h3, h4, h5,
     .block-7.active .pricing-text li {
       color: rgba(255, 255, 255, 0.9); }
     .block-7.active .btn-primary {
-      color: #000000 !important;
+      color: #d1e8f1 !important;
       background: #fff !important; }
       .block-7.active .btn-primary:hover, .block-7.active .btn-primary:focus {
         background: #fff !important;
-        color: #000000 !important; }
+        color: #d1e8f1 !important; }
 
 @media (max-width: 767.98px) {
   .img-2 {
