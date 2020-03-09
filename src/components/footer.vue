@@ -50,16 +50,16 @@
 						<h2 class="ftco-heading-2">Información</h2>
 						<ul class="list-unstyled">
 							<li>
-								<a href="#" class="py-2 d-block">Jornadas</a>
+								<router-link :to="{name:'jornadas'}" class="py-2 d-block">Jornadas</router-link>
 							</li>
 							<li>
-								<a href="#" class="py-2 d-block">Calendario</a>
+								<router-link :to="{name:'escuela'}" class="py-2 d-block">Escuela</router-link>
 							</li>
 							<li>
-								<a href="#" class="py-2 d-block">Entrada y salida</a>
+								<router-link :to="{name:'actividades'}" class="py-2 d-block">Actividades</router-link>
 							</li>
 							<li>
-								<a href="#" class="py-2 d-block">Servicios</a>
+								<router-link :to="{name:'galeria'}" class="py-2 d-block">Galeria</router-link>
 							</li>
 						</ul>
 					</div>

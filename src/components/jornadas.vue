@@ -31,7 +31,7 @@
                       </div>
                     </div>
                      <!-- end modalidades de jornadas -->
-                     <p class="justified">Ademas de nuestras jornadas anteriore, disponemos de los siguientes horarios ampliados:</p>
+                     <p class="justified">Ademas de nuestras jornadas anteriores, disponemos de los siguientes horarios ampliados:</p>
                      <ul>
                        <li>Horario ampliado de mañana: 7:30h a 9h</li>
                        <li>Horario ampliado de tarde: 17h a 19:00h</li>

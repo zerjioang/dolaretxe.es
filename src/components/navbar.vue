@@ -10,7 +10,7 @@
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <router-link class="nav-link" :to="{'name':'home'}">Inicio</router-link>
+            <router-link class="nav-link" :to="{'name':'home'}">{{$t('inicio')}}</router-link>
           </li>
 
           <li class="nav-item" v-for="m in menuitems" :key="m.text">
@@ -18,16 +18,15 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Información</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{$t('informacion')}}</a>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownInfo">
               <a v-for="s in serviceItems" :key="s.text" class="dropdown-item" href="#" v-on:click="goto($event, s.to)">{{s.text}}</a>
             </div>
           </li>
 
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Sobre Nosotros
+              {{$t('sobre_nosotros')}}
             </a>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownAbout">
               <a class="dropdown-item" href="#" v-on:click="goto($event, 'contact')">Contacto</a>
@@ -37,6 +36,18 @@
               </a>
             </div>
           </li>
+
+          <!-- start language selector -->
+          <li class="nav-item dropdown btn-lang">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{$t('idioma')}}
+            </a>
+            <div class="dropdown-menu animate slideIn btn-lang" aria-labelledby="navbarDropdownLang">
+              <a class="dropdown-item" href="#" v-on:click="changeLanguage('es')">Español</a>
+              <a class="dropdown-item" href="#" v-on:click="changeLanguage('eus')">Euskera</a>
+            </div>
+          </li>
+          <!-- end language selector -->
           <li class="nav-item cta mr-md-2" v-show="showLogin">
             <router-link :to="{'name': 'login'}" class="nav-link">Acceder</router-link>
           </li>
@@ -97,6 +108,13 @@ export default {
     goto: function(e, name){
       e.preventDefault();
       this.$router.push({name: name});
+    },
+    changeLanguage(lang){
+      // change other locale
+      if (lang) {
+        console.log("changing current locale to", lang);
+        this.$i18n.locale = lang;
+      }
     }
   },
   components: {
@@ -158,5 +176,17 @@ export default {
 
   .navbar-img {
     max-height: 60px;
+  }
+  .btn-lang {
+    background: #d2e0e5 !important;
+    color: white;
+    border: 5px;
+    border-radius: 7px;
+  }
+  .btn-lang a {
+    color: black;
+  }
+  .btn-lang a:hover {
+    color: #ef5735;
   }
 </style>

@@ -2,15 +2,15 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import i18n from './i18n'
 import './registerServiceWorker'
 
 Vue.config.productionTip = false
 
-// import jquery used by template theme
-// import jQuery from "jquery";
-// window.jQuery = window.$ = jQuery
+// https://joomla.stackexchange.com/questions/8888/jqmigrate-logging-is-active-how-to-disable
+jQuery.migrateMute = true
 
-// import global styles and js
+//import global styles and js
 //import bootstrap jquery and popper
 import 'bootstrap' // add js functionality
 import 'bootstrap/dist/css/bootstrap.min.css' // add css styles
@@ -29,33 +29,14 @@ import '@/assets/css/flaticon.css'
 import '@/assets/css/icomoon.css'
 import '@/assets/css/style.css'
 import '@/assets/css/shared.css'
+import '@/assets/css/clean-scrollbar.css'
+
+
 // customize cursor selection colors 
 import '@/assets/css/selection.css'
 
-require('@/assets/js/jquery-migrate-3.0.1.min.js');
-// require('@/assets/js/jquery.easing.1.3.js');
-// require('jquery.easing')(jQuery)
-import 'jquery.easing'
-
-import '@/assets/js/jquery.waypoints.min.js';
-// import 'jquery-waypoints'
-
-// todo solve
-// generates a runtime error: Reason: TypeError: b is undefined
-// import '@/assets/js/jquery.stellar.min.js';
-// import 'jquery.stellar'
-
-// owl carousel plugin
-import '@/assets/js/owl.carousel.min.js';
-
-require('@/assets/js/jquery.magnific-popup.min.js');
-//import magnificPopup from 'magnific-popup'
-
-// require('@/assets/js/aos.js');
 import AOS from 'aos'
 window.AOS = AOS
-
-require('@/assets/js/jquery.animateNumber.min.js');
 
 import scrollax from 'scrollax'
 window.scrollax = scrollax
@@ -76,12 +57,16 @@ if (gaid!=='') {
 			}
 		}
 	});
+} else {
+	console.log("google analytics is not enabled")
 }
 
 // create and mount the instance
 const app = new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    i18n,
+    render: h => h(App),
+  mounted: () => document.dispatchEvent(new Event("x-app-rendered")),
 }).$mount('#app')
 // Now the app has started!

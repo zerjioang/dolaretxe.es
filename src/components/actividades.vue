@@ -145,7 +145,7 @@ export default {
           text: 'Desarrollo afectivo',
         },
         {
-          id: 2,
+          id: 3,
           icon: 'ion-ios-body',
           class: 'bg-dlrtx-4',
           text: 'Desarrollo social',
@@ -160,10 +160,10 @@ export default {
   },
   created(){
     console.log("jornadas::created")
+    this.jQueryInit();
   },
   mounted(){
     console.log("jornadas::mounted")
-    this.jQueryInit();
     this.imageIdx = this.randomIntFromInterval(0, imagelist.length-1);
     this.current = this.imagelist[this.imageIdx];
   },

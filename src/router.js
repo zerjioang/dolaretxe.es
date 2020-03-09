@@ -60,7 +60,7 @@ const router = new Router({
     },
     {
       //add link for retrocompatibility
-      path: 'visita',
+      path: '/visita',
       name: 'fotos-old',
       component: () => import(/* webpackChunkName: "about" */ '@/views/fotos.vue'),
       metadata: {
@@ -187,7 +187,7 @@ const router = new Router({
       }
     },
     {
-      path: 'es/legal/privacidad',
+      path: '/es/legal/privacidad',
       name: 'privacy',
       component: () => import(/* webpackChunkName: "about" */ '@/views/legal/privacy.vue'),
       metadata: {
@@ -219,5 +219,33 @@ router.beforeResolve((to, from, next) => {
 router.afterEach((to, from) => {
   store.commit('appLoading', false)
 })
+
+function getRoutesList(routes, pre) {
+  return routes.reduce((array, route) => {
+    const path = `${pre}${route.path}`;
+
+    if (route.path !== '*') {
+      array.push(path);
+    }
+
+    if (route.children) {
+      array.push(...getRoutesList(route.children, `${path}/`));
+    }
+
+    return array;
+  }, []);
+}
+
+function getRoutesXML() {
+  const list = getRoutesList(router.options.routes, 'https://zigamiklic.com')
+    .map(route => `<url><loc>${route}</loc></url>`)
+    .join('\r\n');
+  return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    ${list}
+  </urlset>`;
+}
+
+// getRoutesList(router.options.routes, 'https://www.dolaretxe.es');
+// getRoutesXML();
 
 export default router;

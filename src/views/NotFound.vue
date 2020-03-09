@@ -4,7 +4,7 @@
     <section class="ftco-section ftco-no-pt ftco-no-pb">
       <div class="container">
         <div class="row no-gutters">
-          <div class="col-md-12 p-md-5 d-flex justify-content-center align-items-center" :style="{'background-image': 'url(' + bgAbout  + ')'}"></div>
+          <div class="col-md-12 p-md-5 d-flex justify-content-center align-items-center"></div>
           <div class="col-md-12 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5 text-center">
               <h2 class="mb-4">Página no encontrada</h2>
@@ -20,7 +20,6 @@
 <script>
 
 import template from '@/mixins/template'
-const bgNotfound = require('@/assets/images/bg_2.jpg');
 
 export default {
   name: 'view-not-found',
@@ -29,7 +28,6 @@ export default {
   },
   data: () => {
     return {
-    	bgNotfound,
     }
   },
   created(){

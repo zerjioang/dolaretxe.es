@@ -32,7 +32,6 @@ export default {
   },
   mounted(){
     console.log("visitavirtual::mounted")
-    this.jQueryInit();
   },
   components:{
     pagetitle: ()=> import('@/components/pagetitle'),
@@ -44,6 +43,7 @@ export default {
 <style type="text/css" scoped="true">
   .vr-iframe {
     min-height: 400px;
+    min-width: 100%;
   }
   .vr-card {
     transition: box-shadow .25s, -webkit-box-shadow .25s;
@@ -52,5 +52,6 @@ export default {
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+    min-width: 100%;
   }
 </style>

@@ -353,39 +353,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 ftco-animate">
-            <a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center" v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/image_1.jpg') + ')' }">
-              <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                <span class="icon-instagram"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center" v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/image_2.jpg') + ')' }">
-              <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                <span class="icon-instagram"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center" v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/image_3.jpg') + ')' }">
-              <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                <span class="icon-instagram"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center" v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/image_4.jpg') + ')' }">
-              <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                <span class="icon-instagram"></span>
-              </div>
-            </a>
+          <div v-for="img in memorableImageList" class="col-xs-12 col-sm-6 col-md-3 col-md-3 ftco-animate">
+            <img class="image-popup img img-resposive img-example" :src="img" :href="img"/>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <section class="ftco-section  pb-5">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -466,27 +441,6 @@
         </div>
       </div>
     </section>
-
-    <section class="ftco-section-parallax ftco-section ftco-no-pt mt-5">
-      <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-12 col-lg-12 text-center heading-section ftco-animate">
-              <h2>Suscríbete a nuestro boletín de noticias</h2>
-              <p>Introduce tu correo electrónico para recibir las novedades de Dolaretxe y conocer la información de primera mano.</p>
-              <div class="row d-flex justify-content-center mt-4 mb-4">
-                <div class="col-md-8">
-                  <form action="#" class="subscribe-form">
-                    <div class="form-group d-flex">
-                      <input type="text" class="form-control" placeholder="Introduce tu email" required>
-                      <input type="submit" value="Subscribete" class="submit px-3">
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
   </div>
 </template>
 
@@ -546,6 +500,12 @@ export default {
         title: "Calidad",
         description: "Calidad en el servicio y colaboradores oficiales de UNICEF"
       }
+      ],
+      memorableImageList: [
+        require('@/assets/images/insta/5620724262840602855.jpg'),
+        require('@/assets/images/insta/6440705795977102007.jpg'),
+        require('@/assets/images/insta/symNivopage14_31.jpg'),
+        require('@/assets/images/insta/2785671161688835371.jpg'),
       ]
     }
   },
@@ -581,6 +541,13 @@ export default {
   color:white;
   font-weight: bold;
   font-size: 17pt;
+}
+.img-example {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
+  outline: none;
 }
 </style>
 
