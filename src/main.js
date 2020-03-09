@@ -61,9 +61,22 @@ import scrollax from 'scrollax'
 window.scrollax = scrollax
 // require('@/assets/js/scrollax.min.js');
 
-// import ES6 style
-import {VueMasonryPlugin} from 'vue-masonry';
-Vue.use(VueMasonryPlugin)
+// configure google analytics if valid
+// docs: https://developers.google.com/analytics/devguides/collection/gtagjs
+// docs: https://matteo-gabriele.gitbook.io/vue-gtag/
+const gaid = process.env.VUE_APP_GOOGLE_ANALYTICS;
+if (gaid!=='') {
+	console.log('enabling Google Analytics with provided GA-ID')
+	const VueGtag = require('vue-gtag');
+	Vue.use(VueGtag, {
+		config: {
+			id: gaid,
+			params: {
+				send_page_view: true
+			}
+		}
+	});
+}
 
 // create and mount the instance
 const app = new Vue({

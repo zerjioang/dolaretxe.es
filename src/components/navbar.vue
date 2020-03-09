@@ -37,7 +37,7 @@
               </a>
             </div>
           </li>
-          <li class="nav-item cta mr-md-2" v-show="false">
+          <li class="nav-item cta mr-md-2" v-show="showLogin">
             <router-link :to="{'name': 'login'}" class="nav-link">Acceder</router-link>
           </li>
         </ul>
@@ -89,7 +89,8 @@ export default {
           to: "unicef",
           text: "Compromiso UNICEF"
         },
-      ]
+      ],
+      showLogin: process.env.VUE_APP_SHOW_LOGIN_BUTTON == 'true'
   	}
   },
   methods:{

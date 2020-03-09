@@ -16,8 +16,8 @@ export default {
   name: 'app',
   methods : {
     handler: function(e) {
-      // e.preventDefault();
-      // alert("usage of right click is not allowed")
+      // disable right button click
+      e.preventDefault();
     }
   },
   components: {

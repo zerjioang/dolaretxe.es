@@ -1,6 +1,11 @@
 <template>
    <div>
       <pagetitle page="Sobre nosotros"/>
+
+      <!-- include google maps iframe for free -->
+      <iframe class="img-responsive vr-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.6611082492964!2d-2.920260001981129!3d43.25852385975998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6e2cf49d4cdbeba!2sEscuela%20Infantil%20%C2%B7%20DOLARETXE%20%C2%B7%20Haur%20Eskola!5e0!3m2!1ses!2ses!4v1576769681457!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="true">
+      </iframe>
+
       <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
          <div class="container">
             <div class="row no-gutters">
@@ -70,10 +75,6 @@
             </div>
          </div>
       </section>
-
-      <!-- include google maps iframe for free -->
-      <iframe class="img-responsive vr-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.6611082492964!2d-2.920260001981129!3d43.25852385975998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6e2cf49d4cdbeba!2sEscuela%20Infantil%20%C2%B7%20DOLARETXE%20%C2%B7%20Haur%20Eskola!5e0!3m2!1ses!2ses!4v1576769681457!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="true">
-      </iframe>
 
       <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
          <div class="container">
@@ -230,7 +231,7 @@ export default {
     font-weight: bold;
   }
   .vr-iframe {
-    min-height: 400px;
+    min-height: 600px;
     width: 100%;
     padding: 0px;
     margin: 0px;
