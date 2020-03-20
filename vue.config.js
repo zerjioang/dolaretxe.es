@@ -1,7 +1,45 @@
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   runtimeCompiler: true,
+  configureWebpack: config => {
+    if (process.env.NODE_ENV === 'production') {
+      config.optimization = {
+        minimize: true,
+        minimizer: [
+          new TerserPlugin({
+            sourceMap: false,
+            cache: true,
+            parallel: true,
+            terserOptions: {
+              extractComments: 'all',
+              ecma: undefined,
+              warnings: true,
+              parse: {},
+              compress: {
+                drop_console: true
+              },
+              mangle: true, // Note `mangle.properties` is `false` by default.
+              module: false,
+              output: {
+                // Eliminate comments
+                comments: false
+              },
+              toplevel: false,
+              nameCache: null,
+              ie8: false,
+              keep_classnames: undefined,
+              keep_fnames: false,
+              safari10: true,
+            },
+          }),
+        ],
+      }
+    } else {
+      // mutate for development...
+    }
+  },
   chainWebpack: config => {
     config.resolve.alias.set('@', path.resolve(__dirname, 'src'));
     config.resolve.alias.set('~', path.resolve(__dirname, 'node_modules'));
@@ -32,7 +70,25 @@ module.exports = {
       renderRoutes: [
         '/',
         '/es',
-        '/eus'
+        '/eus',
+        '/es/escuela',
+        '/escuela/escuela.php',
+        '/es/fotos',
+        '/visita',
+        '/es/galeria',
+        '/es/unicef',
+        '/es/visitavirtual',
+        '/es/jornadas',
+        '/jornadas/jornadas.php',
+        '/es/actividades',
+        '/actividades/actividades.php',
+        '/es/contacto/trabajo',
+        '/es/contacto',
+        '/contacto/contacto.php',
+        '/es/legal/aviso',
+        '/avisolegal/avisolegal.php',
+        '/es/legal/cookies',
+        '/es/legal/privacidad',
       ],
       useRenderEvent: true,
       headless: true,

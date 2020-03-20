@@ -1,4 +1,5 @@
 #!/bin/bash
 
-echo "starting"
+echo "compiling current version"
+rm -rf dist
 yarn build

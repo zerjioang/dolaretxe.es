@@ -3,7 +3,7 @@
 	    <cookie-law theme="dark-lime" buttonText="Aceptar">
 	    	<div slot="message">
 				<p class="justified cookie">
-					Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración mediante los ajustes de su navegador u obtener <router-link :to="{ name: 'cookies' }">
+					Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración mediante los ajustes de su navegador u obtener <router-link :to="{ name: 'cookies' }" alt="mas información sobre cookies">
 						<span style="color: white;">más información</span>
 					</router-link>.
 				</p>
