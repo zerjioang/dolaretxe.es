@@ -235,7 +235,7 @@
         </div>
         <div class="row">
           <div v-for="img in memorableImageList" :key="img" class="col-xs-12 col-sm-6 col-md-3 col-md-3 ftco-animate">
-            <img class="image-popup img img-resposive img-example" :src="img" :href="img"/>
+            <img class="image-popup img img-resposive img-example" :src="img" :href="img" alt="dolaretxe escuela Infantil, haur eskola y guarderia en bilbao"/>
           </div>
         </div>
       </div>

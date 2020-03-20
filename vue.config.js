@@ -50,13 +50,13 @@ module.exports = {
     msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
-    // configure the workbox plugin
-    workboxPluginMode: 'InjectManifest',
-    workboxOptions: {
-      // swSrc is required in InjectManifest mode.
-      swSrc: 'src/registerServiceWorker.js',
-      // ...other Workbox options...
-    }
+    iconPaths: {
+      favicon32: 'favicon/favicon-32x32.png',
+      favicon16: 'favicon/favicon-16x16.png',
+      appleTouchIcon: 'favicon/apple-touch-icon-180x180.png',
+      maskIcon: 'favicon/safari-pinned-tab.svg',
+      msTileImage: 'favicon/msapplication-icon-144x144.png',
+    },
   },
   pluginOptions: {
     i18n: {

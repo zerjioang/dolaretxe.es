@@ -14,7 +14,7 @@
 			<div class="row mb-5">
 				<div class="col-md-12">
 					<div class="mb-4 text-center"> 
-						<img :src="require('@/assets/images/dolaretxe-white.png')" class="footer-img">
+						<img :src="require('@/assets/images/dolaretxe-white.png')" class="footer-img" alt="dolaretxe escuela Infantil, haur eskola y guarderia en bilbao">
 					</div>
 				</div>
 			</div>

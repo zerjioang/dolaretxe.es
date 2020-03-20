@@ -9,7 +9,7 @@
                 <h5>Comprometidos con la Infancia</h5>
              </div>
              <div class="ftco-animate fadeInUp ftco-animated align-items-center text-center img-pad">
-                <img class="amiga img-responsive" :src="bgUnicefEscuelaAmiga">
+                <img class="amiga img-responsive" :src="bgUnicefEscuelaAmiga" alt="dolaretxe escuela Infantil, haur eskola y guarderia en bilbao">
              </div>
 
              <div class="row">
@@ -33,7 +33,7 @@
              </div>
              <div class="ftco-animate fadeInUp ftco-animated align-items-center text-center img-pad unicef-bg">
                 <a href="http://www.unicef.es/" alt="UNICEF" target="_blank">
-                <img class="img-responsive" :src="bgUnicefFooter">
+                <img class="img-responsive" :src="bgUnicefFooter" alt="dolaretxe escuela Infantil, haur eskola y guarderia en bilbao">
                 </a>
              </div>
           </div>

@@ -30,6 +30,9 @@ import '@/assets/css/icomoon.css'
 import '@/assets/css/style.css'
 import '@/assets/css/shared.css'
 import '@/assets/css/clean-scrollbar.css'
+// google fonts
+import '@/assets/css/nunito-font.css'
+import '@/assets/css/rubik-font.css'
 
 
 // customize cursor selection colors 

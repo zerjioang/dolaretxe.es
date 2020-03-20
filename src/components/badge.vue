@@ -1,6 +1,6 @@
 <template>
 <div class="whiteCard text-center">
-	<img class="image" :src="ejgvImage" alt="eusko jaurlaritza gobierno vasco. numero de licencia dolaretxe haureskola"/>
+	<img class="image" :src="ejgvImage" alt="dolaretxe escuela Infantil, haur eskola y guarderia en bilbao con numero de licencia del gobierno vasco"/>
 	<p class="label">
 		Escuela Infantil DOLARETXE Haur Eskola
 		
