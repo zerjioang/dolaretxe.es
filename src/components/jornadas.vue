@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pagetitle page="Jornadas" :image="current" />
+    <pagetitle page="Jornadas"  />
     <section class="ftco-section ftco-no-pt ftco-no-pb mt-5 mb-5">
          <div class="container">
             <div class="row no-gutters">

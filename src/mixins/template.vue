@@ -72,10 +72,10 @@ export default {
           $('.carousel-testimony').owlCarousel({
             center: true,
             loop: true,
-            items:1,
-            margin: 30,
+            items:4,
+            margin: 15,
             stagePadding: 0,
-            nav: false,
+            nav: true,
             navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
             responsive:{
               0:{
@@ -92,6 +92,7 @@ export default {
 
         };
         carousel();
+        $('.carousel-testimony').trigger("to.owl.carousel", [1, 1, true]);
 
         $('nav .dropdown').hover(function(){
           var $this = $(this);

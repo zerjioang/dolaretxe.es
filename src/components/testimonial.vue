@@ -1,57 +1,53 @@
 <template>
-<section class="rating__card">
-  <blockquote class="rating__card__quote">“{{review}}”</blockquote>
-  
-  <div class="rating__card__stars">
-    <span class="icon-star checked"></span>
-    <span class="icon-star checked"></span>
-    <span class="icon-star checked"></span>
-    <span class="icon-star checked"></span>
-    <span class="icon-star checked"></span>
-    <br>
-    <span class="rating__card__stars__name">{{name}}</span>
-  </div>
-  <p class="rating__card__bottomText">1 reseña</p>
-</section>
+  <section class="rating__card">
+    <blockquote class="rating__card__quote">“{{review}}”</blockquote>
+
+    <div class="rating__card__stars">
+      <span class="icon-star checked"></span>
+      <span class="icon-star checked"></span>
+      <span class="icon-star checked"></span>
+      <span class="icon-star checked"></span>
+      <span class="icon-star checked"></span>
+      <br />
+      <span class="rating__card__stars__name">{{name}}</span>
+    </div>
+    <p class="rating__card__bottomText">1 reseña</p>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'testimonial-component',
+  name: "testimonial-component",
   props: {
     name: {
-        type: String,
-        default: "name"
+      type: String,
+      default: "name"
     },
     review: {
-        type: String,
-        default: ""
+      type: String,
+      default: ""
     }
   },
-  methods: {
-  },
+  methods: {},
   data: () => {
-    return {
-    }
+    return {};
   },
-  created(){
-    console.log("testimonial::created")
+  created() {
+    console.log("testimonial::created");
   },
-  mounted(){
-    console.log("testimonial::mounted")
+  mounted() {
+    console.log("testimonial::mounted");
   },
-  components:{
-  }
-}
+  components: {}
+};
 </script>
 
 <style lang="scss" scoped="true">
-
 $body-color: #333a4d;
-$df-dark-blue: #003A79;
-$df-sky-blue: #00B3E7;
-$df-orange: #F78D28;
-$df-bg-gray: #EFF0F2;
+$df-dark-blue: #003a79;
+$df-sky-blue: #00b3e7;
+$df-orange: #f78d28;
+$df-bg-gray: #eff0f2;
 
 h1 {
   font-family: sans-serif;
@@ -66,7 +62,7 @@ h1 {
   font-family: sans-serif;
   color: #545454;
   font-weight: 100;
-  background: url('') no-repeat center center;
+  background: url("") no-repeat center center;
   border-radius: 10px;
   /* background: url('') no-repeat center center, linear-gradient($df-dark-blue, $df-sky-blue); */
   background-size: cover;
@@ -99,8 +95,9 @@ h1 {
   margin: 0 0 0 5px;
 }
 .rating__card__bottomText {
-  margin: 30px auto 15px;
   text-align: center;
   font-size: 14px;
+  padding: 0px;
+  margin: 0px;
 }
 </style>

@@ -174,9 +174,9 @@ export default {
 .link {
 	cursor: pointer;
 }
-.link:hover, .link:active, .link:focus {
-	color: white;
-	cursor: pointer;
+.link:hover, .link:active, .link:focus, a:hover, a:active {
+	color: white !important;
+	cursor: pointer !important;
 }
 .copyright {
 	margin-top: 20px; 

@@ -85,14 +85,6 @@ export default {
           text: "Fotos"
         },
         {
-          to: "escuela",
-          text: "Escuela"
-        },
-        {
-          to: "jornadas",
-          text: "Jornadas"
-        },
-        {
           to: "actividades",
           text: "Actividades"
         },
@@ -114,6 +106,7 @@ export default {
       if (lang) {
         console.log("changing current locale to", lang);
         this.$i18n.locale = lang;
+        localStorage.setItem("lang", lang);
       }
     }
   },

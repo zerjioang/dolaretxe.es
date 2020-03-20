@@ -4,7 +4,7 @@
       <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
          <div class="container">
             <div class="row no-gutters">
-               <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" :style="{'background-image': 'url(' + bgAbout  + ')'}">
+               <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" :style="{'background-image': 'url(' + bgEscuela  + ')'}">
                </div>
                <div class="col-md-7 wrap-about py-md-5 ftco-animate">
                   <div class="heading-section mb-5 pt-5 pl-md-5">
@@ -25,7 +25,7 @@
             </div>
          </div>
       </section>
-      <br></br>
+      <br>
       <section class="ftco-section ftco-no-pt ftco-no-pb">
          <div class="container">
             <div class="row no-gutters">
@@ -37,12 +37,13 @@
                      <h5>Aprendizaje y desarrollo</h5>
                      <p class="pr-md-5 mr-md-5 justified">
                         <strong>Dolaretxe</strong> nace con el propósito de que los niños aprendan y se desarrollen de forma integral en un entorno familiar y estimulante.
-                        <br></br> Nuestro equipo docente se concentra en la motivación de los pequeños usando el juego como medio para favorecer el aprendizaje, la creatividad y el desarrollo individual de cada uno de los niños a través de sus propios estímulos e intereses.
+                        <br>
+                        Nuestro equipo docente se concentra en la motivación de los pequeños usando el juego como medio para favorecer el aprendizaje, la creatividad y el desarrollo individual de cada uno de los niños a través de sus propios estímulos e intereses.
                      </p>
                      <h5>Niños por aula</h5>
                      <p class="pr-md-5 mr-md-5 justified">
                         El número de niños por aula cumple con los ratios establecidos por el Departamento de Educación del Gobierno Vasco:
-                        <br></br>
+                        <br>
                      <ul>
                         <li>
                            8 niños en el aula de 0-1 años.
@@ -61,14 +62,14 @@
                      </p>
                   </div>
                </div>
-               <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/about.jpg') + ')' }">
+               <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" v-bind:style="{ backgroundImage: 'url(' + bgEquipo + ')' }">
                </div>
             </div>
          </div>
       </section>
       
       <div class="ftco-animate fadeInUp ftco-animated align-items-center text-center img-pad">
-        <div class="img-full" v-bind:style="{ backgroundImage: 'url(' + bgStackO2 + ')' }" style="min-height: 500px;">
+        <div class="img-full" v-bind:style="{ backgroundImage: 'url(' + bgInstalaciones + ')' }" style="min-height: 500px;">
         </div>
       </div>
       
@@ -169,7 +170,7 @@
          </div>
       </section>
 
-      <div class="img-full" v-bind:style="{ backgroundImage: 'url(' + bgStackO1 + ')' }" style="min-height: 500px;">
+      <div class="img-full" v-bind:style="{ backgroundImage: 'url(' + bgObjetivos + ')' }" style="min-height: 500px;">
       </div>
 
       <section class="ftco-section ftco-no-pt ftco-no-pb">
@@ -260,9 +261,10 @@
 
 import template from '@/mixins/template'
 
-const bgStackO1 = require('@/assets/images/stack_01.png');
-const bgStackO2 = require('@/assets/images/stack_02.png');
-const bgAbout = require('@/assets/images/about.jpg');
+const bgEscuela = require('@/assets/images/escuela/01.jpg');
+const bgEquipo = require('@/assets/images/escuela/02.jpg');
+const bgInstalaciones = require('@/assets/images/escuela/04.jpg');
+const bgObjetivos = require('@/assets/images/escuela/03.jpg');
 
 export default {
   name: 'escuela-component',
@@ -271,9 +273,10 @@ export default {
   },
   data: () => {
     return {
-    	bgStackO1,
-    	bgStackO2,
-    	bgAbout
+      bgEscuela,
+      bgEquipo,
+      bgInstalaciones,
+      bgObjetivos,
     }
   },
   created(){

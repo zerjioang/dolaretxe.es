@@ -1,6 +1,6 @@
 <template>
   <div class="icon-bar">
-    <a href="#" class="call">{{text}}<strong>{{phone}}</strong></a>
+    <a :href="'tel:'+phone" class="call">{{text}}<strong>{{phone}}</strong></a>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pagetitle page="Visita Virtual" :image="image"/>
+    <pagetitle page="Visita Virtual"/>
     <section class="ftco-section ftco-no-pt ftco-no-pb pa-5">
       <div class="container">
         <div class="row no-gutters">

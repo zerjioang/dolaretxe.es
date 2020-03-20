@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pagetitle page="Actividades" :image="current" />
+    <pagetitle page="Actividades"/>
     <section class="ftco-section ftco-no-pt ftco-no-pb mt-5 mb-5">
          <div class="container">
             <div class="row no-gutters">
