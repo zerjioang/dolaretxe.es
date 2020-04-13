@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-start pt-5" data-scrollax-parent="true">
           <div class="col-lg-6 col-md-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Escuela Infantil.<br><span>Dolaretexe</span><br>Haur Eskola</h1>
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Escuela Infantil.<br><span>Dolaretexe</span><br>Haurreskola</h1>
             <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="icon-calendar mr-2"></span>{{location}}</p>
             <p>Centro Autorizado por el Departamento de Educación del Gobierno Vasco</p>
             <badge class="mb-3"/>
@@ -190,7 +190,7 @@
           <br>
           <div class="heading-section">
             <div class="text-center">
-              <h2 class="mb-4">Descubre Dolaretxe Haur Eskola</h2>
+              <h2 class="mb-4">Descubre Dolaretxe Haurreskola</h2>
               <p class="justified font-20">
                 Te ofrecemos un <strong>servicio único</strong> y excepcional para ti y para los niños, gracias al <strong>equipazo de educadoras</strong> y un personal totalmente cualificado, con nuestra experiencia y profesionalidad como principales avales. Sin olvidar nuestras instalaciones, con aulas perfectamente equipadas y destacando como punto fundamental la <strong>perfecta localización</strong> del centro, situado en una <strong>zona abierta, totalmente peatonal y libre de tráfico</strong>.
             </p>
@@ -235,7 +235,7 @@
         </div>
         <div class="row">
           <div v-for="img in memorableImageList" :key="img" class="col-xs-12 col-sm-6 col-md-3 col-md-3 ftco-animate">
-            <img class="image-popup img img-resposive img-example" :src="img" :href="img" alt="dolaretxe escuela Infantil, haur eskola y guarderia en bilbao"/>
+            <img class="image-popup img img-resposive img-example" :src="img" :href="img" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"/>
           </div>
         </div>
       </div>
@@ -251,7 +251,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text-center">
-              <p class="contact-text font-20">Nos encantaría conocerte a ti y a tu/s peque/s. Ponte en contacto con nosotras para comprobar disponibilidad de plazas y concertar una cita para conocer nuestra guarde. Os invitamos a conocer la Escuela Infantil Dolaretxe Haur Eskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios y tarifas que mejor se adapten a vuestras necesidades.</p>
+              <p class="contact-text font-20">Nos encantaría conocerte a ti y a tu/s peque/s. Ponte en contacto con nosotras para comprobar disponibilidad de plazas y concertar una cita para conocer nuestra guarde. Os invitamos a conocer la Escuela Infantil Dolaretxe Haurreskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios y tarifas que mejor se adapten a vuestras necesidades.</p>
               <router-link
               class="btn dolar-gradient-orangred py-3 px-4 btn-matricula"
               :to="{name:'contact'}">Contacta con nosotros</router-link>

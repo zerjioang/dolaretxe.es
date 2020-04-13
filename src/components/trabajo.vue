@@ -12,7 +12,7 @@
                         <h2 class="mb-4">Trabaja con nosotros</h2>
                      </div>
                      <p class="text-center">
-                        <img class="icon" :src="require('@/assets/images/cv.svg')" alt="dolaretxe escuela Infantil, haur eskola y guarderia en bilbao">
+                        <img class="icon" :src="require('@/assets/images/cv.svg')" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao">
                      </p>
                   </div>
                </div>

@@ -32,7 +32,7 @@
         <div v-masonry="containerId" origin-left="false" transition-duration="1s" fit-width="true" horizontal-order="true" item-selector=".item">
           <div v-masonry-tile class="item" v-for="item in block.images">
             <img class="image-popup img img-resposive
-             masonry-img" v-lazy="item" :href="item" alt="dolaretxe escuela Infantil, haur eskola y guarderia en bilbao"/>
+             masonry-img" v-lazy="item" :href="item" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"/>
           </div>
         </div> 
       </div>

@@ -49,7 +49,7 @@ module.exports = {
     config.resolve.alias.set('~', path.resolve(__dirname, 'node_modules'));
   },
   pwa: {
-    name: 'Dolaretxe Haur Eskola',
+    name: 'Dolaretxe Haurreskola',
     themeColor: '#E57B21',
     msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',
