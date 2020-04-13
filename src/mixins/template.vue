@@ -94,7 +94,7 @@ export default {
         carousel();
         $('.carousel-testimony').trigger("to.owl.carousel", [1, 1, true]);
 
-        $('nav .dropdown').hover(function(){
+        $('nav .dropdown').click(function(){
           var $this = $(this);
           //   timer;
           // clearTimeout(timer);
@@ -111,10 +111,6 @@ export default {
             // $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
             $this.find('.dropdown-menu').removeClass('show');
           // }, 100);
-        });
-
-        $('#dropdown04').on('show.bs.dropdown', function () {
-          console.log('show');
         });
 
         // scroll
@@ -156,27 +152,6 @@ export default {
           });
         };
         scrollWindow();
-
-        var isMobile = {
-          Android: function() {
-            return navigator.userAgent.match(/Android/i);
-          },
-            BlackBerry: function() {
-            return navigator.userAgent.match(/BlackBerry/i);
-          },
-            iOS: function() {
-            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-          },
-            Opera: function() {
-            return navigator.userAgent.match(/Opera Mini/i);
-          },
-            Windows: function() {
-            return navigator.userAgent.match(/IEMobile/i);
-          },
-            any: function() {
-            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-          }
-        };
 
         var counter = function() {
           
@@ -240,7 +215,7 @@ export default {
         contentWayPoint();
 
         // navigation
-        var OnePageNav = function() {
+        /*var OnePageNav = function() {
           $(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
             e.preventDefault();
 
@@ -260,7 +235,8 @@ export default {
           $('body').on('activate.bs.scrollspy', function () {
           })
         };
-        OnePageNav();
+        OnePageNav();*/
+        $('#ftco-nav').removeClass('show');
 
         // magnific popup
         $('.image-popup').magnificPopup({
@@ -281,16 +257,6 @@ export default {
             enabled: true,
             duration: 300 // don't foget to change the duration also in CSS
           }
-        });
-
-        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-          disableOn: 700,
-          type: 'iframe',
-          mainClass: 'mfp-fade',
-          removalDelay: 160,
-          preloader: false,
-
-          fixedContentPos: false
         });
       }
     },

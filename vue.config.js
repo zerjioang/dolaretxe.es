@@ -2,7 +2,11 @@ const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
+  publicPath: '/dolaretxe.es',
+  outputDir: 'dist',
   runtimeCompiler: true,
+  productionSourceMap: false,
+  integrity: false,
   configureWebpack: config => {
     if (process.env.NODE_ENV === 'production') {
       config.optimization = {
@@ -45,7 +49,7 @@ module.exports = {
     config.resolve.alias.set('~', path.resolve(__dirname, 'node_modules'));
   },
   pwa: {
-    name: 'Dolaretxe',
+    name: 'Dolaretxe Haur Eskola',
     themeColor: '#E57B21',
     msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',

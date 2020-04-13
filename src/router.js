@@ -10,7 +10,7 @@ const router = new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '//',
       name: 'home',
       component: () => import(/* webpackChunkName: "about" */ '@/views/Index.vue'),
       metadata: {
@@ -128,7 +128,7 @@ const router = new Router({
     },
     /*
     {
-      path: '/es/contacto/citaprevia',
+      path: '//es/contacto/citaprevia',
       name: 'citaprevia',
       component: () => import('@/views/citaprevia.vue'),
       metadata: {
@@ -193,6 +193,14 @@ const router = new Router({
       metadata: {
         lang: 'es'
       }
+    },
+    {
+      path: '/404',
+      name: 'not-found',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ '@/views/NotFound.vue')
     },
     {
       path: '*',
