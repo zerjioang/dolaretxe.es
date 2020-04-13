@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-start pt-5" data-scrollax-parent="true">
           <div class="col-lg-6 col-md-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Escuela Infantil.<br><span>Haur Eskola</span></h1>
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Escuela Infantil.<br><span>Dolaretexe</span><br>Haur Eskola</h1>
             <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="icon-calendar mr-2"></span>{{location}}</p>
             <p>Centro Autorizado por el Departamento de Educación del Gobierno Vasco</p>
             <badge class="mb-3"/>
