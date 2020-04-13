@@ -110,14 +110,6 @@ const router = new Router({
       }
     },
     {
-      path: '/es/actividades',
-      name: 'actividades',
-      component: () => import(/* webpackChunkName: "about" */ '@/views/actividades.vue'),
-      metadata: {
-        lang: 'es'
-      }
-    },
-    {
       //add link for retrocompatibility
       path: '/actividades/actividades.php',
       name: 'actividades-old',

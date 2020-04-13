@@ -1,42 +1,52 @@
 <template>
   <div class="icon-bar">
-    <a :href="'tel:'+phone" class="call">{{text}}<strong>{{phone}}</strong></a>
+    <a :href="'tel:'+phone" class="call">
+      <span v-if="showText">{{text}}</span>
+      <strong>{{phone}}</strong>
+    </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'stickyphone-component',
+  name: "stickyphone-component",
   props: {
     text: {
-        type: String,
-        default: "Llámanos: "
+      type: String,
+      default: "Llámanos: "
     },
     phone: {
-        type: String,
-        default: "94 600 45 58"
+      type: String,
+      default: "94 600 45 58"
     }
+  },
+  methods: {},
+  data: () => ({
+    showText: true
+  }),
+  created() {
+    console.log("stickyphone::created");
   },
   methods: {
-  },
-  data: () => {
-    return {
+    onResize: function() {
+      this.showText = window.innerWidth >= 480;
     }
   },
-  created(){
-    console.log("stickyphone::created")
+  mounted() {
+    console.log("stickyphone::mounted");
+    // Register an event listener when the Vue component is ready
+    window.addEventListener("resize", this.onResize);
+    this.onResize();
   },
-  mounted(){
-    console.log("stickyphone::mounted")
-  },
-  components:{
-  }
-}
+  components: {}
+};
 </script>
 
 <style type="text/css" scoped="true">
-
-body {margin:0;height:2000px;}
+body {
+  margin: 0;
+  height: 2000px;
+}
 
 .icon-bar {
   position: fixed;
@@ -47,6 +57,19 @@ body {margin:0;height:2000px;}
   transform: translateY(-50%);
   z-index: 4;
   margin-left: -110px; /* Negative half of width. */
+}
+@media screen and (min-width: 380px) and (max-width: 480px) {
+  .icon-bar {
+    top: 1%;
+    left: 65%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .icon-bar {
+    top: 1%;
+    left: 83%;
+  }
 }
 
 .icon-bar a {
@@ -63,7 +86,7 @@ body {margin:0;height:2000px;}
 }
 
 .icon-bar a:hover {
-  background-color: #A00;
+  background-color: #a00;
 }
 
 .call {

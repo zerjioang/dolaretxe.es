@@ -88,3 +88,16 @@
 *, html, body {
 	font-family: 'Rubik', sans-serif;
 }
+
+/*.black-gradient {
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#262626",GradientType=1); 
+}
+*/
+
+.black-gradient {
+	background: #E4F4FA
+}

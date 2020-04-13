@@ -1,11 +1,26 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <nav
+    class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+    id="ftco-navbar"
+  >
     <div class="container">
       <router-link class="navbar-brand" :to="{'name':'home'}">
-        <img :src="require('@/assets/images/dolaretxe.png')" class="navbar-img" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao">
+        <img
+          :src="require('@/assets/images/dolaretxe.png')"
+          class="navbar-img"
+          alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+        />
       </router-link>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="oi oi-menu"></span> Menu
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#ftco-nav"
+        aria-controls="ftco-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="oi oi-menu"></span> Menu
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
@@ -17,32 +32,74 @@
             <router-link :to="{'name': m.to}" class="nav-link">{{m.text}}</router-link>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{$t('informacion')}}</a>
-            <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownInfo">
-              <a v-for="s in serviceItems" :key="s.text" class="dropdown-item" href="#" v-on:click="goto($event, s.to)">{{s.text}}</a>
+          <li
+          v-if="serviceItems!=undefined && serviceItems.length > 0"
+          class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownInfo"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >{{$t('informacion')}}</a>
+            <div
+              class="dropdown-menu animate slideIn"
+              aria-labelledby="navbarDropdownInfo"
+            >
+              <a
+                v-for="s in serviceItems"
+                :key="s.text"
+                class="dropdown-item"
+                href="#"
+                v-on:click="goto($event, s.to)"
+              >{{s.text}}</a>
             </div>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{$t('sobre_nosotros')}}
-            </a>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownAbout"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >{{$t('sobre_nosotros')}}</a>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownAbout">
               <a class="dropdown-item" href="#" v-on:click="goto($event, 'contact')">Contacto</a>
-              <a v-show="false" class="dropdown-item" href="#" v-on:click="goto($event, 'citaprevia')">Cita Previa</a>
+              <a
+                v-show="false"
+                class="dropdown-item"
+                href="#"
+                v-on:click="goto($event, 'citaprevia')"
+              >Cita Previa</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#" v-on:click="goto($event, 'trabajo')">Trabaja con nosotros
-              </a>
+              <a
+                class="dropdown-item"
+                href="#"
+                v-on:click="goto($event, 'trabajo')"
+              >Trabaja con nosotros</a>
             </div>
           </li>
 
           <!-- start language selector -->
           <li class="nav-item dropdown btn-lang">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{$t('idioma')}}
-            </a>
-            <div class="dropdown-menu animate slideIn btn-lang" aria-labelledby="navbarDropdownLang">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownAbout"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >{{$t('idioma')}}</a>
+            <div
+              class="dropdown-menu animate slideIn btn-lang"
+              aria-labelledby="navbarDropdownLang"
+            >
               <a class="dropdown-item" href="#" v-on:click="changeLanguage('es')">Español</a>
               <a class="dropdown-item" href="#" v-on:click="changeLanguage('eus')">Euskera</a>
             </div>
@@ -59,49 +116,39 @@
 </template>
 
 <script>
-
 export default {
-  name: 'component-navbar',
+  name: "component-navbar",
   data: () => {
-  	return {
-  		name: "dolaretxe",
-  		menuitems: [
+    return {
+      name: "dolaretxe",
+      menuitems: [
         {
           to: "escuela",
           text: "Escuela"
         },
-    		{
-    			to: "jornadas",
-    			text: "Jornadas"
-    		},
+        {
+          to: "jornadas",
+          text: "Jornadas"
+        },
         {
           to: "visitavirtual",
           text: "Visita Virtual"
-        }
-  		],
-      serviceItems: [
+        },
         {
           to: "galeria",
           text: "Fotos"
-        },
-        {
-          to: "actividades",
-          text: "Actividades"
-        },
-        {
-          to: "unicef",
-          text: "Compromiso UNICEF"
-        },
+        }
       ],
-      showLogin: process.env.VUE_APP_SHOW_LOGIN_BUTTON == 'true'
-  	}
+      serviceItems: [],
+      showLogin: process.env.VUE_APP_SHOW_LOGIN_BUTTON == "true"
+    };
   },
-  methods:{
-    goto: function(e, name){
+  methods: {
+    goto: function(e, name) {
       e.preventDefault();
-      this.$router.push({name: name});
+      this.$router.push({ name: name });
     },
-    changeLanguage(lang){
+    changeLanguage(lang) {
       // change other locale
       if (lang) {
         console.log("changing current locale to", lang);
@@ -110,76 +157,75 @@ export default {
       }
     }
   },
-  components: {
-  }
-}
+  components: {}
+};
 </script>
 
 <style type="text/css" scoped="true">
-  /*make dropdowns appear on hover with following style*/
-  @media (min-width: 979px) {
-    ul.nav li.dropdown:hover > ul.dropdown-menu {
-      display: block;
-    }
+/*make dropdowns appear on hover with following style*/
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
   }
-  /*make dropdown animated*/
-  @media (min-width: 992px) {
-    .animate {
-      animation-duration: 0.3s;
-      -webkit-animation-duration: 0.3s;
-      animation-fill-mode: both;
-      -webkit-animation-fill-mode: both;
-    }
+}
+/*make dropdown animated*/
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
   }
+}
 
-  @keyframes slideIn {
-    0% {
-      transform: translateY(1rem);
-      opacity: 0;
-    }
-    100% {
-      transform:translateY(0rem);
-      opacity: 1;
-    }
-    0% {
-      transform: translateY(1rem);
-      opacity: 0;
-    }
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
   }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
 
-  @-webkit-keyframes slideIn {
-    0% {
-      -webkit-transform: transform;
-      -webkit-opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-      -webkit-opacity: 1;
-    }
-    0% {
-      -webkit-transform: translateY(1rem);
-      -webkit-opacity: 0;
-    }
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
   }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
 
-  .slideIn {
-    -webkit-animation-name: slideIn;
-    animation-name: slideIn;
-  }
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
 
-  .navbar-img {
-    max-height: 60px;
-  }
-  .btn-lang {
-    background: #d2e0e5 !important;
-    color: white;
-    border: 5px;
-    border-radius: 7px;
-  }
-  .btn-lang a {
-    color: black;
-  }
-  .btn-lang a:hover {
-    color: #ef5735;
-  }
+.navbar-img {
+  max-height: 60px;
+}
+.btn-lang {
+  background: #d2e0e5 !important;
+  color: white;
+  border: 5px;
+  border-radius: 7px;
+}
+.btn-lang a {
+  color: black;
+}
+.btn-lang a:hover {
+  color: #ef5735;
+}
 </style>

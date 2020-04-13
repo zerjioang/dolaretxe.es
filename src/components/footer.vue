@@ -1,5 +1,5 @@
 <template>
-	<footer class="ftco-footer ftco-bg-dark ftco-section dolar-gradient-orangred-darken-1">
+	<footer class="ftco-footer ftco-bg-dark ftco-section black-gradient">
 	    <cookie-law theme="dark-lime" buttonText="Aceptar">
 	    	<div slot="message">
 				<p class="justified cookie">
@@ -14,7 +14,7 @@
 			<div class="row mb-5">
 				<div class="col-md-12">
 					<div class="mb-4 text-center"> 
-						<img :src="require('@/assets/images/dolaretxe-white.png')" class="footer-img" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao">
+						<img :src="require('@/assets/images/dolaretxe.png')" class="footer-img" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao">
 					</div>
 				</div>
 			</div>
@@ -56,10 +56,10 @@
 								<router-link :to="{name:'escuela'}" class="py-2 d-block">Escuela</router-link>
 							</li>
 							<li>
-								<router-link :to="{name:'actividades'}" class="py-2 d-block">Actividades</router-link>
+								<router-link :to="{name:'unicef'}" class="py-2 d-block">UNICEF</router-link>
 							</li>
 							<li>
-								<router-link :to="{name:'galeria'}" class="py-2 d-block">Galeria</router-link>
+								<router-link :to="{name:'galeria'}" class="py-2 d-block">Fotos</router-link>
 							</li>
 						</ul>
 					</div>
@@ -168,14 +168,15 @@ export default {
 	color: white;
 }
 .footer-img {
-	max-height: 100px;
+	max-height: 120px;
 	margin: 5px;
 }
 .link {
 	cursor: pointer;
 }
+/*hover color for all links */
 .link:hover, .link:active, .link:focus, a:hover, a:active {
-	color: white !important;
+	color: grey !important;
 	cursor: pointer !important;
 }
 .copyright {
@@ -183,6 +184,21 @@ export default {
 }
 footer {
 	padding-bottom: 20px;
+}
+
+/* change footer widget colors */
+.ftco-footer .ftco-footer-widget ul li a span {
+    color: #7f7e7d;
+}
+
+/* change footer text color */
+.ftco-footer .ftco-footer-widget h2,
+.ftco-footer p,
+.ftco-footer .ftco-footer-widget ul li a {
+	color: black
+}
+.ftco-footer-social li a {
+	background: rgba(191, 191, 191, 0.4);
 }
 </style>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pagetitle page="Actividades"/>
+    <pagetitle  v-show="showPageTitle" page="Actividades"/>
     <section class="ftco-section ftco-no-pt ftco-no-pb mt-5 mb-5">
          <div class="container">
             <div class="row no-gutters">
@@ -117,6 +117,12 @@ const imagelist = [
 ];
 export default {
   name: 'actividades-component',
+  props: {
+    showPageTitle: {
+      type: Boolean,
+      default: false
+    }
+  },
   extends: template,
   methods: {
   },
