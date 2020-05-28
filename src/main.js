@@ -5,6 +5,11 @@ import store from './store'
 import i18n from './i18n'
 import './registerServiceWorker'
 
+// requires
+// yarn add vue-meta
+import VueMeta from 'vue-meta';
+Vue.use(VueMeta);
+
 Vue.config.productionTip = false
 
 // https://joomla.stackexchange.com/questions/8888/jqmigrate-logging-is-active-how-to-disable

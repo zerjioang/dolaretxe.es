@@ -2,14 +2,15 @@
   <div>
     <div class="hero-wrap hero-bg-color" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
-      <div class="container">
+      <div class="container main-container">
         <div
-          class="row no-gutters slider-text align-items-center justify-content-start pt-5"
+          class="row no-gutters align-items-center justify-content-start pt-5"
           data-scrollax-parent="true"
         >
           <div
-            class="col-lg-6 col-md-6 ftco-animate"
+            class="col-lg-5 col-md-5 col-sm-6 col-xs-12 ftco-animate"
             data-scrollax=" properties: { translateY: '70%' }"
+            style="padding: 10px;"
           >
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
               Escuela Infantil.
@@ -21,35 +22,13 @@
               <span class="icon-calendar mr-2"></span>
               {{location}}
             </p>
-            <p>Centro Autorizado por el Departamento de Educación del Gobierno Vasco</p>
+            <p
+              class="disclaimer"
+            >Centro Autorizado por el Departamento de Educación del Gobierno Vasco</p>
             <badge class="mb-3" />
           </div>
-          <div class="col-lg-2 col"></div>
-          <div class="col-lg-4 col-md-6 mt-0 mt-md-5 mb-3">
-            <form
-              action="#"
-              class="request-form ftco-animate"
-              ref="formElement"
-              @submit.prevent="onSubmitContact($event)"
-            >
-              <h2>Matrícula abierta</h2>
-              <p>Estas de enhorabuena!</p>
-              <p
-                class="justified"
-              >El plazo de matriculación para este curso todavia esta abierto! Date prisa y contáctanos y te informaremos de las posibilidades y cómo reservar tu plaza.</p>
-              <p class="justified">
-                Finalización del plazo:
-                <br />
-                <strong>1 de abril del 2020</strong>
-              </p>
-              <div class="form-group">
-                <input
-                  type="submit"
-                  value="Contactar"
-                  class="btn dolar-gradient-orangred py-3 px-4 btn-matricula"
-                />
-              </div>
-            </form>
+          <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 pt-5 mx-3">
+            <mapCta class="mt-5" />
           </div>
         </div>
       </div>
@@ -159,7 +138,7 @@
       </div>
     </section>
 
-    <section class="ftco-section pt-5 ftco-no-pb">
+    <section class="ftco-section pt-5 mb-2">
       <div class="container">
         <div class="row no-gutters">
           <div
@@ -186,10 +165,9 @@
       </div>
     </section>
 
-    <opiniones/>
-    <unicef/>
-
-    
+    <matriculaSection />
+    <opiniones />
+    <unicef />
 
     <section class="ftco-section ftco-gallery ftco-no-pt">
       <div class="container-fluid px-4">
@@ -217,7 +195,6 @@
 </template>
 
 <script>
-import googlemap from "@/mixins/googlemap";
 import template from "@/mixins/template";
 import axios from "axios";
 
@@ -226,30 +203,7 @@ export default {
   props: {
     msg: String
   },
-  mixins: [
-    //googlemap
-    template
-  ],
-  methods: {
-    onSubmitContact: function(e) {
-      if (e) {
-        e.preventDefault();
-      }
-      const sendForm = false;
-      if (sendForm) {
-        var vm = this;
-        var formElement = vm.$refs.formElement;
-        var formData = new FormData(formElement);
-        var url =
-          "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeihRMLgHFVTFio8P62wQtiCf4TJQT9MgxRgGWABf_19XDG_g/formResponse";
-        axios.post(url, formData).then(function(response) {
-          console.log(response);
-        });
-      } else {
-        this.$router.push({ name: "contact" });
-      }
-    }
-  },
+  mixins: [template],
   data: () => {
     return {
       location: "Bilbao. Casco Viejo, Bizkaia",
@@ -281,25 +235,22 @@ export default {
             "Calidad en el servicio y colaboradores oficiales de UNICEF"
         },
         {
-          id: 3,
+          id: 4,
           icon: "flaticon-time",
           title: "Flexibilidad Horaria",
-          description:
-            "Horarios de entrada y salida adaptables y flexibles"
+          description: "Horarios de entrada y salida adaptables y flexibles"
         },
         {
-          id: 3,
+          id: 5,
           icon: "flaticon-calendar-1",
           title: "11 meses",
-          description:
-            "Calendario escolar de hasta 11 mensualidades"
+          description: "Calendario escolar de hasta 11 mensualidades"
         },
         {
-          id: 3,
+          id: 6,
           icon: "flaticon-worldwide",
           title: "Trilingue",
-          description:
-            "Educación en Castellano, Euskera e Ingles"
+          description: "Educación en Castellano, Euskera e Ingles"
         }
       ]
     };
@@ -313,6 +264,8 @@ export default {
   },
   components: {
     featureBox: () => import("@/components/featureBox"),
+    mapCta: () => import("@/components/mapCta"),
+    matriculaSection: () => import("@/components/matriculaSection"),
     opiniones: () => import("@/components/opiniones-google"),
     unicef: () => import("@/components/sections/section-unicef"),
     badge: () => import("@/components/badge")
@@ -332,11 +285,6 @@ export default {
   font-size: 14pt;
   font-weight: lighter;
 }
-.btn-matricula {
-  color: white;
-  font-weight: bold;
-  font-size: 17pt;
-}
 .img-example {
   max-width: 100%;
   margin-top: 10px;
@@ -348,6 +296,21 @@ export default {
   width: 100%;
   max-width: 800px;
   text-align: justify;
+}
+.disclaimer {
+  max-width: 400px;
+}
+.main-container {
+  padding: 0px;
+  width: 100%;
+  width: max-content;
+  width: -moz-available;
+  display: block;
+  max-width: 1200px;
+}
+.hero-wrap {
+  height: auto;
+  padding-bottom: 20px;
 }
 </style>
 
