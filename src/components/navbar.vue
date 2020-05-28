@@ -76,8 +76,9 @@
                 href="#"
                 v-on:click="goto($event, 'citaprevia')"
               >Cita Previa</a>
-              <div class="dropdown-divider"></div>
+              <div v-if="layout.showWorkWithUs" class="dropdown-divider"></div>
               <a
+              v-if="layout.showWorkWithUs" 
                 class="dropdown-item"
                 href="#"
                 v-on:click="goto($event, 'trabajo')"
@@ -121,6 +122,9 @@ export default {
   data: () => {
     return {
       name: "dolaretxe",
+      layout: {
+        showWorkWithUs: process.env.VUE_APP_SHOW_WORK_WITH_US == 'true',
+      },
       menuitems: [
         {
           to: "escuela",
