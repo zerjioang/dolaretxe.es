@@ -33,7 +33,7 @@
              </div>
              <div class="ftco-animate fadeInUp ftco-animated align-items-center text-center img-pad unicef-bg">
                 <a href="http://www.unicef.es/" alt="UNICEF" target="_blank">
-                <img class="img-responsive" :src="bgUnicefFooter" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao">
+                <img class="img-responsive img-unicef" :src="bgUnicefFooter" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao">
                 </a>
              </div>
           </div>
@@ -76,6 +76,7 @@ export default {
 
 <style type="text/css" scoped="true">
 	.amiga {
+    width: 100%;
 		width: -moz-available;
 		width: -webkit-available;
 		max-width: 600px;
@@ -84,6 +85,11 @@ export default {
 		padding-top: 10px;
 		padding-bottom: 30px;
 	}
+  .img-unicef {
+    width: 100%;
+    width: -moz-available;
+		width: -webkit-available;
+  }
   .unicef-bg {
     background: #00b0fa;
   }

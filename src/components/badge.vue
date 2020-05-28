@@ -3,9 +3,7 @@
 	<img class="image" :src="ejgvImage" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao con numero de licencia del gobierno vasco"/>
 	<p class="label">
 		Escuela Infantil DOLARETXE Haurreskola
-		
-		<br></br>
-		<p class="licenseNumber">Nº 015713</p>
+		<p class="licenseNumber mt-4">Nº 015713</p>
 	</p>
 </div>
 </template>
@@ -62,6 +60,7 @@ export default {
   padding-top: 10px;
   padding-left: 5px;
   padding-right: 5px;
+  width: 233px;
 }
 .bold {
 	font-weight: bold;
