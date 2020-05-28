@@ -1,7 +1,7 @@
 <template>
-  <div class="block-18 text-center py-4 mb-4" :class="colorClass">
+  <div class="block-18 text-center py-4 mb-4 wrapper-box" :class="colorClass">
      <div class="text">
-        <div class="icon d-flex justify-content-center align-items-center">
+        <div class="icon d-flex justify-content-center align-items-center wrapper-title">
            <span class="colored" :class="icon"></span>
         </div>
         <span class="center-feature">
@@ -51,6 +51,13 @@ export default {
 </script>
 
 <style type="text/css" scoped="true">
+.wrapper-box {
+  min-height: 185px;
+  max-height: 225px;
+}
+.wrapper-title {
+  padding-top: 15px;
+}
 .center-feature {
   color: white !important;;
   font-size: 20px !important;
@@ -61,7 +68,7 @@ export default {
   font-size: 40px;
 }
 .box-text {
-  margin: 8px;
+  padding-bottom: 10px;
   max-width: 95%;
 }
 .box-subtitle {

@@ -263,7 +263,7 @@ export default {
         },
         {
           id: 1,
-          icon: "flaticon-home",
+          icon: "flaticon-magic-wand",
           title: "Zona de juegos",
           description: "Con patio exterior vallado para jugar los dias de sol"
         },
@@ -279,6 +279,27 @@ export default {
           title: "Calidad",
           description:
             "Calidad en el servicio y colaboradores oficiales de UNICEF"
+        },
+        {
+          id: 3,
+          icon: "flaticon-time",
+          title: "Flexibilidad Horaria",
+          description:
+            "Horarios de entrada y salida adaptables y flexibles"
+        },
+        {
+          id: 3,
+          icon: "flaticon-calendar-1",
+          title: "11 meses",
+          description:
+            "Calendario escolar de hasta 11 mensualidades"
+        },
+        {
+          id: 3,
+          icon: "flaticon-worldwide",
+          title: "Trilingue",
+          description:
+            "Educación en Castellano, Euskera e Ingles"
         }
       ]
     };

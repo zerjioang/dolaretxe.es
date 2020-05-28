@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row no-gutters">
           <div class="col-md-12 wrap-about ftco-animate">
-            <div class="heading-section mb-5 pt-5 pl-md-5">
+            <div class="heading-section pt-5 pl-md-5">
               <div class="pr-md-5 mr-md-5">
                 <h2 class="mb-4">Jornadas</h2>
               </div>
@@ -152,8 +152,6 @@
         </div>
       </div>
     </section>
-
-    <sectionActividades />
   </div>
 </template>
 
@@ -291,7 +289,6 @@ export default {
   components: {
     pagetitle: () => import("@/components/pagetitle"),
     featureBox: () => import("@/components/featureBox"),
-    sectionActividades: () => import("@/components/actividades")
   }
 };
 </script>

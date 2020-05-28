@@ -252,6 +252,7 @@
             </div>
          </div>
       </section>
+      <sectionActividades />
       <sectionUnicef/>
    </div>
 </template>
@@ -288,7 +289,8 @@ export default {
   components:{
     featureBox: () => import('@/components/featureBox'),
     sectionUnicef: () => import('@/components/sections/section-unicef'),
-    pagetitle: ()=> import('@/components/pagetitle')
+    pagetitle: ()=> import('@/components/pagetitle'),
+    sectionActividades: () => import("@/components/actividades"),
   }
 }
 </script>
