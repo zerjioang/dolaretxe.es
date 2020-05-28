@@ -24,6 +24,9 @@ import template from '@/mixins/template'
 export default {
   name: 'view-not-found',
   extends: template,
+  metaInfo: {
+    title: 'Página no encontrada',
+  },
   methods: {
   },
   data: () => {

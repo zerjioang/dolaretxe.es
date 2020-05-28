@@ -15,8 +15,8 @@
 export default {
   name: 'app',
   metaInfo: {
-    title: 'Dolaretxe',
-    titleTemplate: '%s | Escuela infantil Bilbao. Casco Viejo, Bilbao',
+    title: 'Bienvenido',
+    titleTemplate: '%s | Dolaretxe, Escuela infantil Bilbao. Casco Viejo, Bilbao',
     htmlAttrs: {
       author: 'zerjioang',
       lang: 'es',

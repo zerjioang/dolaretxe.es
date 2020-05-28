@@ -22,6 +22,8 @@ module.exports = {
               warnings: true,
               parse: {},
               compress: {
+                warnings: false,
+                drop_debugger: true,
                 drop_console: true
               },
               mangle: true, // Note `mangle.properties` is `false` by default.

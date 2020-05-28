@@ -8,6 +8,9 @@ import legal from '@/components/legal.vue'
 
 export default {
   name: 'view-legal',
+  metaInfo: {
+    title: 'Aviso Legal',
+  },
   mounted(){
   	console.log("mounted::view-legal")
   	this.$store.commit('appLoading', false)
