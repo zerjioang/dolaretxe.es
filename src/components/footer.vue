@@ -2,7 +2,7 @@
 	<footer class="ftco-footer ftco-bg-dark ftco-section black-gradient">
 	    <cookie-law theme="dark-lime" buttonText="Aceptar">
 	    	<div slot="message">
-				<p class="justified cookie">
+				<p class="justified cookie white">
 					Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración mediante los ajustes de su navegador u obtener <router-link :to="{ name: 'cookies' }" alt="mas información sobre cookies">
 						<span style="color: white;">más información</span>
 					</router-link>.
@@ -199,6 +199,9 @@ footer {
 }
 .ftco-footer-social li a {
 	background: rgba(191, 191, 191, 0.4);
+}
+.white {
+	color: rgb(221, 221, 221) !important;
 }
 </style>
 
