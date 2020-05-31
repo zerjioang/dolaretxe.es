@@ -3,7 +3,7 @@
     class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
     id="ftco-navbar"
   >
-    <div class="container">
+    <div class="container nav-container">
       <router-link class="navbar-brand" :to="{'name':'home'}">
         <img
           :src="require('@/assets/images/dolaretxe.png')"
@@ -32,9 +32,7 @@
             <router-link :to="{'name': m.to}" class="nav-link">{{m.text}}</router-link>
           </li>
 
-          <li
-          v-if="serviceItems!=undefined && serviceItems.length > 0"
-          class="nav-item dropdown">
+          <li v-if="serviceItems!=undefined && serviceItems.length > 0" class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -44,10 +42,7 @@
               aria-haspopup="true"
               aria-expanded="false"
             >{{$t('informacion')}}</a>
-            <div
-              class="dropdown-menu animate slideIn"
-              aria-labelledby="navbarDropdownInfo"
-            >
+            <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownInfo">
               <a
                 v-for="s in serviceItems"
                 :key="s.text"
@@ -78,7 +73,7 @@
               >Cita Previa</a>
               <div v-if="layout.showWorkWithUs" class="dropdown-divider"></div>
               <a
-              v-if="layout.showWorkWithUs" 
+                v-if="layout.showWorkWithUs"
                 class="dropdown-item"
                 href="#"
                 v-on:click="goto($event, 'trabajo')"
@@ -123,7 +118,7 @@ export default {
     return {
       name: "dolaretxe",
       layout: {
-        showWorkWithUs: process.env.VUE_APP_SHOW_WORK_WITH_US == 'true',
+        showWorkWithUs: process.env.VUE_APP_SHOW_WORK_WITH_US == "true"
       },
       menuitems: [
         {
@@ -231,5 +226,46 @@ export default {
 }
 .btn-lang a:hover {
   color: #ef5735;
+}
+
+@media (min-width: 0px) {
+  .nav-container {
+    padding: 0px;
+    max-width: 1140px;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .nav-container {
+    padding: 0px;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .nav-container {
+    padding: 0px;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .nav-container {
+    padding: 0px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .nav-container {
+    padding: 0px;
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1600px) {
+  .nav-container {
+    padding: 0px;
+    max-width: 1140px;
+  }
 }
 </style>

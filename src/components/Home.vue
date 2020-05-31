@@ -2,15 +2,14 @@
   <div>
     <div class="hero-wrap hero-bg-color" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
-      <div class="container main-container">
+      <div class="container hero-container">
         <div
-          class="row no-gutters slider-text align-items-center justify-content-start pt-5"
+          class="row no-gutters slider-text align-items-center justify-content-start hero-center"
           data-scrollax-parent="true"
         >
           <div
-            class="col-lg-5 col-md-5 col-sm-6 col-xs-12 ftco-animate"
+            class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row ftco-animate"
             data-scrollax=" properties: { translateY: '70%' }"
-            style="padding: 10px;"
           >
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
               Escuela Infantil.
@@ -27,8 +26,8 @@
             >Centro Autorizado por el Departamento de Educación del Gobierno Vasco</p>
             <badge class="mb-3" />
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 pt-5 mx-3">
-            <mapCta class="mt-5" />
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row">
+            <mapCta />
           </div>
         </div>
       </div>
@@ -77,7 +76,7 @@
     </section>
 
     <opiniones />
-    <matriculaSection v-if="layout.matriculaAbierta"/>
+    <matriculaSection v-if="layout.matriculaAbierta" />
 
     <section class="ftco-section pt-5 ftco-no-pb">
       <div class="container">
@@ -208,7 +207,7 @@ export default {
   data: () => {
     return {
       layout: {
-        matriculaAbierta: process.env.VUE_APP_MATRICULA_ABIERTA=='true'
+        matriculaAbierta: process.env.VUE_APP_MATRICULA_ABIERTA == "true"
       },
       location: "Bilbao. Casco Viejo, Bizkaia",
       actividades: [
@@ -277,7 +276,7 @@ export default {
 };
 </script>
 
-<style lang="css" scoped="true">
+<style lang="css" scoped>
 .google-stars {
   margin-bottom: 60px;
 }
@@ -304,17 +303,118 @@ export default {
 .disclaimer {
   max-width: 400px;
 }
-.main-container {
-  padding: 0px;
-  width: 100%;
-  width: max-content;
-  width: -webkit-fill-available;
-  display: block;
-  max-width: 1200px;
-}
 .hero-wrap {
   height: auto;
   padding-bottom: 20px;
+}
+
+.slider-text {
+  height: 690px;
+}
+
+.hero-center {
+  text-align: left;
+}
+.hero-row {
+  padding: 0px;
+}
+
+@media (min-width: 0px) {
+  .slider-text {
+    height: 990px;
+  }
+  .hero-row {
+    padding-top: 20px;
+  }
+  .hero-center {
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .hero-row {
+    padding: 5px;
+  }
+  .hero-center {
+    text-align: left;
+  }
+  .disclaimer {
+    max-width: 100%;
+  }
+  .slider-text {
+    height: 555px;
+  }
+  .hero-container {
+    padding-left: 20px;
+    max-width: 100%;
+    padding-right: 20px;
+  }
+  .slider-text h1 span {
+    font-size: 37px !important;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .hero-row {
+    padding: 5px;
+  }
+  .slider-text {
+    height: 565px;
+  }
+  .hero-container {
+    padding-left: 20px;
+    max-width: 100%;
+    padding-right: 20px;
+  }
+  .slider-text h1 span {
+    font-size: 50px !important;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .hero-row {
+    padding-top: 50px;
+  }
+  .hero-container {
+    padding-left: 10%;
+    max-width: 100%;
+    padding-right: 10%;
+  }
+  .slider-text {
+    height: 680px !important;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .hero-row {
+    padding-top: 80px;
+  }
+  .slider-text {
+    height: 960px;
+  }
+  .hero-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1600px) {
+  .hero-row {
+    padding-top: 80px;
+  }
+  .slider-text {
+    height: 960px;
+  }
+  .hero-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 1640px;
+  }
 }
 </style>
 
