@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import store from '@/store'
 import { getRoutesXML } from '@/router/sitemap-router'
+import { asyncI18n } from '@/router/lang-router'
 
 Vue.use(Router)
 let routes = [
@@ -220,10 +221,14 @@ const router = new Router({
   }
 })
 
-//generate sitemap
-console.log(
-  getRoutesXML(router, 'http://dolaretxe.es')
-)
+if (process.env.ENV != "production") {
+  console.log(
+    getRoutesXML(router, 'http://dolaretxe.es')
+  )
+}
+
+// add support for async i18n
+asyncI18n(router)
 
 // configure router loading mode
 router.beforeResolve((to, from, next) => {
