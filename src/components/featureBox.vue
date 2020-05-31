@@ -56,11 +56,11 @@ export default {
   max-height: 225px;
 }
 .wrapper-title {
-  padding-top: 15px;
+  padding-top: 5px;
 }
 .center-feature {
   color: white !important;;
-  font-size: 20px !important;
+  font-size: 17px !important;
   font-weight: bold;
 }
 .colored {

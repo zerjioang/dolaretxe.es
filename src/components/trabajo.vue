@@ -23,7 +23,7 @@
                </div>
                <div class="col-md-6 ftco-animate">
                   <p class="justified spaced">
-                     Tambien puedes enviarnos un email a <a href="mailto:info@dolaretxe.com">info@dolaretxe.com</a> con tus datos y adjuntando tu CV y lo recibiremos encantados para futuros procesos.
+                     Tambien puedes enviarnos un email a <a href="mailto:info@dolaretxe.es">info@dolaretxe.es</a> con tus datos y adjuntando tu CV y lo recibiremos encantados para futuros procesos.
                   </p>
                </div>
             </div>

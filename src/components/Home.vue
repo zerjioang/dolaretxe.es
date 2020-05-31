@@ -4,7 +4,7 @@
       <div class="overlay"></div>
       <div class="container main-container">
         <div
-          class="row no-gutters align-items-center justify-content-start pt-5"
+          class="row no-gutters slider-text align-items-center justify-content-start pt-5"
           data-scrollax-parent="true"
         >
           <div
@@ -76,6 +76,9 @@
       </div>
     </section>
 
+    <opiniones />
+    <matriculaSection v-if="layout.matriculaAbierta"/>
+
     <section class="ftco-section pt-5 ftco-no-pb">
       <div class="container">
         <div class="row no-gutters">
@@ -85,7 +88,7 @@
           ></div>
           <div class="col-md-7 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
-              <div class="pr-md-5 mr-md-5">
+              <div>
                 <h2 class="mb-4">Visita nuestro centro!</h2>
               </div>
               <p
@@ -112,7 +115,7 @@
         <div class="row no-gutters">
           <div class="col-md-12 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
-              <div class="pr-md-5 mr-md-5">
+              <div>
                 <h2 class="mb-4">Servicios</h2>
               </div>
               <p class="pr-md-5 mr-md-5 justified font-20">
@@ -147,7 +150,7 @@
           ></div>
           <div class="col-md-7 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
-              <div class="pr-md-5 mr-md-5">
+              <div>
                 <h2 class="mb-4">Nuestra metodología</h2>
               </div>
               <p
@@ -165,8 +168,6 @@
       </div>
     </section>
 
-    <matriculaSection />
-    <opiniones />
     <unicef />
 
     <section class="ftco-section ftco-gallery ftco-no-pt">
@@ -206,6 +207,9 @@ export default {
   mixins: [template],
   data: () => {
     return {
+      layout: {
+        matriculaAbierta: process.env.VUE_APP_MATRICULA_ABIERTA=='true'
+      },
       location: "Bilbao. Casco Viejo, Bizkaia",
       actividades: [
         {
@@ -304,7 +308,7 @@ export default {
   padding: 0px;
   width: 100%;
   width: max-content;
-  width: -moz-available;
+  width: -webkit-fill-available;
   display: block;
   max-width: 1200px;
 }

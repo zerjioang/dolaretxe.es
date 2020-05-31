@@ -6,10 +6,10 @@
             <div class="row no-gutters">
                <div class="col-md-12 wrap-about ftco-animate">
                   <div class="heading-section mb-5 pt-5 pl-md-5">
-                     <div class="pr-md-5 mr-md-5">
+                     <div>
                         <h2 class="mb-4">Actividades</h2>
                      </div>
-                     <div class="pr-md-5 mr-md-5">
+                     <div>
                         <h3 class="mb-4">Desarrollo integral</h3>
                      </div>
                      <p class="justified">
@@ -68,7 +68,7 @@
                     <!-- start modalidades de jornadas -->
 
                     <!-- start: apartado que describe la info sobre desarrollo armonico -->
-                    <div class="pr-md-5 mr-md-5">
+                    <div>
                         <h3 class="mb-4">Desarrollo armónico</h3>
                      </div>
                      <p class="justified">

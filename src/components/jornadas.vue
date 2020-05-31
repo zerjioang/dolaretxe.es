@@ -6,10 +6,10 @@
         <div class="row no-gutters">
           <div class="col-md-12 wrap-about ftco-animate">
             <div class="heading-section pt-5 pl-md-5">
-              <div class="pr-md-5 mr-md-5">
+              <div>
                 <h2 class="mb-4">Jornadas</h2>
               </div>
-              <div class="pr-md-5 mr-md-5">
+              <div>
                 <h3 class="mb-4">Calendario Escolar</h3>
               </div>
               <p
@@ -20,7 +20,7 @@
               >Ofrecemos el modelo lingüístico bilingüe (euskera-castellano) con introducción al inglés.</p>
 
               <!-- start modalidades de jornadas -->
-              <div class="pr-md-5 mr-md-5">
+              <div>
                 <h3 class="mb-4">Tres jornadas diferentes</h3>
               </div>
               <div class="row">
@@ -38,7 +38,7 @@
               <!-- end modalidades de jornadas -->
 
               <!-- start horarios ampliados -->
-              <div class="pr-md-5 mr-md-5">
+              <div>
                 <h3>Además disponemos de los siguientes horarios ampliados</h3>
                 <p>De los que podrás beneficiarte en caso de necesidad para acudir a Dolaretxe</p>
               </div>
@@ -81,7 +81,7 @@
               <!-- start modalidades de jornadas -->
 
               <!-- start: apartado que describe la info sobre comidas -->
-              <div class="pr-md-5 mr-md-5">
+              <div>
                 <h3 class="mb-4">Comida</h3>
               </div>
               <p class="justified">
@@ -104,7 +104,7 @@
               <!-- end: apartado que describe la info sobre comidas -->
 
               <!-- start: apartado que describe la info sobre ludoteca -->
-              <div class="pr-md-5 mr-md-5">
+              <div>
                 <h3 class="mb-4">Ludoteca</h3>
               </div>
               <div class="row">

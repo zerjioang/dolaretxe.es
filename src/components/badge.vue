@@ -40,7 +40,6 @@ export default {
   background-size: auto;
   border-radius: 8px;
   padding: 10px;
-  max-width: 400px;
 }
 
 .whiteCard > p {

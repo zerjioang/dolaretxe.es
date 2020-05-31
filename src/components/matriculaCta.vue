@@ -14,7 +14,7 @@
     <p class="justified">
       Finalización del plazo:
       <br />
-      <strong>1 de abril del 2020</strong>
+      <strong>{{fechaFin}}</strong>
     </p>
     <div class="form-group">
       <input
@@ -30,6 +30,24 @@ import template from "@/mixins/template";
 
 export default {
   name: "component-matricula-cta",
+  data: () => ({
+    layout: {
+      matriculaFin: process.env.VUE_APP_MATRICULA_FIN_FECHA
+    }
+  }),
+  computed: {
+    fechaFin: function() {
+      if (this.layout.matriculaFin == "") {
+        return "contacte para consultar plazo";
+      }
+      try {
+        const d = new Date(this.layout.matriculaFin);
+        return d.toDateString();
+      } catch (err) {
+        return "contacte para consultar plazo";
+      }
+    }
+  },
   methods: {
     onSubmitContact: function(e) {
       if (e) {
@@ -69,5 +87,14 @@ export default {
   color: white !important;
   font-weight: bold;
   font-size: 17pt;
+}
+
+.request-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 31px -21px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 31px -21px rgba(0, 0, 0, 0.33);
+  width: 100%;
 }
 </style>

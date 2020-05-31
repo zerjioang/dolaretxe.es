@@ -246,7 +246,6 @@ export default {
   .location-img {
     float: left;
     margin-top: 8px;
-    height: 100%;
   }
   .title-location {
     max-width: 250px;

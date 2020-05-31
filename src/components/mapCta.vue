@@ -1,7 +1,7 @@
 <template>
   <div class="request-form">
     <h2>Dolaretxe</h2>
-    <p>Donde estamos</p>
+    <p>Prim Kalea, 11, bajo, 48006 Bilbo, BI</p>
     <div class="gmap-iframe">
       <!-- include google maps iframe for free -->
       <iframe
@@ -13,7 +13,9 @@
       ></iframe>
     </div>
     <div class="form-group">
-      <button class="btn dolar-gradient-orangred py-3 px-4 btn-map">Contactar</button>
+      <router-link :to="{name: 'contact'}">
+        <button class="btn dolar-gradient-orangred py-3 px-4 btn-map">Contactar</button>
+      </router-link>
     </div>
   </div>
 </template>
@@ -32,6 +34,14 @@ export default {
 }
 .gmap-iframe {
     max-width: 100%;
+    max-width: -webkit-available;
     border:0px;
+}
+.map-wrapper {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 31px -21px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 31px -21px rgba(0, 0, 0, 0.33);
 }
 </style>
