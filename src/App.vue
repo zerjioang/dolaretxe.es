@@ -1,41 +1,41 @@
 <template>
   <div id="app" @contextmenu="handler($event)">
-    <loader v-if="$store.getters.loading"/>
+    <loader v-if="$store.getters.loading" />
     <div v-else>
-      <stickyPhone/>
-      <navbarComponent/>
+      <stickyPhone />
+      <navbarComponent />
       <router-view></router-view>
-      <footerComponent/>
+      <footerComponent />
     </div>
   </div>
 </template>
 
 <script type="text/javascript">
-
 export default {
-  name: 'app',
+  name: "app",
   metaInfo: {
-    title: 'Bienvenido',
-    titleTemplate: '%s | Dolaretxe, Escuela infantil Bilbao. Casco Viejo, Bilbao',
+    title: "Bienvenido",
+    titleTemplate:
+      "%s | Dolaretxe, Escuela infantil Bilbao. Casco Viejo, Bilbao",
     htmlAttrs: {
-      author: 'zerjioang',
-      lang: 'es',
+      author: "zerjioang",
+      lang: "es",
       amp: true
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        property: 'og:title',
-        title: 'Dolaretxe',
+        property: "og:title",
+        title: "Dolaretxe",
         // following template options are identical
         // template: '%s - My page',
         template: chunk => `${chunk} - My page`,
-        vmid: 'og:title'
+        vmid: "og:title"
       }
     ]
   },
-  methods : {
+  methods: {
     handler: function(e) {
       // disable right button click
       e.preventDefault();
@@ -44,22 +44,36 @@ export default {
   mounted() {
     console.log("loading user prefered language");
     const stored = localStorage.getItem("lang");
-    if(stored && stored == "es"){
+    if (stored && stored == "es") {
       console.log("setting language to es");
-      this.$i18n.locale = 'es'
-    } else if(stored && stored == "eus"){
+      this.$i18n.locale = "es";
+    } else if (stored && stored == "eus") {
       console.log("setting language to eus");
-      this.$i18n.locale = 'eus'
+      this.$i18n.locale = "eus";
     }
   },
   components: {
-    stickyPhone: () => import('@/components/stickyPhone'),
-    navbarComponent: () => import('@/components/navbar'),
-    footerComponent: () => import('@/components/footer'),
-    loader: () => import('@/components/loader'),
+    stickyPhone: () => import("@/components/stickyPhone"),
+    navbarComponent: () => import("@/components/navbar"),
+    footerComponent: () => import("@/components/footer"),
+    loader: () => import("@/components/loader")
   }
-}
+};
 </script>
 
 <style lang="scss">
 </style>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

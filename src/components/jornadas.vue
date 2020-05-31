@@ -288,7 +288,7 @@ export default {
   },
   components: {
     pagetitle: () => import("@/components/pagetitle"),
-    featureBox: () => import("@/components/featureBox"),
+    featureBox: () => import("@/components/featureBox")
   }
 };
 </script>
@@ -303,3 +303,17 @@ export default {
   padding: 0px;
 }
 </style>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

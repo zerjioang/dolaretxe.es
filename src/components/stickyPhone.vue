@@ -99,3 +99,17 @@ body {
   font-size: 30px;
 }
 </style>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

@@ -3,7 +3,8 @@
     class="hero-wrap hero-wrap-2 js-fullheight"
     v-bind:class="{ 'hero-bg-color': (image == undefined) }"
     :style="{'background-image': 'url(' + image  + ')'}"
-    data-stellar-background-ratio="0.5">
+    data-stellar-background-ratio="0.5"
+  >
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -11,11 +12,13 @@
           <h1 class="mb-3 bread">Dolaretxe Haurreskola</h1>
           <p class="breadcrumbs">
             <span class="mr-2">
-              <router-link :to="{'name':'home'}">Dolaretxe 
+              <router-link :to="{'name':'home'}">
+                Dolaretxe
                 <i class="ion-ios-arrow-forward"></i>
               </router-link>
             </span>
-            <span>{{page}}
+            <span>
+              {{page}}
               <i class="ion-ios-arrow-forward"></i>
             </span>
           </p>
@@ -26,11 +29,10 @@
 </template>
 
 <script>
-
-import template from '@/mixins/template'
+import template from "@/mixins/template";
 
 export default {
-  name: 'pagetitle-component',
+  name: "pagetitle-component",
   props: {
     image: {
       type: String | Object,
@@ -41,34 +43,43 @@ export default {
       default: () => "Error"
     }
   },
-  mixins: [
-    template
-  ],
-  methods: {
-  },
+  mixins: [template],
+  methods: {},
   data: () => {
-    return {
-    }
+    return {};
   },
-  created(){
-    console.log("pagetitle::created")
+  created() {
+    console.log("pagetitle::created");
   },
-  mounted(){
-    console.log("pagetitle::mounted")
+  mounted() {
+    console.log("pagetitle::mounted");
     this.jQueryInit();
   },
-  components:{
-  }
-}
+  components: {}
+};
 </script>
 
 <style type="text/css" scoped="true">
-  .gray {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
-  .blur {
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-    filter: blur(5px);
-  }
+.gray {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.blur {
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+}
 </style>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

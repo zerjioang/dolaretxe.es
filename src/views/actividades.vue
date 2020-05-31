@@ -16,3 +16,17 @@ export default {
   }
 }
 </script>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

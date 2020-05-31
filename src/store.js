@@ -16,6 +16,6 @@ export default new Vuex.Store({
 
   },
   getters: {
-     loading: state => state.loading
+    loading: state => state.loading
   }
 })

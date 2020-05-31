@@ -2,33 +2,37 @@
   <!-- loader -->
   <div id="app-loader" class="show fullscreen">
     <svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle
+        class="path"
+        cx="24"
+        cy="24"
+        r="22"
+        fill="none"
+        stroke-width="4"
+        stroke-miterlimit="10"
+        stroke="#F96D00"
+      />
     </svg>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'loader-component',
-  mixins: [
-  ],
-  methods: {
-  },
+  name: "loader-component",
+  mixins: [],
+  methods: {},
   data: () => {
-    return {
-    }
+    return {};
   },
-  created(){
-    console.log("loader::created")
+  created() {
+    console.log("loader::created");
   },
-  mounted(){
-    console.log("loader::mounted")
+  mounted() {
+    console.log("loader::mounted");
   },
-  components:{
-  }
-}
+  components: {}
+};
 </script>
 
 <style scoped lang="css">

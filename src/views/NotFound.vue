@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pagetitle page="Página no encontrada"/>
+    <pagetitle page="Página no encontrada" />
     <section class="ftco-section ftco-no-pt ftco-no-pb">
       <div class="container">
         <div class="row no-gutters">
@@ -18,30 +18,41 @@
 </template>
 
 <script>
-
-import template from '@/mixins/template'
+import template from "@/mixins/template";
 
 export default {
-  name: 'view-not-found',
+  name: "view-not-found",
   extends: template,
   metaInfo: {
-    title: 'Página no encontrada',
+    title: "Página no encontrada"
   },
-  methods: {
-  },
+  methods: {},
   data: () => {
-    return {
-    }
+    return {};
   },
-  created(){
-    console.log("view-not-found::created")
+  created() {
+    console.log("view-not-found::created");
   },
-  mounted(){
-    console.log("view-not-found::mounted")
+  mounted() {
+    console.log("view-not-found::mounted");
     this.jQueryInit();
   },
-  components:{
-    pagetitle: ()=> import('@/components/pagetitle'),
+  components: {
+    pagetitle: () => import("@/components/pagetitle")
+  }
+};
+</script>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
   }
 }
-</script>
+</i18n>

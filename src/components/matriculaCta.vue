@@ -98,3 +98,17 @@ export default {
   width: 100%;
 }
 </style>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

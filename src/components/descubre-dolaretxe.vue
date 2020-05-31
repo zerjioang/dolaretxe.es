@@ -47,13 +47,26 @@
 
 <script>
 export default {
-    name: 'component-descubre-dolaretxe',
-    components: {
-        featureBox: () => import("@/components/featureBox"),
-    }
-}
+  name: "component-descubre-dolaretxe",
+  components: {
+    featureBox: () => import("@/components/featureBox")
+  }
+};
 </script>
 
 <style scoped>
-
 </style>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

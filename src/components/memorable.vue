@@ -40,3 +40,17 @@ export default {
 
 <style scoped>
 </style>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

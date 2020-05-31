@@ -1,22 +1,35 @@
 <template>
-  <legal/>
+  <legal />
 </template>
 
 <script>
-
-import legal from '@/components/legal.vue'
+import legal from "@/components/legal.vue";
 
 export default {
-  name: 'view-legal',
+  name: "view-legal",
   metaInfo: {
-    title: 'Aviso Legal',
+    title: "Aviso Legal"
   },
-  mounted(){
-  	console.log("mounted::view-legal")
-  	this.$store.commit('appLoading', false)
+  mounted() {
+    console.log("mounted::view-legal");
+    this.$store.commit("appLoading", false);
   },
   components: {
     legal: legal
   }
-}
+};
 </script>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

@@ -235,3 +235,17 @@ footer {
 
 <style scoped lang="scss">
 </style>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

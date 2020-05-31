@@ -1,18 +1,31 @@
 <template>
-  <visitavirtual/>
+  <visitavirtual />
 </template>
 
 <script>
-
-import visitavirtual from '@/components/visitavirtual';
+import visitavirtual from "@/components/visitavirtual";
 
 export default {
-  name: 'view-visitavirtual',
+  name: "view-visitavirtual",
   metaInfo: {
-    title: 'Visita virtual',
+    title: "Visita virtual"
   },
   components: {
     visitavirtual
   }
-}
+};
 </script>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

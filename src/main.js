@@ -54,7 +54,7 @@ window.scrollax = scrollax
 // docs: https://developers.google.com/analytics/devguides/collection/gtagjs
 // docs: https://matteo-gabriele.gitbook.io/vue-gtag/
 const gaid = process.env.VUE_APP_GOOGLE_ANALYTICS;
-if (gaid!=='') {
+if (gaid !== '') {
 	console.log('enabling Google Analytics with provided GA-ID')
 	const VueGtag = require('vue-gtag');
 	Vue.use(VueGtag, {
@@ -71,10 +71,10 @@ if (gaid!=='') {
 
 // create and mount the instance
 const app = new Vue({
-    router,
-    store,
-    i18n,
-    render: h => h(App),
-  mounted: () => document.dispatchEvent(new Event("x-app-rendered")),
+	router,
+	store,
+	i18n,
+	render: h => h(App),
+	mounted: () => document.dispatchEvent(new Event("x-app-rendered")),
 }).$mount('#app')
 // Now the app has started!

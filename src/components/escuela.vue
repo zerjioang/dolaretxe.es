@@ -311,3 +311,17 @@ export default {
     margin-bottom: 20px;
   }
 </style>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

@@ -183,7 +183,7 @@
                 class="contact-text font-20"
               >Nos encantaría conocerte a ti y a tu/s peque/s. Ponte en contacto con nosotras para comprobar disponibilidad de plazas y concertar una cita para conocer nuestra guarde. Os invitamos a conocer la Escuela Infantil Dolaretxe Haurreskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios y tarifas que mejor se adapten a vuestras necesidades.</p>
               <router-link
-                class="btn dolar-gradient-orangred py-3 px-4 btn-matricula"
+                class="btn dolar-gradient-orangred py-3 px-4 btn-contact"
                 :to="{name:'contact'}"
               >Contacta con nosotros</router-link>
             </div>
@@ -319,6 +319,12 @@ export default {
   padding: 0px;
 }
 
+.btn-contact {
+  color: #fff;
+  font-weight: 700;
+  font-size: 17pt;
+}
+
 @media (min-width: 0px) {
   .slider-text {
     height: 990px;
@@ -418,5 +424,16 @@ export default {
 }
 </style>
 
-<style scoped lang="scss">
-</style>
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>

@@ -1,18 +1,31 @@
 <template>
-  <unicef/>
+  <unicef />
 </template>
 
 <script>
-
-import unicef from '@/components/unicef.vue'
+import unicef from "@/components/unicef.vue";
 
 export default {
-  name: 'view-unicef',
+  name: "view-unicef",
   metaInfo: {
-    title: 'Colaboradores de UNICEF',
+    title: "Colaboradores de UNICEF"
   },
   components: {
     unicef
   }
-}
+};
 </script>
+
+<i18n>
+{
+  "es":{
+
+  },
+  "en":{
+    
+  },
+  "eus":{
+    
+  }
+}
+</i18n>
