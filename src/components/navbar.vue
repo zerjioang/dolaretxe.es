@@ -53,7 +53,7 @@
             </div>
           </li>
 
-          <li class="nav-item dropdown">
+          <li v-if="layout.showWorkWithUs" class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -73,7 +73,6 @@
               >Cita Previa</a>
               <div v-if="layout.showWorkWithUs" class="dropdown-divider"></div>
               <a
-                v-if="layout.showWorkWithUs"
                 class="dropdown-item"
                 href="#"
                 v-on:click="goto($event, 'trabajo')"
@@ -155,6 +154,12 @@ export default {
         localStorage.setItem("lang", lang);
       }
     }
+  },
+  created(){
+    this.menuitems.push({
+      to: "contact",
+          text: "Contacto"
+    })
   },
   components: {}
 };

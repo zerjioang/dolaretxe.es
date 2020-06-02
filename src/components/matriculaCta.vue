@@ -5,16 +5,14 @@
     ref="formElement"
     @submit.prevent="onSubmitContact($event)"
   >
-    <img class="img-baby" :src="require('@/assets/images/baby.png')" />
+    <img v-if="false" class="img-baby" :src="require('@/assets/images/baby.png')" />
     <h2>Matrícula abierta</h2>
     <p>Estas de enhorabuena!</p>
     <p
       class="justified"
     >El plazo de matriculación para este curso todavia esta abierto! Date prisa y contáctanos y te informaremos de las posibilidades y cómo reservar tu plaza.</p>
     <p class="justified">
-      Finalización del plazo:
-      <br />
-      <strong>{{fechaFin}}</strong>
+      Finalización del plazo: <strong>{{fechaFin}}</strong>
     </p>
     <div class="form-group">
       <input
