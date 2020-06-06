@@ -6,8 +6,10 @@
 
 export default {
   name: 'view-cookies',
-  metaInfo: {
-    title: 'Política de cookies',
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   components: {
     cookies: () => import('@/components/cookies.vue')
@@ -18,13 +20,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Política de Cookies"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Política de Cookies"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Política de Cookies"
+    }
   }
 }
 </i18n>

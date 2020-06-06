@@ -8,8 +8,10 @@ import home from '@/components/Home.vue'
 
 export default {
   name: 'view-home',
-  metaInfo: {
-    title: 'Bienvenido',
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   components: {
     home: home
@@ -20,13 +22,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Bienvenido"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Bienvenido"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Bienvenido"
+    }
   }
 }
 </i18n>

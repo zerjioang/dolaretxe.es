@@ -7,8 +7,10 @@ import visitavirtual from "@/components/visitavirtual";
 
 export default {
   name: "view-visitavirtual",
-  metaInfo: {
-    title: "Visita virtual"
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   components: {
     visitavirtual
@@ -19,13 +21,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Visita virtual"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Visita virtual"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Visita virtual"
+    }
   }
 }
 </i18n>

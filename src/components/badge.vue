@@ -1,10 +1,10 @@
 <template>
 <div class="whiteCard text-center">
-	<img class="image" :src="ejgvImage" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao con numero de licencia del gobierno vasco"/>
-	<p class="label">
-		Escuela Infantil DOLARETXE Haurreskola
-		<p class="licenseNumber mt-4">Nº 015713</p>
-	</p>
+  <img class="image" :src="ejgvImage" alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao con numero de licencia del gobierno vasco"/>
+  <p class="label">
+    {{$t('title')}}
+    <p class="licenseNumber mt-4">Nº 015713</p>
+  </p>
 </div>
 </template>
 
@@ -79,14 +79,14 @@ export default {
 
 <i18n>
 {
-  "es":{
-
-  },
-  "en":{
-    
-  },
-  "eus":{
-    
-  }
+    "es": {
+        "title": "Escuela Infantil DOLARETXE Haurreskola"
+    },
+    "en": {
+        "title": "Escuela Infantil DOLARETXE Haurreskola"
+    },
+    "eus": {
+        "title": "Escuela Infantil DOLARETXE Haurreskola"
+    }
 }
 </i18n>

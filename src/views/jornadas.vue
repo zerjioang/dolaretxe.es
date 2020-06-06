@@ -8,8 +8,10 @@ import jornadas from '@/components/jornadas.vue'
 
 export default {
   name: 'view-jornadas',
-  metaInfo: {
-    title: 'Jornadas',
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   components: {
     jornadas
@@ -20,13 +22,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Jornadas"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Jornadas"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Jornadas"
+    }
   }
 }
 </i18n>

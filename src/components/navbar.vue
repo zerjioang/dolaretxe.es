@@ -151,6 +151,7 @@ export default {
       if (lang) {
         console.log("changing current locale to", lang);
         this.$i18n.locale = lang;
+        this.$root.$i18n.locale = lang;
         localStorage.setItem("lang", lang);
       }
     }
@@ -278,13 +279,22 @@ export default {
 <i18n>
 {
   "es":{
-
+    "inicio": "Inicio",
+    "informacion": "Información",
+    "sobre_nosotros": "Sobre Nosotros",
+    "idioma": "Idioma"
   },
   "en":{
-    
+    "inicio": "Home",
+    "informacion": "Information",
+    "sobre_nosotros": "About us",
+    "idioma": "Language"
   },
   "eus":{
-    
+    "inicio": "Hasiera",
+    "informacion": "Informazioa",
+    "sobre_nosotros": "Guri Buruz",
+    "idioma": "Hezkuntza"
   }
 }
 </i18n>

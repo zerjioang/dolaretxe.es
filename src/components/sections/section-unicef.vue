@@ -5,8 +5,8 @@
         <div class="col-md-12 wrap-about ftco-animate pb-5">
           <div class="heading-section">
             <div>
-              <h2>Escuela Amiga de UNICEF</h2>
-              <h5>Comprometidos con la Infancia</h5>
+              <h2>{{$t('unicef-title')}}</h2>
+              <h5>{{$t('unicef-subtitle')}}</h5>
             </div>
             <div class="ftco-animate fadeInUp ftco-animated align-items-center text-center img-pad">
               <img
@@ -19,24 +19,19 @@
             <div class="row">
               <div class="col-md-4">
                 <p class="justified">
-                  Para la Escuela Infantil ·
-                  <strong>Dolaretxe</strong> · Haur Eskoa es un orgullo pertenecer a una organización como
-                  <strong>UNICEF</strong> por su compromiso con los Derechos de la Infancia.
+                  {{$t('desc1')}}
                 </p>
               </div>
 
               <div class="col-md-4">
                 <p class="justified">
-                  El orgullo es doble al ser la primera Escuela Amiga de
-                  <strong>UNICEF</strong> en Euskadi, donde a partir de nuestro trabajo con los más pequeños queremos contribuir a difundir desde lo local, desde el corazón del Casco Viejo bilbaíno, los valores de solidaridad y ciudadanía global acordes con la misión de
-                  <strong>UNICEF</strong>.
+                  {{$t('desc2')}}
                 </p>
               </div>
 
               <div class="col-md-4">
                 <p class="justified">
-                  Con un pequeño esfuerzo y el firme
-                  <strong>compromiso con los Derechos de la Infancia</strong> de cada uno de nosotros estaremos desarrollando una labor de incalculable valor en favor de nuestros hijos, alumnos y otros niños y niñas del mundo que están en situaciones muy desfavorables.
+                  {{$t('desc3')}}
                 </p>
               </div>
             </div>
@@ -110,14 +105,26 @@ export default {
 
 <i18n>
 {
-  "es":{
-
-  },
-  "en":{
-    
-  },
-  "eus":{
-    
-  }
+    "es": {
+        "unicef-title": "Escuela Amiga de UNICEF",
+        "unicef-subtitle": "Comprometidos con la Infancia",
+        "desc1": "Para la Escuela Infantil Dolaretxe Haur Eskola es un orgullo pertenecer a una organización como UNICEF por su compromiso con los Derechos de la Infancia.",
+        "desc2": "El orgullo es doble al ser la primera Escuela Amiga de UNICEF en Euskadi, donde a partir de nuestro trabajo con los más pequeños queremos contribuir a difundir desde lo local, desde el corazón del Casco Viejo bilbaíno, los valores de solidaridad y ciudadanía global acordes con la misión de UNICEF.",
+        "desc3": "Con un pequeño esfuerzo y el firme compromiso con los Derechos de la Infancia de cada uno de nosotros estaremos desarrollando una labor de incalculable valor en favor de nuestros hijos, alumnos y otros niños y niñas del mundo que están en situaciones muy desfavorables."
+    },
+    "en": {
+        "unicef-title": "Escuela Amiga de UNICEF",
+        "unicef-subtitle": "Comprometidos con la Infancia",
+        "desc1": "Para la Escuela Infantil Dolaretxe Haur Eskola es un orgullo pertenecer a una organización como UNICEF por su compromiso con los Derechos de la Infancia.",
+        "desc2": "El orgullo es doble al ser la primera Escuela Amiga de UNICEF en Euskadi, donde a partir de nuestro trabajo con los más pequeños queremos contribuir a difundir desde lo local, desde el corazón del Casco Viejo bilbaíno, los valores de solidaridad y ciudadanía global acordes con la misión de UNICEF.",
+        "desc3": "Con un pequeño esfuerzo y el firme compromiso con los Derechos de la Infancia de cada uno de nosotros estaremos desarrollando una labor de incalculable valor en favor de nuestros hijos, alumnos y otros niños y niñas del mundo que están en situaciones muy desfavorables."
+    },
+    "eus": {
+        "unicef-title": "Escuela Amiga de UNICEF",
+        "unicef-subtitle": "Comprometidos con la Infancia",
+        "desc1": "Para la Escuela Infantil Dolaretxe Haur Eskola es un orgullo pertenecer a una organización como UNICEF por su compromiso con los Derechos de la Infancia.",
+        "desc2": "El orgullo es doble al ser la primera Escuela Amiga de UNICEF en Euskadi, donde a partir de nuestro trabajo con los más pequeños queremos contribuir a difundir desde lo local, desde el corazón del Casco Viejo bilbaíno, los valores de solidaridad y ciudadanía global acordes con la misión de UNICEF.",
+        "desc3": "Con un pequeño esfuerzo y el firme compromiso con los Derechos de la Infancia de cada uno de nosotros estaremos desarrollando una labor de incalculable valor en favor de nuestros hijos, alumnos y otros niños y niñas del mundo que están en situaciones muy desfavorables."
+    }
 }
 </i18n>

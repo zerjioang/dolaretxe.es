@@ -6,8 +6,10 @@
 
 export default {
   name: 'view-privacy',
-  metaInfo: {
-    title: 'Política de Privacidad',
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   components: {
     privacy: () => import('@/components/privacy.vue')
@@ -18,13 +20,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Política de Privacidad"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Política de Privacidad"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Política de Privacidad"
+    }
   }
 }
 </i18n>

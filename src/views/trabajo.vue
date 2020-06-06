@@ -7,8 +7,10 @@ import trabajo from "@/components/trabajo.vue";
 
 export default {
   name: "view-trabajo",
-  metaInfo: {
-    title: "Trabaja con nosotros"
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   components: {
     trabajo
@@ -19,13 +21,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Trabaja con nosotros"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Trabaja con nosotros"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Trabaja con nosotros"
+    }
   }
 }
 </i18n>

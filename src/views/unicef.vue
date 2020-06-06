@@ -7,8 +7,10 @@ import unicef from "@/components/unicef.vue";
 
 export default {
   name: "view-unicef",
-  metaInfo: {
-    title: "Colaboradores de UNICEF"
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   components: {
     unicef
@@ -19,13 +21,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Colaboradores de UNICEF"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Colaboradores de UNICEF"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Colaboradores de UNICEF"
+    }
   }
 }
 </i18n>

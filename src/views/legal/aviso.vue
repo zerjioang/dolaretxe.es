@@ -7,12 +7,14 @@ import legal from "@/components/legal.vue";
 
 export default {
   name: "view-legal",
-  metaInfo: {
-    title: "Aviso Legal"
-  },
   mounted() {
     console.log("mounted::view-legal");
     this.$store.commit("appLoading", false);
+  },
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   components: {
     legal: legal
@@ -23,13 +25,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Aviso Legal"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Aviso Legal"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Aviso Legal"
+    }
   }
 }
 </i18n>

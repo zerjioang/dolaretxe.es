@@ -8,8 +8,10 @@ import contact from '@/components/contact.vue'
 
 export default {
   name: 'view-contact',
-  metaInfo: {
-    title: 'Contacto',
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   components: {
     contact
@@ -20,13 +22,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Contacto"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Contacto"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Contacto"
+    }
   }
 }
 </i18n>

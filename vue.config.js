@@ -69,7 +69,7 @@ module.exports = {
       locale: 'es',
       fallbackLocale: 'es',
       localeDir: 'locales',
-      enableInSFC: false
+      enableInSFC: true
     },
     prerenderSpa: {
       registry: undefined,

@@ -23,8 +23,10 @@ import template from "@/mixins/template";
 export default {
   name: "view-not-found",
   extends: template,
-  metaInfo: {
-    title: "Página no encontrada"
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   methods: {},
   data: () => {
@@ -46,13 +48,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Página no encontrada"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Página no encontrada"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Página no encontrada"
+    }
   }
 }
 </i18n>

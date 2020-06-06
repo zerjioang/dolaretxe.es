@@ -7,25 +7,23 @@
           <div class="col-md-12 wrap-about ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
               <div>
-                <h2 class="mb-4">Actividades</h2>
+                <h2 class="mb-4">{{$t('actividades')}}</h2>
               </div>
               <div>
-                <h3 class="mb-4">Desarrollo integral</h3>
+                <h3 class="mb-4">{{$t('desarrollo_integral')}}</h3>
               </div>
-              <p
-                class="justified"
-              >La actividad desempeñada por Dolaretxe tiene como propósito principal la calidad en el servicio y en la asistencia, basada en el respeto a la diversidad, ritmos y necesidades específicas de cada niño. Es por ello que las actividades realizadas en Dolaretxe se desarrollan dentro de programas pedagógicos que utilizan el juego y que tienen objetivos específicos adaptados a cada una de las edades y necesidades de cada niño. Las actividades que realizamos en Dolaretxe están orientadas a conseguir el desarrollo integral (físico, intelectual, afectivo y social) de los niños aportándoles experiencias y estímulos enriquecedores.</p>
+              <p class="justified">{{$t('desc1')}}</p>
 
               <!-- start cta desarrollo -->
               <div class="row">
                 <div
                   class="col-xs-6 col-md-6 col-lg-3"
-                  v-for="item in desarrolloList"
+                  v-for="(item,i) in desarrolloList"
                   :key="item.id"
                 >
                   <div class="justify-content-center counter-wrap ftco-animate">
                     <featureBox
-                      :text="item.text"
+                      :text="$t('desarrollo-list-text')[i]"
                       :subtitle="item.subtitle"
                       :icon="item.icon"
                       :colorClass="item.class"
@@ -34,70 +32,44 @@
                 </div>
               </div>
               <!-- end cta desarrollo -->
-              <p
-                class="justified"
-              >De este modo conseguiremos un adecuado desarrollo de los niños en los siguientes aspectos:</p>
+              <p class="justified">{{$t('desc2')}}</p>
               <ul>
-                <li>Físico: Maduración psicomotriz que favorezca su autonomía.</li>
-                <li>Intelectual: Adquirir y desarrollar el lenguaje, memoria visual y auditiva y razonamiento lógico.</li>
-                <li>Afectivo y social: Adquirir y desarrollar capacidades emotivas para afrontar diferentes situaciones y comprender a los demás.</li>
+                <li v-for="l in $t('lista1')" :key="l">{{l}}</li>
               </ul>
             </div>
           </div>
           <div class="col-md-12 wrap-about ftco-animate">
             <div class="heading-section pl-md-5">
               <div>
-                <h3 class="mb-4">A traves del juego</h3>
+                <h3 class="mb-4">{{$t('a-traves-juego')}}</h3>
               </div>
-              <p
-                class="justified"
-              >A través del juego conseguimos un ambiente agradable, divertido e integrador lleno de momentos placenteros que favorecen el aprendizaje y hacen que el niño eleve su autoestima, y se sienta querido y seguro.</p>
-              <p class="justified">Con el juego logramos que los niños:</p>
+              <p class="justified">{{$t('a-traves-juego-subtitle')}}</p>
+              <p class="justified">{{$t('a-traves-del-juego-p')}}</p>
               <ul>
-                <li>Estimulen su creatividad, imaginación y curiosidad.</li>
-                <li>Desarrollen habilidades y valores sociales como respetar, compartir y cooperar.</li>
-                <li>Estimulen la capacidad para pensar y solucionar problemas.</li>
-                <li>Aumenten la capacidad de concentración y atención.</li>
-                <li>Detecten sus limitaciones de forma positiva y logren seguridad en si mismos.</li>
-                <li>Incrementen su capacidad psicomotora y de coordinación.</li>
-                <li>Avancen en la obtención de habilidades comunicativas.</li>
+                <li v-for="l in $t('lista-juegos')" :key="l">{{l}}</li>
               </ul>
-              <p
-                class="justified"
-              >Hacemos un seguimiento personalizado y diario de cada niño. Informamos a las familias diariamente de forma oral y a través de la agenda escolar sobre la educación y evolución de los niños.</p>
-              <p
-                class="justified"
-              >Evaluamos trimestralmente la evolución de los niños con boletines de información.</p>
+              <p class="justified">{{$t('desc3')}}</p>
+              <p class="justified">{{$t('desc4')}}</p>
               <!-- start modalidades de jornadas -->
 
               <!-- start: apartado que describe la info sobre desarrollo armonico -->
               <div>
-                <h3 class="mb-4">Desarrollo armónico</h3>
+                <h3 class="mb-4">{{$t('title-desarrollo-armonico')}}</h3>
               </div>
-              <p
-                class="justified"
-              >Nos centramos en las siguientes actividades para lograr un desarrollo armónico de acuerdo a cada una de las edades y ritmos de cada uno de los niños.</p>
+              <p class="justified">{{$t('subtitle-desarrollo-armonico')}}</p>
             </div>
             <!-- end: apartado que describe la info sobre desarrollo armonico -->
           </div>
 
           <div class="col-md-6">
             <ul>
-              <li>Estimulación del lenguaje en las diversas áreas de expresión mediante cuentos, canciones y rimas.</li>
-              <li>Juegos de estimulación auditiva reproduciendo sonidos que despierten la memoria auditiva logrando identificar y diferenciar estímulos sonoros.</li>
-              <li>Desarrollo de la memoria visual mediante fichas con imágenes (bits de inteligencia) y palabras (vocabulario visual) y que logren establecer relaciones entre ellas.</li>
-              <li>A través de los juegos y de la música trabajamos con los niños en conceptos relativos al espacio (derecha/izquierda, arriba/abajo, delante/detrás, etc.), al tiempo (rapidez, ritmo, duración, etc.) para que desarrollen y maduren las habilidades psicomotrices necesarias para el equilibrio y la orientación.</li>
-              <li>Atención a la educación artística: Damos especial atención a las artes plásticas para despertar el gusto por lo estético y la expresión artística.</li>
+              <li v-for="l in $t('lista-desa-arm-1')" :key="l">{{l}}</li>
             </ul>
           </div>
 
           <div class="col-md-6">
             <ul>
-              <li>Impulsamos las actividades donde lo niños desarrollan las habilidades sensoriales mediante la manipulación de objetos y materiales con diferentes texturas, colores y formas.</li>
-              <li>Atención a la habilidad motora fina promoviendo actividades donde los niños manipulen, agarren, armen y desarmen objetos, pinten con los dedos, manos u otros utensilios, elaboren puzzles…</li>
-              <li>Actividades al aire libre que se desarrollan en el patio de juegos como los juegos de agua y arena, el descubrimiento del entorno inmediato y etc.</li>
-              <li>Nos centramos en aquellas actividades y juegos que ayuden a que los niños se adapten al medio y a los nuevos hábitos y rutinas de la escuela en aspectos como los horarios, actividades, alimentación e higiene además de las relaciones sociales con otros niños y los adultos.</li>
-              <li>Fomentamos los juegos interpretativos (disfraces, teatro…) donde los niños asumen un papel o un personaje que estimule su potencial creativo e imaginativo. De este modo, durante el juego trabajarán el razonamiento y la lógica al enfrentarse a nuevas situaciones, retos y confrontaciones e intentarán buscarles solución.</li>
+              <li v-for="l in $t('lista-desa-arm-2')" :key="l">{{l}}</li>
             </ul>
           </div>
         </div>
@@ -135,26 +107,22 @@ export default {
         {
           id: 0,
           icon: "ion-ios-american-football",
-          class: "bg-dlrtx-1",
-          text: "Desarrollo fisico"
+          class: "bg-dlrtx-1"
         },
         {
           id: 1,
           icon: "ion-ios-bowtie",
-          class: "bg-dlrtx-2",
-          text: "Desarrollo intelectual"
+          class: "bg-dlrtx-2"
         },
         {
           id: 2,
           icon: "ion-ios-contacts",
-          class: "bg-dlrtx-3",
-          text: "Desarrollo afectivo"
+          class: "bg-dlrtx-3"
         },
         {
           id: 3,
           icon: "ion-ios-body",
-          class: "bg-dlrtx-4",
-          text: "Desarrollo social"
+          class: "bg-dlrtx-4"
         }
       ]
     };
@@ -199,14 +167,54 @@ li {
 
 <i18n>
 {
-  "es":{
-
-  },
-  "en":{
-    
-  },
-  "eus":{
-    
-  }
+    "es": {
+        "actividades": "Actividades",
+        "desarrollo_integral": "Desarrollo integral",
+        "desc1": "La actividad desempeñada por Dolaretxe tiene como propósito principal la calidad en el servicio y en la asistencia, basada en el respeto a la diversidad, ritmos y necesidades específicas de cada niño. Es por ello que las actividades realizadas en Dolaretxe se desarrollan dentro de programas pedagógicos que utilizan el juego y que tienen objetivos específicos adaptados a cada una de las edades y necesidades de cada niño. Las actividades que realizamos en Dolaretxe están orientadas a conseguir el desarrollo integral (físico, intelectual, afectivo y social) de los niños aportándoles experiencias y estímulos enriquecedores.",
+        "desc2": "De este modo conseguiremos un adecuado desarrollo de los niños en los siguientes aspectos:",
+        "lista1": [
+            "Físico: Maduración psicomotriz que favorezca su autonomía.",
+            "Intelectual: Adquirir y desarrollar el lenguaje, memoria visual y auditiva y razonamiento lógico.",
+            "Afectivo y social: Adquirir y desarrollar capacidades emotivas para afrontar diferentes situaciones y comprender a los demás."
+        ],
+        "a-traves-juego": "A traves del juego",
+        "a-traves-juego-subtitle": "A través del juego conseguimos un ambiente agradable, divertido e integrador lleno de momentos placenteros que favorecen el aprendizaje y hacen que el niño eleve su autoestima, y se sienta querido y seguro.",
+        "a-traves-del-juego-p": "Con el juego logramos que los niños:",
+        "lista-juegos": [
+            "Estimulen su creatividad, imaginación y curiosidad.",
+            "Desarrollen habilidades y valores sociales como respetar, compartir y cooperar.",
+            "Estimulen la capacidad para pensar y solucionar problemas.",
+            "Aumenten la capacidad de concentración y atención.",
+            "Detecten sus limitaciones de forma positiva y logren seguridad en si mismos.",
+            "Incrementen su capacidad psicomotora y de coordinación.",
+            "Avancen en la obtención de habilidades comunicativas."
+        ],
+        "desc3": "Hacemos un seguimiento personalizado y diario de cada niño. Informamos a las familias diariamente de forma oral y a través de la agenda escolar sobre la educación y evolución de los niños.",
+        "desc4": "Evaluamos trimestralmente la evolución de los niños con boletines de información.",
+        "title-desarrollo-armonico": "Desarrollo armónico",
+        "subtitle-desarrollo-armonico": "Nos centramos en las siguientes actividades para lograr un desarrollo armónico de acuerdo a cada una de las edades y ritmos de cada uno de los niños.",
+        "lista-desa-arm-1": [
+            "Estimulación del lenguaje en las diversas áreas de expresión mediante cuentos, canciones y rimas.",
+            "Juegos de estimulación auditiva reproduciendo sonidos que despierten la memoria auditiva logrando identificar y diferenciar estímulos sonoros.",
+            "Desarrollo de la memoria visual mediante fichas con imágenes (bits de inteligencia) y palabras (vocabulario visual) y que logren establecer relaciones entre ellas.",
+            "A través de los juegos y de la música trabajamos con los niños en conceptos relativos al espacio (derecha/izquierda, arriba/abajo, delante/detrás, etc.), al tiempo (rapidez, ritmo, duración, etc.) para que desarrollen y maduren las habilidades psicomotrices necesarias para el equilibrio y la orientación.",
+            "Atención a la educación artística: Damos especial atención a las artes plásticas para despertar el gusto por lo estético y la expresión artística."
+        ],
+        "lista-desa-arm-2": [
+            "Impulsamos las actividades donde lo niños desarrollan las habilidades sensoriales mediante la manipulación de objetos y materiales con diferentes texturas, colores y formas.",
+            "Atención a la habilidad motora fina promoviendo actividades donde los niños manipulen, agarren, armen y desarmen objetos, pinten con los dedos, manos u otros utensilios, elaboren puzzles…",
+            "Actividades al aire libre que se desarrollan en el patio de juegos como los juegos de agua y arena, el descubrimiento del entorno inmediato y etc.",
+            "Nos centramos en aquellas actividades y juegos que ayuden a que los niños se adapten al medio y a los nuevos hábitos y rutinas de la escuela en aspectos como los horarios, actividades, alimentación e higiene además de las relaciones sociales con otros niños y los adultos.",
+            "Fomentamos los juegos interpretativos (disfraces, teatro…) donde los niños asumen un papel o un personaje que estimule su potencial creativo e imaginativo. De este modo, durante el juego trabajarán el razonamiento y la lógica al enfrentarse a nuevas situaciones, retos y confrontaciones e intentarán buscarles solución."
+        ],
+        "desarrollo-list-text": [
+            "Desarrollo fisico",
+            "Desarrollo intelectual",
+            "Desarrollo afectivo",
+            "Desarrollo social"
+        ]
+    },
+    "en": {},
+    "eus": {}
 }
 </i18n>

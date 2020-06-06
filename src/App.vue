@@ -42,14 +42,20 @@ export default {
     }
   },
   mounted() {
-    console.log("loading user prefered language");
+    console.log("loading user prefered language from app");
     const stored = localStorage.getItem("lang");
     if (stored && stored == "es") {
       console.log("setting language to es");
       this.$i18n.locale = "es";
+      this.$root.$i18n.locale = "es";
     } else if (stored && stored == "eus") {
       console.log("setting language to eus");
       this.$i18n.locale = "eus";
+      this.$root.$i18n.locale = "eus";
+    } else if (stored && stored == "en") {
+      console.log("setting language to en");
+      this.$i18n.locale = "en";
+      this.$root.$i18n.locale = "en";
     }
   },
   components: {

@@ -8,8 +8,10 @@ import fotos from '@/components/fotos.vue'
 
 export default {
   name: 'view-fotos',
-  metaInfo: {
-    title: 'Galeria de fotos',
+  metaInfo() {
+    return {
+      title: this.$t("seo.title")
+    };
   },
   components: {
     fotos
@@ -20,13 +22,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "seo": {
+      "title": "Fotos"
+    }
   },
   "en":{
-    
+    "seo": {
+      "title": "Fotos"
+    }
   },
   "eus":{
-    
+    "seo": {
+      "title": "Fotos"
+    }
   }
 }
 </i18n>
