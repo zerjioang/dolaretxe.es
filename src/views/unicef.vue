@@ -32,7 +32,7 @@ export default {
   },
   "eus":{
     "seo": {
-      "title": "Colaboradores de UNICEF"
+      "title": "UNICEF-en Adiskide Eskola"
     }
   }
 }

@@ -36,7 +36,7 @@ export default {
   },
   "eus":{
     "seo": {
-      "title": "Aviso Legal"
+      "title": "Lege oharra"
     }
   }
 }

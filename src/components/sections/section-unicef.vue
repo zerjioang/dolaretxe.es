@@ -120,11 +120,11 @@ export default {
         "desc3": "Con un pequeño esfuerzo y el firme compromiso con los Derechos de la Infancia de cada uno de nosotros estaremos desarrollando una labor de incalculable valor en favor de nuestros hijos, alumnos y otros niños y niñas del mundo que están en situaciones muy desfavorables."
     },
     "eus": {
-        "unicef-title": "Escuela Amiga de UNICEF",
-        "unicef-subtitle": "Comprometidos con la Infancia",
-        "desc1": "Para la Escuela Infantil Dolaretxe Haur Eskola es un orgullo pertenecer a una organización como UNICEF por su compromiso con los Derechos de la Infancia.",
-        "desc2": "El orgullo es doble al ser la primera Escuela Amiga de UNICEF en Euskadi, donde a partir de nuestro trabajo con los más pequeños queremos contribuir a difundir desde lo local, desde el corazón del Casco Viejo bilbaíno, los valores de solidaridad y ciudadanía global acordes con la misión de UNICEF.",
-        "desc3": "Con un pequeño esfuerzo y el firme compromiso con los Derechos de la Infancia de cada uno de nosotros estaremos desarrollando una labor de incalculable valor en favor de nuestros hijos, alumnos y otros niños y niñas del mundo que están en situaciones muy desfavorables."
+        "unicef-title": "UNICEF-en Adiskide Eskola",
+        "unicef-subtitle": "Haurtzaroaz arduratuak",
+        "desc1": "Dolaretxe Haur Hezkuntza Eskolak harro osoz hartzen du UNICEF bezalako antolamenduaren barne egotea, etxe horrek Haurtzaroaren Eskubideekin beti izan duen konpromezuarengatik.",
+        "desc2": "Harro sentimena bikoitza dugu Euskadiko lehenengo UNICEF-en Adiskide Eskola garelako, umeekin egiten dugun eginkizuna dela medio elkartasun baloreak eta hirigintza globalak aditzera eman nahi ditugulako Bilboko Alde Zaharreko bihotz-bihotzetik.",
+        "desc3": "Ahalegin txiki baina sendo batekin Haurtzaroaren Eskubideak gureak egiten baditugu gai izango gara eginkizun polita eta neurtezina bideratzea gure seme-alaben, ikasleriaren eta munduan zehar egoera larria sufritzen ari diren umeen alde egiteko."
     }
 }
 </i18n>

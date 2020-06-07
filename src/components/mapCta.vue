@@ -1,7 +1,7 @@
 <template>
   <div class="map-form">
     <h2>Dolaretxe</h2>
-    <p>Prim Kalea, 11, bajo, 48006 Bilbo, BI</p>
+    <p>{{$t('direccion')}}</p>
     <div class="gmap-iframe">
       <!-- include google maps iframe for free -->
       <iframe
@@ -14,7 +14,7 @@
       ></iframe>
     </div>
     <router-link :to="{name: 'contact'}">
-      <button class="btn dolar-gradient-orangred py-3 px-4 btn-map">Contactar</button>
+      <button class="btn dolar-gradient-orangred py-3 px-4 btn-map">{{$t('contact')}}</button>
     </router-link>
   </div>
 </template>
@@ -74,13 +74,16 @@ export default {
 <i18n>
 {
   "es":{
-
+    "direccion": "Calle Prim, 11, bajo, 48006 Bilbao, BI",
+    "contact": "Contactar"
   },
   "en":{
-    
+    "direccion": "Prim Kalea, 11, bajo, 48006 Bilbo, BI",
+    "contact": "Gurekin harremanetan jarri"
   },
   "eus":{
-    
+    "direccion": "Prim Kalea, 11, bajo, 48006 Bilbo, BI",
+    "contact": "Gurekin harremanetan jarri"
   }
 }
 </i18n>

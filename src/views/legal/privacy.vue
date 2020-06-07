@@ -31,7 +31,7 @@ export default {
   },
   "eus":{
     "seo": {
-      "title": "Política de Privacidad"
+      "title": "Pribatasun politika"
     }
   }
 }

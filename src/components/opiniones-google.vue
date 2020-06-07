@@ -6,10 +6,8 @@
           <stars count="5" class="google-stars" />
         </div>
         <div class="container col-md-12 text-center heading-section ftco-animate">
-          <h2 class="mx-4">4.9/5 estrellas recibidas por nuestros usuarios nos avalan</h2>
-          <h5
-            class="text-center mx-4"
-          >Y nos hacen ser mejores cada dia. Puedes ver todos los comentarios en Google pero aqui tienes una pequeña muestra!</h5>
+          <h2 class="mx-4">{{$t('title')}}</h2>
+          <h5 class="text-center mx-4">{{$t('subtitle')}}</h5>
         </div>
       </div>
       <div class="row ftco-animate">
@@ -58,7 +56,7 @@
               href="https://goo.gl/maps/6qhGXF4kZ1yFzGpu5"
               rel="noopener"
               target="_blank"
-            >Ver todas las reseñas en Google</a>
+            >{{$t('google-btn')}}</a>
           </div>
         </div>
       </div>
@@ -94,13 +92,19 @@ export default {
 <i18n>
 {
   "es":{
-
+    "title": "4.9/5 estrellas recibidas por nuestros usuarios nos avalan",
+    "subtitle": "Y nos hacen ser mejores cada dia. Puedes ver todos los comentarios en Google pero aqui tienes una pequeña muestra!",
+    "google-btn": "Ver todas las reseñas en Google"
   },
   "en":{
-    
+    "title": "4.9/5 estrellas recibidas por nuestros usuarios nos avalan",
+    "subtitle": "Y nos hacen ser mejores cada dia. Puedes ver todos los comentarios en Google pero aqui tienes una pequeña muestra!",
+    "google-btn": "Ver todas las reseñas en Google"
   },
   "eus":{
-    
+    "title": "4.9/5 gure erabiltzaileek jasotako izarrek abalatzen gaituzte",
+    "subtitle": "Gero eta hobeak egiten gaituzte egunero. Google-en ikus ditzakezu iruzkin guztiak, baina hemen duzu lagin txiki bat!",
+    "google-btn": "Erreseina guztiak Google-en ikusi"
   }
 }
 </i18n>

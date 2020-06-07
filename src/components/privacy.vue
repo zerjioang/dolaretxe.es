@@ -1,13 +1,13 @@
 <template>
   <div>
-    <pagetitle page="Política de privacidad" />
+    <pagetitle :page="$t('title')" />
     <section class="ftco-section ftco-no-pt ftco-no-pb mt-2">
       <div class="container">
         <div class="row no-gutters">
           <div class="col-md-12 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
               <div>
-                <h2 class="mb-4">Política de privacidad</h2>
+                <h2 class="mb-4">{{$t('title')}}</h2>
               </div>
               <h6>
                 <strong>ESCUELA INFANTIL DOLARETXE</strong> (PRIMERAN, S.L.) CALLE PRIM 11 48006 BILBAO- BIZKAIA – España
@@ -77,13 +77,13 @@ export default {
 <i18n>
 {
   "es":{
-
+    "title": "Política de privacidad"
   },
   "en":{
-    
+    "title": "Política de privacidad"
   },
   "eus":{
-    
+    "title": "Pribatasun politika"
   }
 }
 </i18n>

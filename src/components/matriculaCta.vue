@@ -6,18 +6,16 @@
     @submit.prevent="onSubmitContact($event)"
   >
     <img v-if="false" class="img-baby" :src="require('@/assets/images/baby.png')" />
-    <h2>Matrícula abierta</h2>
-    <p>Estas de enhorabuena!</p>
-    <p
-      class="justified"
-    >El plazo de matriculación para este curso todavia esta abierto! Date prisa y contáctanos y te informaremos de las posibilidades y cómo reservar tu plaza.</p>
+    <h2>{{$t('title')}}</h2>
+    <p>{{$t('desc1')}}</p>
+    <p class="justified">{{$t('desc2')}}</p>
     <p class="justified">
-      Finalización del plazo: <strong>{{fechaFin}}</strong>
+      {{$t('fin')}} <strong>{{fechaFin}}</strong>
     </p>
     <div class="form-group">
       <input
         type="submit"
-        value="Contactar"
+        :value="$t('contact')"
         class="btn dolar-gradient-orangred py-3 px-4 btn-matricula"
       />
     </div>
@@ -100,13 +98,25 @@ export default {
 <i18n>
 {
   "es":{
-
+    "title":"Matrícula abierta",
+    "desc1":"Estas de enhorabuena!",
+    "desc2": "El plazo de matriculación para este curso todavia esta abierto! Date prisa y contáctanos y te informaremos de las posibilidades y cómo reservar tu plaza.",
+    "fin": "Finalización del plazo:",
+    "contact": "Contacta con nosotros"
   },
   "en":{
-    
+    "title":"Matrícula abierta",
+    "desc1":"Estas de enhorabuena!",
+    "desc2": "El plazo de matriculación para este curso todavia esta abierto! Date prisa y contáctanos y te informaremos de las posibilidades y cómo reservar tu plaza.",
+    "fin": "Finalización del plazo:",
+    "contact": "Contacta con nosotros"
   },
   "eus":{
-    
+    "title":"Matrikula irekia",
+    "desc1":"Zorionak!",
+    "desc2": "Ikastaro honetarako matrikulazio epea oraindik zabalik dago! Azkar ibili eta gurekin harremanetan jar zaitez, zure plaza erreserbatzeko aukeren berri emango dizugu.",
+    "fin": "Epea amaitzea:",
+    "contact": "Gurekin harremanetan jarri"
   }
 }
 </i18n>

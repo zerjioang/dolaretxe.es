@@ -1,7 +1,7 @@
 <template>
   <div class="icon-bar">
     <a :href="'tel:'+phone" class="call">
-      <span v-if="showText">{{text}}</span>
+      <span v-if="showText">{{$t('text')}}</span>
       <strong>{{phone}}</strong>
     </a>
   </div>
@@ -11,10 +11,6 @@
 export default {
   name: "stickyphone-component",
   props: {
-    text: {
-      type: String,
-      default: "Llámanos: "
-    },
     phone: {
       type: String,
       default: "94 600 45 58"
@@ -103,13 +99,13 @@ body {
 <i18n>
 {
   "es":{
-
+    "text": "Llámanos: "
   },
   "en":{
-    
+    "text": "Call us: "
   },
   "eus":{
-    
+    "text": "Telefonoa: "
   }
 }
 </i18n>

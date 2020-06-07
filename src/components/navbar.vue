@@ -28,7 +28,7 @@
             <router-link class="nav-link" :to="{'name':'home'}">{{$t('inicio')}}</router-link>
           </li>
 
-          <li class="nav-item" v-for="m in menuitems" :key="m.text">
+          <li class="nav-item" v-for="m in $t('menuitems')" :key="m.text">
             <router-link :to="{'name': m.to}" class="nav-link">{{m.text}}</router-link>
           </li>
 
@@ -119,24 +119,6 @@ export default {
       layout: {
         showWorkWithUs: process.env.VUE_APP_SHOW_WORK_WITH_US == "true"
       },
-      menuitems: [
-        {
-          to: "escuela",
-          text: "Escuela"
-        },
-        {
-          to: "jornadas",
-          text: "Jornadas"
-        },
-        {
-          to: "visitavirtual",
-          text: "Visita Virtual"
-        },
-        {
-          to: "galeria",
-          text: "Fotos"
-        }
-      ],
       serviceItems: [],
       showLogin: process.env.VUE_APP_SHOW_LOGIN_BUTTON == "true"
     };
@@ -157,10 +139,6 @@ export default {
     }
   },
   created(){
-    this.menuitems.push({
-      to: "contact",
-          text: "Contacto"
-    })
   },
   components: {}
 };
@@ -282,7 +260,29 @@ export default {
     "inicio": "Inicio",
     "informacion": "Información",
     "sobre_nosotros": "Sobre Nosotros",
-    "idioma": "Idioma"
+    "idioma": "Idioma",
+    "menuitems": [
+        {
+          "to": "escuela",
+          "text": "Escuela"
+        },
+        {
+          "to": "jornadas",
+          "text": "Jornadas"
+        },
+        {
+          "to": "visitavirtual",
+          "text": "Visita Virtual"
+        },
+        {
+          "to": "galeria",
+          "text": "Fotos"
+        },
+        {
+          "to": "contact",
+          "text": "Contacto"
+        }
+      ]
   },
   "en":{
     "inicio": "Home",
@@ -294,7 +294,29 @@ export default {
     "inicio": "Hasiera",
     "informacion": "Informazioa",
     "sobre_nosotros": "Guri Buruz",
-    "idioma": "Hezkuntza"
+    "idioma": "Hezkuntza",
+    "menuitems": [
+        {
+          "to": "escuela",
+          "text": "Eskola"
+        },
+        {
+          "to": "jornadas",
+          "text": "Jardunaldiak"
+        },
+        {
+          "to": "visitavirtual",
+          "text": "Bisita Birtuala"
+        },
+        {
+          "to": "galeria",
+          "text": "Argazkiak"
+        },
+        {
+          "to": "contact",
+          "text": "Kontaktua"
+        }
+      ]
   }
 }
 </i18n>

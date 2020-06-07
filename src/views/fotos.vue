@@ -33,7 +33,7 @@ export default {
   },
   "eus":{
     "seo": {
-      "title": "Fotos"
+      "title": "Argazkiak"
     }
   }
 }

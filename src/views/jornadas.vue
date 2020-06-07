@@ -33,7 +33,7 @@ export default {
   },
   "eus":{
     "seo": {
-      "title": "Jornadas"
+      "title": "Jardunaldiak"
     }
   }
 }

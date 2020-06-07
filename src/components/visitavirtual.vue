@@ -79,10 +79,8 @@ export default {
           "https://www.google.com/maps/embed?pb=!4v1576770032106!6m8!1m7!1sCAoSLEFGMVFpcE1uS0lFR01RNlF0YjFnb2hNOE01eXZkQ2x4TVBneUR3N2JSTHhF!2m2!1d43.25865805259303!2d-2.91844887510274!3f100!4f0!5f0.7820865974627469",
           "https://www.google.com/maps/embed?pb=!4v1576770910819!6m8!1m7!1sCAoSLEFGMVFpcFBQWm16WTl2dTV3VDIyTktob0k2RmM4ei1NNXV3QnJONEtldnZl!2m2!1d43.25862096014243!2d-2.918598800912378!3f300!4f0!5f0.7820865974627469",
           "https://www.google.com/maps/embed?pb=!4v1576770955105!6m8!1m7!1sCAoSLEFGMVFpcFBYRXF5b2xIU0FJNk90SUpiQl9tOXAtYzR3eV8zdVZ0a2s4N0ZU!2m2!1d43.2584959767037!2d-2.918657983878802!3f320!4f10!5f0.7820865974627469",
-          "https://www.google.com/maps/embed?pb=!4v1576770982887!6m8!1m7!1sCAoSLEFGMVFpcE5UblhvNmFGc2Rha3lrNnVyNG1oWDBMNl9oOUNVQ3VBYWVzaXU2!2m2!1d43.25854201427043!2d-2.918908174301123!3f0!4f10!5f0.7820865974627469",
           "https://www.google.com/maps/embed?pb=!4v1576771010786!6m8!1m7!1sCAoSLEFGMVFpcFB6TWFzM1Y3eUdpOU5qc3NScUk3R2dlUk1ZdVJlcFdEQ0VQeWZk!2m2!1d43.258518481675!2d-2.918764222095547!3f0!4f0!5f0.7820865974627469",
           "https://www.google.com/maps/embed?pb=!4v1576771023325!6m8!1m7!1sCAoSLEFGMVFpcFBxRkdWLWw2ZUNRR20zbTlOVUNEUUNhVkMtRWFJckJSdEVoRGxi!2m2!1d43.25856163682872!2d-2.91897644817368!3f20!4f10!5f0.7820865974627469",
-          "https://www.google.com/maps/embed?pb=!4v1576771034201!6m8!1m7!1sCAoSLEFGMVFpcE5rY1l3MHBqVC1pY1ZzOW9LTTNOUV9zMWVHV1dsZ3E1NlhGUHcx!2m2!1d43.25848325864552!2d-2.918548543002089!3f120!4f0!5f0.7820865974627469",
           "https://www.google.com/maps/embed?pb=!4v1576771050479!6m8!1m7!1sCAoSLEFGMVFpcFA0MWF4TjZzVW1VZEIzQm41bEl1Y3U5R2FuZVlQc1ZmVV95NHB3!2m2!1d43.25863359832675!2d-2.918486078011711!3f120!4f10!5f0.7820865974627469",
           "https://www.google.com/maps/embed?pb=!4v1576771070287!6m8!1m7!1sCAoSLEFGMVFpcE9YY2JGUlEwZWlYRGJRd3UtNEliR3dfcGxqUkpyWWZuN1ZUeW9o!2m2!1d43.25858590398227!2d-2.918497284425712!3f180!4f10!5f0.7820865974627469"
         ]
@@ -116,15 +114,13 @@ export default {
 		"por-instalaciones": "Por instalaciones",
 		"por-instalaciones-desc": "Tambien puedes visitar Dolaretxe de manera virtual y acceder a nuestras instalaciones como si estuvieras en persona!",
 		"vr-salas-names-list": [
-			"Sala 1",
-			"Sala 2",
-			"Sala 3",
-			"Sala 4",
-			"Sala 5",
-			"Sala 6",
-			"Sala 7",
-			"Sala 8",
-			"Sala 9"
+			"Clase Verde",
+			"Clase Azul",
+			"Entrada principal",
+			"Patio",
+			"Entrada",
+			"Clase Verde",
+			"Clase Celeste"
 		]
 	},
 	"en": {
@@ -135,34 +131,30 @@ export default {
 		"por-instalaciones": "Por instalaciones",
 		"por-instalaciones-desc": "Tambien puedes visitar Dolaretxe de manera virtual y acceder a nuestras instalaciones como si estuvieras en persona!",
 		"vr-salas-names-list": [
-			"Sala 1",
-			"Sala 2",
-			"Sala 3",
-			"Sala 4",
-			"Sala 5",
-			"Sala 6",
-			"Sala 7",
-			"Sala 8",
-			"Sala 9"
+			"Clase 1",
+			"Clase 2",
+			"Clase 3",
+			"Clase 4",
+			"Clase 5",
+			"Clase 6",
+			"Clase 8"
 		]
 	},
 	"eus": {
 		"title-visita-virtual": "Bisita Birtuala",
-		"desc1": "En Dolaretxe ofrecemos unas instalaciones modernas dotadas de un amplio patio exterior donde los niños podrán disfrutar y aprender jugando tutelados por educadores afectuosos y pacientes.",
-		"desc2": "Una imagen vale mas que mil palabras:",
-		"dolaretxe-360": "Ver Dolaretxe en 360º",
-		"por-instalaciones": "Por instalaciones",
-		"por-instalaciones-desc": "Tambien puedes visitar Dolaretxe de manera virtual y acceder a nuestras instalaciones como si estuvieras en persona!",
+		"desc1": "Dolaretxen instalazio modernoak eskaintzen ditugu, kanpoko jolastoki zabalarekin, hezitzaile amultsuen eta pazienteen tutoretzapean jolastuz gozatu eta ikasi ahal izateko.",
+		"desc2": "Irudi batek mila hitzek baino gehiago balio du",
+		"dolaretxe-360": "Dolaretxe ikusi 360ºtan",
+		"por-instalaciones": "Dolaretxeko instalazioak",
+		"por-instalaciones-desc": "Era berean, Dolaretxe bisita dezakezu modu birtualean, eta gure instalazioetara sar zaitezke, zuzenean bazeunde bezala!",
 		"vr-salas-names-list": [
-			"Gela 1",
-			"Gela 2",
-			"Gela 3",
-			"Gela 4",
-			"Gela 5",
-			"Gela 6",
-			"Gela 7",
-			"Gela 8",
-			"Gela 9"
+			"Gela Berdea",
+			"Gela Urdina",
+			"Sarrera nagusia",
+			"Patioa",
+			"Sarrera",
+			"Gela Berdea",
+			"Gela Urdin Argia"
 		]
 	}
 }

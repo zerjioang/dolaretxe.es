@@ -32,7 +32,7 @@ export default {
   },
   "eus":{
     "seo": {
-      "title": "Visita virtual"
+      "title": "Bisita Birtuala"
     }
   }
 }

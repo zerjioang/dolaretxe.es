@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pagetitle page="Compromiso UNICEF" />
+    <pagetitle :page="$t('title')" />
     <sectionUnicef />
   </div>
 </template>
@@ -15,7 +15,6 @@ export default {
   },
   mounted() {
     console.log("compromiso-unicef::mounted");
-    // this.jQueryInit();
   },
   components: {
     pagetitle: () => import("@/components/pagetitle"),
@@ -30,13 +29,13 @@ export default {
 <i18n>
 {
   "es":{
-
+    "title": "Compromiso UNICEF"
   },
   "en":{
-    
+    "title": "Compromiso UNICEF"
   },
   "eus":{
-    
+    "title": "UNICEF-ekiko konpromisoa"
   }
 }
 </i18n>

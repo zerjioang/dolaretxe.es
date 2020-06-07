@@ -232,16 +232,6 @@ if (process.env.ENV != "production") {
 
 // configure router loading mode
 router.beforeResolve((to, from, next) => {
-  console.log("loading user prefered language from router");
-  const stored = localStorage.getItem("lang");
-  if (stored && stored == "es") {
-    console.log("setting language to es");
-  } else if (stored && stored == "eus") {
-    console.log("setting language to eus");
-  } else if (stored && stored == "en") {
-    console.log("setting language to en");
-  }
-
   if (to.name) {
     store.commit('appLoading', true)
   }
