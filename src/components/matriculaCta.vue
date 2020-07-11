@@ -5,12 +5,13 @@
     ref="formElement"
     @submit.prevent="onSubmitContact($event)"
   >
-    <img v-if="false" class="img-baby" :src="require('@/assets/images/baby.png')" />
+    <img v-if="layout.showImgBaby" class="img-baby" :src="require('@/assets/images/baby.png')" />
     <h2>{{$t('title')}}</h2>
     <p>{{$t('desc1')}}</p>
     <p class="justified">{{$t('desc2')}}</p>
-    <p class="justified">
-      {{$t('fin')}} <strong>{{fechaFin}}</strong>
+    <p v-if="layout.showFechaFin" class="justified">
+      {{$t('fin')}}
+      <strong>{{fechaFin}}</strong>
     </p>
     <div class="form-group">
       <input
@@ -28,6 +29,8 @@ export default {
   name: "component-matricula-cta",
   data: () => ({
     layout: {
+      showFechaFin: false,
+      showImgBaby: false,
       matriculaFin: process.env.VUE_APP_MATRICULA_FIN_FECHA
     }
   }),

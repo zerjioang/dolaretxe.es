@@ -1,10 +1,10 @@
 <template>
   <div class="rate">
-    <label class="checked" for="star5" title="5">5 stars</label>
-    <label class="checked" for="star4" title="4">4 stars</label>
-    <label class="checked" for="star3" title="3">3 stars</label>
-    <label class="checked" for="star2" title="2">2 stars</label>
-    <label class="checked" for="star1" title="1">1 star</label>
+    <label class="checked" for="star5" title="5"></label>
+    <label class="checked" for="star4" title="4"></label>
+    <label class="checked" for="star3" title="3"></label>
+    <label class="checked" for="star2" title="2"></label>
+    <label class="checked" for="star1" title="1"></label>
   </div>
 </template>
 

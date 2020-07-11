@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
         <div class="col-md-9 ftco-animate pb-5">
-          <h1 class="mb-3 bread">Dolaretxe Haur Eskola</h1>
+          <h1 class="mb-3 bread">{{$t('title')}}</h1>
           <p class="breadcrumbs">
             <span class="mr-2">
               <router-link :to="{'name':'home'}">
@@ -73,13 +73,13 @@ export default {
 <i18n>
 {
   "es":{
-
+    "title": "Dolaretxe Escuela Infantil"
   },
   "en":{
-    
+    "title": "Dolaretxe Haur Eskola"
   },
   "eus":{
-    
+    "title": "Dolaretxe Haur Eskola"
   }
 }
 </i18n>

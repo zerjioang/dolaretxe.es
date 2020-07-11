@@ -252,8 +252,8 @@
             </div>
          </div>
       </section>
-      <sectionActividades />
-      <sectionUnicef/>
+      <sectionActividades id="actividades"/>
+      <sectionUnicef id="unicef"/>
    </div>
 </template>
 

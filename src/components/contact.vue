@@ -66,12 +66,16 @@
               <h5>Disponibilidad de plazas</h5>
               <p class="justified">
                 Disponibilidad de plazas libres para este curso y el próximo. Si deseáis obtener más información o realizar una consulta, pinchar en la dirección de correo electrónico:
-                <a href="mailto:info@dolaretxe.es">info@dolaretxe.es</a>
+                <a
+                  href="mailto:info@dolaretxe.es"
+                >info@dolaretxe.es</a>
               </p>
               <h5>Reserva de plaza</h5>
               <p class="justified">
                 Para realizar la reserva de plaza deberían enviar a la dirección de contacto
-                <a href="mailto:info@dolaretxe.es">info@dolaretxe.es</a> los siguientes documentos
+                <a
+                  href="mailto:info@dolaretxe.es"
+                >info@dolaretxe.es</a> los siguientes documentos
               </p>
               <div class="row">
                 <div

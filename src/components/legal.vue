@@ -1,4 +1,8 @@
-<template>
+<!--
+NOTA:
+
+El contenido del mensaje legal no se ha traducido
+--><template>
   <div>
     <pagetitle page="Aviso Legal" />
     <section class="ftco-section ftco-no-pt ftco-no-pb mt-2">

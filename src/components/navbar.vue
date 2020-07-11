@@ -64,7 +64,11 @@
               aria-expanded="false"
             >{{$t('sobre_nosotros')}}</a>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownAbout">
-              <a class="dropdown-item" href="#" v-on:click="goto($event, 'contact')">Contacto</a>
+              <a
+                class="dropdown-item"
+                href="#"
+                v-on:click="goto($event, 'contact')"
+              >{{$t('contact-text')}}</a>
               <a
                 v-show="false"
                 class="dropdown-item"
@@ -76,7 +80,7 @@
                 class="dropdown-item"
                 href="#"
                 v-on:click="goto($event, 'trabajo')"
-              >Trabaja con nosotros</a>
+              >{{$('trabaja-text')}}</a>
             </div>
           </li>
 
@@ -101,7 +105,7 @@
           </li>
           <!-- end language selector -->
           <li class="nav-item cta mr-md-2" v-show="showLogin">
-            <router-link :to="{'name': 'login'}" class="nav-link">Acceder</router-link>
+            <router-link :to="{'name': 'login'}" class="nav-link">{{$t('acceder')}}</router-link>
           </li>
         </ul>
       </div>
@@ -138,8 +142,7 @@ export default {
       }
     }
   },
-  created(){
-  },
+  created() {},
   components: {}
 };
 </script>
@@ -282,13 +285,19 @@ export default {
           "to": "contact",
           "text": "Contacto"
         }
-      ]
+      ],
+      "contact-text": "Contacto",
+      "trabaja-text": "Trabaja con nosotros",
+      "acceder": "Acceder"
   },
   "en":{
     "inicio": "Home",
     "informacion": "Information",
     "sobre_nosotros": "About us",
-    "idioma": "Language"
+    "idioma": "Language",
+    "contact-text": "Contact",
+    "trabaja-text": "Work with us",
+    "acceder": "Login"
   },
   "eus":{
     "inicio": "Hasiera",
@@ -316,7 +325,10 @@ export default {
           "to": "contact",
           "text": "Kontaktua"
         }
-      ]
+      ],
+      "contact-text": "Kontaktua",
+      "trabaja-text": "Gurekin lan engin",
+      "acceder": "Sartu"
   }
 }
 </i18n>

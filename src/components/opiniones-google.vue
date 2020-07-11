@@ -1,3 +1,8 @@
+<!--
+NOTA:
+
+para mantener la originalidad de las opiniones, no se han traducido
+-->
 <template>
   <section class="ftco-section testimony-section ftco-no-pt">
     <div>

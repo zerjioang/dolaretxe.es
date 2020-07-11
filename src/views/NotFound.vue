@@ -59,7 +59,7 @@ export default {
   },
   "eus":{
     "seo": {
-      "title": "Web orrialdea ez da aurkitu"
+      "title": "Aurkitu gabeko orria"
     }
   }
 }

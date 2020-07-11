@@ -213,7 +213,9 @@ const router = new Router({
   base: process.env.BASE_URL,
   routes,
   scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
+    if (to.hash) {
+      return { selector: to.hash }
+    } else if (savedPosition) {
       return savedPosition
     } else {
       return { x: 0, y: 0 }
@@ -223,7 +225,7 @@ const router = new Router({
 
 if (process.env.ENV != "production") {
   console.log(
-    getRoutesXML(router, 'http://dolaretxe.es')
+    getRoutesXML(router, 'https://dolaretxe.es')
   )
 }
 

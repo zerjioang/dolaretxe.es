@@ -1,3 +1,8 @@
+<!--
+NOTA:
+
+este componente (fichero) no está siendo utilizado en la version actual
+-->
 <template>
   <a rel="noopener" target="_blank" :href="link" :title="text" class="btn btn-whatsapp">
     <i class="fa fa-whatsapp fa-fw"></i>

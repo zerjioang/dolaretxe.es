@@ -1,6 +1,6 @@
 <template>
   <section class="rating__card">
-    <blockquote class="rating__card__quote">“{{review}}”</blockquote>
+    <blockquote class="rating__card__quote">"{{review}}"</blockquote>
 
     <div class="rating__card__stars">
       <span class="icon-star checked"></span>
@@ -11,7 +11,7 @@
       <br />
       <span class="rating__card__stars__name">{{name}}</span>
     </div>
-    <p class="rating__card__bottomText">1 reseña</p>
+    <p class="rating__card__bottomText">{{$t('reseña')}}</p>
   </section>
 </template>
 
@@ -105,13 +105,13 @@ h1 {
 <i18n>
 {
   "es":{
-
+    "reseña": "1 reseña"
   },
   "en":{
-    
+    "reseña": ""
   },
   "eus":{
-    
+    "reseña": "aipamen bat"
   }
 }
 </i18n>

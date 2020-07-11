@@ -15,7 +15,7 @@
               Escuela Infantil.
               <br />
               <span>Dolaretxe</span>
-              <br />Haur Eeskola
+              <br />Haur Eskola
             </h1>
             <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
               <span class="icon-calendar mr-2"></span>
@@ -60,7 +60,10 @@
             :key="actividad.id"
             class="col-md-3 align-self-stretch ftco-animate text-center"
           >
-            <div class="media block-6 services d-block">
+            <div
+              class="media block-6 services d-block card-activity"
+              :class="{'card-activity-none':!actividad.square}"
+            >
               <div class="icon">
                 <span :class="actividad.icon"></span>
               </div>
@@ -157,7 +160,7 @@
               >A través del juego conseguimos un ambiente agradable, divertido e integrador lleno de momentos placenteros que favorecen el aprendizaje, haciendo que el niño o niña eleve su autoestima y se sienta querido y seguro.</p>
               <p>
                 <router-link
-                  :to="{name: 'actividades'}"
+                  :to="{name: 'escuela', hash: '#actividades'}"
                   class="btn btn-primary"
                 >Conoce nuestras actividades</router-link>
               </p>
@@ -212,54 +215,74 @@ export default {
       location: "Bilbao. Casco Viejo, Bizkaia",
       actividades: [
         {
-          id: 0,
+          id: 1,
           icon: "flaticon-like",
           title: "Centro autorizado",
           description:
-            "Autorizado por el Departamento de Educación del Gobierno Vasco"
-        },
-        {
-          id: 1,
-          icon: "flaticon-magic-wand",
-          title: "Zona de juegos",
-          description: "Con patio exterior vallado para jugar los dias de sol"
+            "Autorizado por el Departamento de Educación del Gobierno Vasco",
+          square: false
         },
         {
           id: 2,
-          icon: "flaticon-calendar",
-          title: "+10 años",
-          description: "10 años de experiencia avalada por nuestros clientes."
+          icon: "flaticon-magic-wand",
+          title: "Zona de juegos",
+          description: "Con patio exterior vallado para jugar los dias de sol",
+          square: false
         },
         {
           id: 3,
-          icon: "flaticon-diploma",
-          title: "Calidad",
-          description:
-            "Calidad en el servicio y colaboradores oficiales de UNICEF"
+          icon: "flaticon-calendar",
+          title: "+10 años",
+          description: "10 años de experiencia avalada por nuestros clientes.",
+          square: false
         },
         {
           id: 4,
-          icon: "flaticon-time",
-          title: "Flexibilidad Horaria",
-          description: "Horarios de entrada y salida adaptables y flexibles"
+          icon: "flaticon-diploma",
+          title: "Calidad",
+          description:
+            "Calidad en el servicio y colaboradores oficiales de UNICEF",
+          square: false
         },
         {
           id: 5,
-          icon: "flaticon-calendar-1",
-          title: "11 meses",
-          description: "Calendario escolar de hasta 11 mensualidades"
+          icon: "flaticon-time",
+          title: "Flexibilidad Horaria",
+          description: "Horarios de entrada y salida adaptables y flexibles",
+          square: false
         },
         {
           id: 6,
+          icon: "flaticon-calendar-1",
+          title: "11 meses",
+          description: "Calendario escolar de hasta 11 mensualidades",
+          square: false
+        },
+        {
+          id: 7,
           icon: "flaticon-worldwide",
           title: "Trilingue",
-          description: "Educación en Castellano, Euskera e Ingles"
+          description: "Educación en Castellano, Euskera e Ingles",
+          square: false
         }
       ]
     };
   },
   created() {
     console.log("home::created");
+    if (process.env.VUE_APP_CORONAVIRUS_MODE_ON == "true") {
+      this.actividades.push({
+        id: 0,
+        icon: "icon-medkit",
+        title: "Coronavirus COVID-19",
+        description: "Medidas de higiene, protección y protocolos de actuación frente al COVID-19",
+        square: true
+      });
+      // ordenar el array por id
+      this.actividades.sort((a, b) => {
+        return a.id - b.id;
+      });
+    }
   },
   mounted() {
     console.log("home::mounted");
@@ -277,6 +300,31 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.card-activity {
+  border: 5px;
+  border-color: #e4e4e4;
+  border-style: dashed;
+  padding: 10px;
+  height: 250px;
+  max-height: 280px;
+  padding-top: 20px;
+}
+
+.card-activity-none {
+  border-color: #e4e4e400;
+  padding-top: 0px;
+}
+
+.card-activity p {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card-activity p {
+    text-align: justify;
+  }
+}
+
 .google-stars {
   margin-bottom: 60px;
 }

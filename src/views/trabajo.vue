@@ -32,7 +32,7 @@ export default {
   },
   "eus":{
     "seo": {
-      "title": "Trabaja con nosotros"
+      "title": "Gurekin lan egin"
     }
   }
 }
