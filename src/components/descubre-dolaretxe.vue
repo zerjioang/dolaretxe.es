@@ -4,7 +4,7 @@
       <br />
       <div class="heading-section">
         <div class="text-center">
-          <h2 class="mb-4">Descubre Dolaretxe Haurreskola</h2>
+          <h2 class="mb-4">Descubre Dolaretxe Haur Eskola</h2>
           <p class="justified font-20">
             Te ofrecemos un
             <strong>servicio único</strong> y excepcional para ti y para los niños, gracias al

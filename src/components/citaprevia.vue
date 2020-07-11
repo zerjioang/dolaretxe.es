@@ -1,3 +1,9 @@
+<!--
+
+NOTA:
+este componente (fichero) no esta siendo utilizado actualmente en la web
+
+-->
 <template>
   <div>
     <pagetitle page="Cita previa" />

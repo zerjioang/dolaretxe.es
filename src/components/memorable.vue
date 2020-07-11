@@ -16,7 +16,7 @@
             class="image-popup img img-resposive img-example"
             :src="img"
             :href="img"
-            alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+            alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
           />
         </div>
       </div>

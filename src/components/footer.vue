@@ -17,7 +17,7 @@
             <img
               :src="require('@/assets/images/dolaretxe.png')"
               class="footer-img"
-              alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+              alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
             />
           </div>
         </div>
@@ -26,10 +26,10 @@
       <div class="row mb-5">
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Dolaretxe Haurreskola</h2>
+            <h2 class="ftco-heading-2">Dolaretxe Haur Eskola</h2>
             <p
               align="justify"
-            >Os invitamos a conocer la Escuela Infantil Dolaretxe Haurreskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios.</p>
+            >Os invitamos a conocer la Escuela Infantil Dolaretxe Haur Eskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios.</p>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
               <li v-show="false" class="ftco-animate">
                 <a href="#" rel="noopener" target="_blank">
@@ -108,7 +108,7 @@
                         target="_blank"
                         rel="noopener"
                       >
-                        Escuela Infantil Haurreskola.
+                        Escuela Infantil Haur Eskola.
                         Calle Prim, 11. Bajo.
                         48006 Bilbao. Bizkaia
                       </a>

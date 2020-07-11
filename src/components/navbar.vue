@@ -8,7 +8,7 @@
         <img
           :src="require('@/assets/images/dolaretxe.png')"
           class="navbar-img"
-          alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+          alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
         />
       </router-link>
       <button

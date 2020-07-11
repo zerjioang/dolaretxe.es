@@ -12,7 +12,7 @@
               <img
                 class="amiga img-responsive"
                 :src="bgUnicefEscuelaAmiga"
-                alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+                alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
               />
             </div>
 
@@ -42,7 +42,7 @@
                 <img
                   class="img-responsive img-unicef"
                   :src="bgUnicefFooter"
-                  alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+                  alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
                 />
               </a>
             </div>

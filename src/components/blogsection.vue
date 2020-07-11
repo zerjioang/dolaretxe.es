@@ -1,3 +1,9 @@
+<!--
+
+NOTA:
+este componente (fichero) no esta siendo utilizado actualmente en la web
+
+-->
 <template>
   <section class="ftco-section">
     <div class="container">

@@ -14,8 +14,8 @@
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
               Escuela Infantil.
               <br />
-              <span>Dolaretexe</span>
-              <br />Haurreskola
+              <span>Dolaretxe</span>
+              <br />Haur Eeskola
             </h1>
             <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
               <span class="icon-calendar mr-2"></span>
@@ -181,7 +181,7 @@
             <div class="text-center">
               <p
                 class="contact-text font-20"
-              >Nos encantaría conocerte a ti y a tu/s peque/s. Ponte en contacto con nosotras para comprobar disponibilidad de plazas y concertar una cita para conocer nuestra guarde. Os invitamos a conocer la Escuela Infantil Dolaretxe Haurreskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios y tarifas que mejor se adapten a vuestras necesidades.</p>
+              >Nos encantaría conocerte a ti y a tu/s peque/s. Ponte en contacto con nosotras para comprobar disponibilidad de plazas y concertar una cita para conocer nuestra guarde. Os invitamos a conocer la Escuela Infantil Dolaretxe Haur Eskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios y tarifas que mejor se adapten a vuestras necesidades.</p>
               <router-link
                 class="btn dolar-gradient-orangred py-3 px-4 btn-contact"
                 :to="{name:'contact'}"

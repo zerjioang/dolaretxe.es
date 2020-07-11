@@ -42,7 +42,7 @@
               class="image-popup img img-resposive masonry-img"
               v-lazy="item"
               :href="item"
-              alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+              alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
             />
           </div>
         </div>

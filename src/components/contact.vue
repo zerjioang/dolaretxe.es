@@ -11,7 +11,7 @@
               <h5>Acércate y conoce la guarde</h5>
               <p
                 class="justified"
-              >Nos encantaría conocerte a ti y a tu/s peque/s. Ponte en contacto con nosotras para comprobar disponibilidad de plazas y concertar una cita para conocer nuestra guarde. Os invitamos a conocer la Escuela Infantil Dolaretxe Haurreskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios y tarifas que mejor se adapten a vuestras necesidades.</p>
+              >Nos encantaría conocerte a ti y a tu/s peque/s. Ponte en contacto con nosotras para comprobar disponibilidad de plazas y concertar una cita para conocer nuestra guarde. Os invitamos a conocer la Escuela Infantil Dolaretxe Haur Eskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios y tarifas que mejor se adapten a vuestras necesidades.</p>
             </div>
             <!-- heading finished -->
 
@@ -20,12 +20,12 @@
                 <img
                   class="location-img text-center"
                   :src="require('@/assets/images/reference_image.png')"
-                  alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+                  alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
                 />
               </div>
               <div class="col-md-6 ftco-animate text-center fadeInUp ftco-animated">
                 <p class="justified">
-                  Escuela Infantil Haurreskola (
+                  Escuela Infantil Haur Eskola (
                   <a
                     href="https://goo.gl/maps/8NV7Twm7ARWWiPLDA"
                     target="blank"
@@ -106,13 +106,13 @@
           <div class="col-md-12 ftco-animate text-center fadeInUp ftco-animated mt-4">
             <p
               class="justified"
-            >Descubre la mejor forma de llegar a Dolaretxe Escuela Infantil Haurreskola ya sea por Metro Bilbao, andando o en coche.</p>
+            >Descubre la mejor forma de llegar a Dolaretxe Escuela Infantil Haur Eskola ya sea por Metro Bilbao, andando o en coche.</p>
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-4 ftco-animate">
                 <img
                   class="location-icon"
                   :src="require('@/assets/images/metrobilbao.png')"
-                  alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+                  alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
                 />
                 <h4 class="title-location">Desde la salida de Metro Unamuno</h4>
                 <h5 class="subtitle-location">4 min (300 m)</h5>
@@ -129,7 +129,7 @@
                 <img
                   class="location-icon-svg"
                   :src="require('@/assets/images/elevator.svg')"
-                  alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+                  alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
                 />
                 <h4 class="title-location">Desde el ascensor de Begoña</h4>
                 <h5 class="subtitle-location">9 min (750 m)</h5>
@@ -148,7 +148,7 @@
                 <img
                   class="location-icon-svg"
                   :src="require('@/assets/images/street.svg')"
-                  alt="dolaretxe escuela Infantil, Haurreskola y guarderia en bilbao"
+                  alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
                 />
                 <h4 class="title-location">Por la calle Prim dirección Unamuno</h4>
                 <h5 class="subtitle-location">3 min (180 m)</h5>

@@ -1,3 +1,9 @@
+<!--
+
+NOTA:
+este componente (fichero) no esta siendo utilizado actualmente en la web
+
+-->
 <template>
   <section class="ftco-section-parallax ftco-section ftco-no-pt mt-5">
     <div class="container">
