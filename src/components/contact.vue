@@ -136,9 +136,9 @@
                   alt="dolaretxe escuela Infantil, Haur Eskola y guarderia en bilbao"
                 />
                 <h4 class="title-location">Desde el ascensor de Begoña</h4>
-                <h5 class="subtitle-location">9 min (750 m)</h5>
+                <h5 class="subtitle-location">5 min (400 m)</h5>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2905.5810872125517!2d-2.9217758734931283!3d43.26020070000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0xd4e4fd48acc8f95%3A0xad48f0365f17f8ea!2sAscensor%20Bego%C3%B1a%20-casco%20Viejo%2C%2048006%20Bilbao%2C%20BI!3m2!1d43.260228!2d-2.919848!4m5!1s0xd4e4fca2737235f%3A0xe6e2cf49d4cdbeba!2sEscuela%20Infantil%20%C2%B7%20DOLARETXE%20%C2%B7%20Haur%20Eskola%2C%20Calle%20Prim%2C%20Bilbao!3m2!1d43.258397599999995!2d-2.9186365999999997!5e0!3m2!1ses!2ses!4v1586779902579!5m2!1ses!2ses"
+                  src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d1452.8053792425515!2d-2.919990691799964!3d43.25957894478417!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m5!1s0xd4e4fd48acc8f95%3A0xad48f0365f17f8ea!2sAscensor%20Bego%C3%B1a%20-casco%20Viejo%2C%20Bilbao!3m2!1d43.260228!2d-2.919848!4m3!3m2!1d43.2587462!2d-2.9184956!5e0!3m2!1ses!2ses!4v1594920641510!5m2!1ses!2ses"
                   width="600"
                   height="450"
                   frameborder="0"

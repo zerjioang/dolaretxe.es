@@ -12,7 +12,7 @@
             data-scrollax=" properties: { translateY: '70%' }"
           >
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-              Escuela Infantil.
+              Escuela Infantil
               <br />
               <span>Dolaretxe</span>
               <br />Haur Eskola
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <section class="ftco-section services-section dolar-gradient-2">
+    <section class="pt-5 pb-5 dolar-gradient-2">
       <div class="container">
         <div class="row d-flex">
           <!-- start: quote -->
@@ -78,6 +78,7 @@
       </div>
     </section>
 
+    <agendaDigital/>
     <opiniones />
     <matriculaSection v-if="layout.matriculaAbierta" />
 
@@ -274,8 +275,9 @@ export default {
       this.actividades.push({
         id: 0,
         icon: "icon-medkit",
-        title: "Coronavirus COVID-19",
-        description: "Medidas de higiene, protección y protocolos de actuación frente al COVID-19",
+        title: "COVID-19",
+        description:
+          "Medidas de higiene y protección frente al COVID-19",
         square: true
       });
       // ordenar el array por id
@@ -294,7 +296,8 @@ export default {
     matriculaSection: () => import("@/components/matriculaSection"),
     opiniones: () => import("@/components/opiniones-google"),
     unicef: () => import("@/components/sections/section-unicef"),
-    badge: () => import("@/components/badge")
+    badge: () => import("@/components/badge"),
+    agendaDigital: () => import("@/components/agendaDigital")
   }
 };
 </script>
@@ -316,12 +319,12 @@ export default {
 }
 
 .card-activity p {
-  text-align: center;
+  text-align: justify;
 }
 
 @media screen and (max-width: 768px) {
   .card-activity p {
-    text-align: justify;
+    text-align: center;
   }
 }
 
