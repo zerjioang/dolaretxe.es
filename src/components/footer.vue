@@ -28,9 +28,7 @@
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">{{$t('title')}}</h2>
-            <p
-              align="justify"
-            >{{$t('description')}}</p>
+            <p align="justify">{{$t('description')}}</p>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
               <li v-show="false" class="ftco-animate">
                 <a href="#" rel="noopener" target="_blank">
@@ -59,7 +57,10 @@
             <h2 class="ftco-heading-2">{{$t('info_title')}}</h2>
             <ul class="list-unstyled">
               <li>
-                <router-link :to="{name:'jornadas'}" class="py-2 d-block">{{$t('menuitem_jornadas')}}</router-link>
+                <router-link
+                  :to="{name:'jornadas'}"
+                  class="py-2 d-block"
+                >{{$t('menuitem_jornadas')}}</router-link>
               </li>
               <li>
                 <router-link :to="{name:'escuela'}" class="py-2 d-block">{{$t('menuitem_escuela')}}</router-link>
@@ -81,10 +82,16 @@
                 <router-link :to="{'name':'legal'}" class="py-2 d-block">{{$t('menuitem_aviso')}}</router-link>
               </li>
               <li>
-                <router-link :to="{'name':'privacy'}" class="py-2 d-block">{{$t('menuitem_privacidad')}}</router-link>
+                <router-link
+                  :to="{'name':'privacy'}"
+                  class="py-2 d-block"
+                >{{$t('menuitem_privacidad')}}</router-link>
               </li>
               <li>
-                <router-link :to="{'name':'cookies'}" class="py-2 d-block">{{$t('menuitem_cookies')}}</router-link>
+                <router-link
+                  :to="{'name':'cookies'}"
+                  class="py-2 d-block"
+                >{{$t('menuitem_cookies')}}</router-link>
               </li>
             </ul>
           </div>
@@ -108,9 +115,7 @@
                         href="https://goo.gl/maps/8NV7Twm7ARWWiPLDA"
                         target="_blank"
                         rel="noopener"
-                      >
-                        {{$t('direccion')}}
-                      </a>
+                      >{{$t('direccion')}}</a>
                     </span>
                   </a>
                 </li>

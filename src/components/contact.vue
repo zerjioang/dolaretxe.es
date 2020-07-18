@@ -394,7 +394,7 @@ iframe {
 	"eus": {
 		"pagetitle": "Gutaz",
 		"title": "Non gaude",
-		"subtitle": "Zatoz eta ezagu ezazu gure haur eskola",
+		"subtitle": "Zatoz eta ezagutu ezazu gure haur eskola",
 		"subtitle_1": "Zu eta zure txikiak ezagutzea gustatuko litzaiguke. Jar zaitez gurekin harremanetan plazak baditugula egiaztatzeko eta nahi izanez gero, haur eskola ezagutzeko hitzordua egiaztatzeko. Dolaretxe Haur Eskola ezagutzera gonbidatzen zaituztegu. Bertan, laguntza pertsonalizatuagoa emango dizuegu eta zuen beharretara ondoen egokitzen diren zerbitzu eta tarifa guztien berri emango dizuegu.",
 		"info_title": "Dolaretxe Haur Eskola",
 		"item_dir": "Helbidea",

@@ -19,11 +19,11 @@
             </h1>
             <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
               <span class="icon-calendar mr-2"></span>
-              {{location}}
+              {{$t('location')}}
             </p>
             <p
               class="disclaimer"
-            >Centro Autorizado por el Departamento de Educación del Gobierno Vasco</p>
+            >{{$t("centro_autorizado")}}</p>
             <badge class="mb-3" />
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row">
@@ -39,12 +39,12 @@
           <!-- start: quote -->
           <div class="col-md-12 align-self-stretch ftco-animate text-center">
             <div class="container col-md-12 text-center heading-section ftco-animate">
-              <h2 class="mb-3" style="color:white;">Bienvenido a jugar</h2>
+              <h2 class="mb-3" style="color:white;">{{$t('bienvenido_a_jugar')}}</h2>
 
               <blockquote class="blockquote" style="color:white;">
                 <p
                   class="mb-0"
-                >"No puede existir trabajo eficaz ni satisfactorio sin juego; no puede existir pensamiento sólido ni saludable sin juego."</p>
+                >"{{$t('quote_text')}}"</p>
                 <footer class="blockquote-footer quote-author" style="color:white;">
                   Charles Dickens,
                   <cite title="Dolaretxe quote" class="quote-author">1854</cite>
@@ -92,20 +92,20 @@
           <div class="col-md-7 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
               <div>
-                <h2 class="mb-4">Visita nuestro centro!</h2>
+                <h2 class="mb-4">{{$t('title_visita_centro')}}</h2>
               </div>
               <p
                 class="justified font-20"
-              >Somos un experimentado centro, con más de 10 años de experiencia en Educación Infantil de 0 a 3 años en la calle Prim, a dos minutos de la Plaza Unamuno del Casco Viejo, Bilbao.</p>
+              >{{$t('description_centro')}}</p>
               <p>
                 <router-link
                   :to="{name: 'visitavirtual'}"
                   class="btn btn-primary mt-1 mr-1"
-                >Empezar visita virtual</router-link>
+                >{{$t('empezar_visita')}}</router-link>
                 <router-link
                   :to="{name: 'contact'}"
                   class="btn btn-primary mt-1"
-                >Contacta con nosotros</router-link>
+                >{{$t('contactanos')}}</router-link>
               </p>
             </div>
           </div>
@@ -119,19 +119,16 @@
           <div class="col-md-12 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
               <div>
-                <h2 class="mb-4">Servicios</h2>
+                <h2 class="mb-4">{{$t('servicios_title')}}</h2>
               </div>
               <p class="pr-md-5 mr-md-5 justified font-20">
-                Nuestro horario, de lunes a viernes de
-                <strong>7:30</strong> a
-                <strong>17:00</strong> con posibilidad de ampliaciones en funcion tus necesidades.
+                {{$t('servicios_description')}}
               </p>
               <p class="pr-md-5 mr-md-5 justified font-20">
-                Disponemos de diferentes jornadas escolares para adaptarse mejor a las necesidades de los padres y los niños. Consulta la disponibilidad de plazas para el curso actual y
-                <strong>¡Echa un vistazo a las jornadas en detalle!</strong>
+               {{$t('servicios_description_2')}}
               </p>
               <p>
-                <router-link :to="{name:'jornadas'}" class="btn btn-primary">Ver jornadas</router-link>
+                <router-link :to="{name:'jornadas'}" class="btn btn-primary">{{$t('ver_jornadas')}}</router-link>
               </p>
             </div>
           </div>
@@ -154,16 +151,16 @@
           <div class="col-md-7 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
               <div>
-                <h2 class="mb-4">Nuestra metodología</h2>
+                <h2 class="mb-4">{{$t('metodologia_title')}}</h2>
               </div>
               <p
                 class="justified font-20"
-              >A través del juego conseguimos un ambiente agradable, divertido e integrador lleno de momentos placenteros que favorecen el aprendizaje, haciendo que el niño o niña eleve su autoestima y se sienta querido y seguro.</p>
+              >{{$t('metodologia_description')}}</p>
               <p>
                 <router-link
                   :to="{name: 'escuela', hash: '#actividades'}"
                   class="btn btn-primary"
-                >Conoce nuestras actividades</router-link>
+                >{{$t('conoce_actividades')}}</router-link>
               </p>
             </div>
           </div>
@@ -177,7 +174,7 @@
       <div class="container-fluid px-4">
         <div class="row justify-content-center">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2 class="mb-3">Acercate y conoce Dolaretxe</h2>
+            <h2 class="mb-3">{{$t('acercate_title')}}</h2>
           </div>
         </div>
         <div class="row">
@@ -185,11 +182,11 @@
             <div class="text-center">
               <p
                 class="contact-text font-20"
-              >Nos encantaría conocerte a ti y a tu/s peque/s. Ponte en contacto con nosotras para comprobar disponibilidad de plazas y concertar una cita para conocer nuestra guarde. Os invitamos a conocer la Escuela Infantil Dolaretxe Haur Eskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios y tarifas que mejor se adapten a vuestras necesidades.</p>
+              >{{$t('acercate_desc')}}</p>
               <router-link
                 class="btn dolar-gradient-orangred py-3 px-4 btn-contact"
                 :to="{name:'contact'}"
-              >Contacta con nosotros</router-link>
+              >{{$t('acercate_link')}}</router-link>
             </div>
           </div>
         </div>
@@ -213,7 +210,6 @@ export default {
       layout: {
         matriculaAbierta: process.env.VUE_APP_MATRICULA_ABIERTA == "true"
       },
-      location: "Bilbao. Casco Viejo, Bizkaia",
       actividades: [
         {
           id: 1,
@@ -477,14 +473,65 @@ export default {
 
 <i18n>
 {
-  "es":{
-
-  },
-  "en":{
-    
-  },
-  "eus":{
-    
-  }
+	"es": {
+		"location": "Bilbao. Casco Viejo, Vizcaya",
+		"centro_autorizado": "Centro Autorizado por el Departamento de Educación del Gobierno Vasco",
+		"bienvenido_a_jugar": "Bienvenido a jugar",
+		"quote_text": "No puede existir trabajo eficaz ni satisfactorio sin juego; no puede existir pensamiento sólido ni saludable sin juego.",
+		"title_visita_centro": "Visita nuestro centro!",
+		"description_centro": "Somos un experimentado centro, con más de 10 años de experiencia en Educación Infantil de 0 a 3 años en la calle Prim, a dos minutos de la Plaza Unamuno del Casco Viejo, Bilbao.",
+		"empezar_visita": "Empezar visita virtual",
+		"contactanos": "Contacta con nosotros",
+		"servicios_title": "Servicios",
+		"servicios_description": "Nuestro horario, de lunes a viernes de 7:30 a 17:00 con posibilidad de ampliaciones en funcion tus necesidades.",
+		"servicios_description_2": " Disponemos de diferentes jornadas escolares para adaptarse mejor a las necesidades de los padres y los niños. Consulta la disponibilidad de plazas para el curso actual y ¡Echa un vistazo a las jornadas en detalle!",
+		"ver_jornadas": "Ver jornadas",
+		"metodologia_title": "Nuestra metodología",
+		"metodologia_description": "A través del juego conseguimos un ambiente agradable, divertido e integrador lleno de momentos placenteros que favorecen el aprendizaje, haciendo que el niño o niña eleve su autoestima y se sienta querido y seguro.",
+		"conoce_actividades": "Conoce nuestras actividades",
+		"acercate_title": "Acercate y conoce Dolaretxe",
+		"acercate_desc": "Nos encantaría conocerte a ti y a tu/s peque/s. Ponte en contacto con nosotras para comprobar disponibilidad de plazas y concertar una cita para conocer nuestra guarde. Os invitamos a conocer la Escuela Infantil Dolaretxe Haur Eskola, donde os proporcionaremos una asistencia más personalizada y os informaremos de todos servicios y tarifas que mejor se adapten a vuestras necesidades.",
+		"acercate_link": "Contacta con nosotros"
+	},
+	"en": {
+		"location": "",
+		"centro_autorizado": "",
+		"bienvenido_a_jugar": "",
+		"quote_text": "",
+		"title_visita_centro": "",
+		"description_centro": "",
+		"empezar_visita": "",
+		"contactanos": "",
+		"servicios_title": "",
+		"servicios_description": "",
+		"servicios_description_2": "",
+		"ver_jornadas": "",
+		"metodologia_title": "",
+		"metodologia_description": "",
+		"conoce_actividades": "",
+		"acercate_title": "",
+		"acercate_desc": "",
+		"acercate_link": "s"
+	},
+	"eus": {
+		"location": "Bilbao. Casco Viejo, Bizkaia",
+		"centro_autorizado": " Eusko Jaurlaritzako Hezkuntza Sailak baimenduta",
+		"bienvenido_a_jugar": "Ongi Etorri jolastera",
+		"quote_text": "Ez da posible behar bezalako lan erankigorrik egin jokurik ez badago; ezta pentsamendu sendo eta osasuntsurik ere.",
+		"title_visita_centro": "Bisitatu gure zentroa!",
+		"description_centro": " 0-3 urte arteko Haur Hezkuntza Eskola berri bat gara, Prim kalean kokatuta, Bilboko Alde Zaharrean Unamuno enparantzatik bi minutura gaude. ",
+		"empezar_visita": "Bisita birtuala hasi",
+		"contactanos": "Gurekin harremanetan jarri",
+		"servicios_title": "Zerbitzuak",
+		"servicios_description": " Dolaretxen astelehenetik ostiralera, goizeko 7:30tik arratsaldeko 17:00ak arte irekitzen ditugu ateak.",
+		"servicios_description_2": "Ordutegi ezberdinak eskaintzen ditugu guraso eta umeen beharretara ahalik eta hoberen moldatzeko. Ordutegiak sehaski ikusi.",
+		"ver_jornadas": "Jardunaldiak ikusi",
+		"metodologia_title": "Zatoz Jolastera",
+		"metodologia_description": " Jokoaren bidez giro atsegina, dibertigarria eta bateratzailea egitea dugu helburu, ikasketa errazten duten une alaiak sortzen ditugu bakoitzak bere buruarekin are eta erosoago senti dadin, umea maitatua eta segurua sentiarazteko.",
+		"conoce_actividades": "Aktibitateei buruzko informazio gehigarria",
+		"acercate_title": "Hurbil zaitez eta ezagutu ezazu Dolaretxe",
+		"acercate_desc": "Zu eta zure txikiak ezagutzea gustatuko litzaiguke. Jar zaitez gurekin harremanetan plazak baditugula egiaztatzeko eta bisita hitzordua egiaztatzeko.  Dolaretxe Haur Eskola ezagutzera gonbidatzen zaituztegu. Laguntza pertsonalizatuagoa emango dizuegu, eta zuen beharretara ondoen egokitzen diren zerbitzu eta tarifa guztien berri emango dizuegu.",
+		"acercate_link": "Gurekin harremanetan jarri"
+	}
 }
 </i18n>
