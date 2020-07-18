@@ -26,7 +26,7 @@ export default {
   },
   "en":{
     "seo": {
-      "title": "Política de Cookies"
+      "title": "Cookie Policy"
     }
   },
   "eus":{

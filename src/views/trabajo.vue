@@ -1,3 +1,8 @@
+<!--
+NOTA:
+
+este componente (fichero) no está siendo utilizado en la version actual
+-->
 <template>
   <trabajo />
 </template>

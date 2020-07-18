@@ -28,7 +28,7 @@ export default {
   },
   "en":{
     "seo": {
-      "title": "Nuestra escuela"
+      "title": ""
     }
   },
   "eus":{

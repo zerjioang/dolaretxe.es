@@ -76,7 +76,7 @@ export default {
     "title": "Dolaretxe Escuela Infantil"
   },
   "en":{
-    "title": "Dolaretxe Haur Eskola"
+    "title": ""
   },
   "eus":{
     "title": "Dolaretxe Haur Eskola"

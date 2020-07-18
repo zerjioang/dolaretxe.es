@@ -28,7 +28,7 @@ export default {
   },
   "en":{
     "seo": {
-      "title": "Contacto"
+      "title": "Contact"
     }
   },
   "eus":{

@@ -6,7 +6,8 @@ este componente (fichero) no está siendo utilizado en la version actual
 <template>
   <a rel="noopener" target="_blank" :href="link" :title="text" class="btn btn-whatsapp">
     <i class="fa fa-whatsapp fa-fw"></i>
-    <span class="flaticon-mobile-phone"></span>Envíanos un Whatsapp
+    <span class="flaticon-mobile-phone"></span>
+    {{$t('button_text')}}
   </a>
 </template>
 
@@ -58,3 +59,17 @@ export default {
   color: #fff;
 }
 </style>
+
+<i18n>
+{
+  "es":{
+    "button_text": "Envíanos un Whatsapp"
+  },
+  "en":{
+    "button_text": "Send us Whatsapp"
+  },
+  "eus":{
+    "button_text": "Whatsapp bidali"
+  }
+}
+</i18n>

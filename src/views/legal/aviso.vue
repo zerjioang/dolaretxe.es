@@ -31,7 +31,7 @@ export default {
   },
   "en":{
     "seo": {
-      "title": "Aviso Legal"
+      "title": "Legal Advice"
     }
   },
   "eus":{

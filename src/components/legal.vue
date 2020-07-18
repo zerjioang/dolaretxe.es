@@ -4,14 +4,14 @@ NOTA:
 El contenido del mensaje legal no se ha traducido
 --><template>
   <div>
-    <pagetitle page="Aviso Legal" />
+    <pagetitle :page="$t('pagetitle')" />
     <section class="ftco-section ftco-no-pt ftco-no-pb mt-2">
       <div class="container">
         <div class="row no-gutters">
           <div class="col-md-12 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
               <div>
-                <h2 class="mb-4">Aviso Legal</h2>
+                <h2 class="mb-4">{{$t('pagetitle')}}</h2>
               </div>
               <p class="justified">
                 El presente sitio web es propiedad de ESCUELA INFANTIL DOLARETXE (PRIMERAN, S.L.), tiene por objeto facilitar a nuestros clientes así como a cualquier otro usuario, información relativa a los productos o servicios de ESCUELA INFANTIL DOLARETXE.
@@ -84,13 +84,13 @@ export default {
 <i18n>
 {
   "es":{
-
+    "pagetitle": "Aviso Legal"
   },
   "en":{
-    
+    "pagetitle": "Legal Advice"
   },
   "eus":{
-    
+    "pagetitle": "Lege Oharra"
   }
 }
 </i18n>

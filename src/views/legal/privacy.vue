@@ -26,7 +26,7 @@ export default {
   },
   "en":{
     "seo": {
-      "title": "Política de Privacidad"
+      "title": "Privacy Policy"
     }
   },
   "eus":{

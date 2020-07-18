@@ -1,3 +1,6 @@
+<!--
+NOTA: el contenido legal de la politica de privacidad no se ha traducido
+-->
 <template>
   <div>
     <pagetitle :page="$t('title')" />
@@ -80,7 +83,7 @@ export default {
     "title": "Política de privacidad"
   },
   "en":{
-    "title": "Política de privacidad"
+    "title": "Privacy policy"
   },
   "eus":{
     "title": "Pribatasun politika"

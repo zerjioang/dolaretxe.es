@@ -28,7 +28,7 @@ export default {
   },
   "en":{
     "seo": {
-      "title": "Cita previa"
+      "title": ""
     }
   },
   "eus":{

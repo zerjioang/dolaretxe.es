@@ -1,13 +1,19 @@
+<!--
+
+NOTA:
+el texto legal de la politica de cookies no se ha traducido
+
+-->
 <template>
   <div>
-    <pagetitle page="Política de Cookies" />
+    <pagetitle :page="$t('pagetitle')" />
     <section class="ftco-section ftco-no-pt ftco-no-pb mt-2">
       <div class="container">
         <div class="row no-gutters">
           <div class="col-md-12 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
               <div>
-                <h2 class="mb-4">Política de cookies</h2>
+                <h2 class="mb-4">{{$t('pagetitle')}}</h2>
               </div>
 
               <h5>¿Que es una cookie?</h5>
@@ -106,13 +112,13 @@ li {
 <i18n>
 {
   "es":{
-
+    "pagetitle": "Política de Cookies"
   },
   "en":{
-    
+    "pagetitle": "Cookie Policy"
   },
   "eus":{
-    
+    "pagetitle": "Cookien politika"
   }
 }
 </i18n>

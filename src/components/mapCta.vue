@@ -78,8 +78,8 @@ export default {
     "contact": "Contactar"
   },
   "en":{
-    "direccion": "Prim Kalea, 11, bajo, 48006 Bilbo, BI",
-    "contact": "Gurekin harremanetan jarri"
+    "direccion": "Prim Street, 11, bajo, 48006 Bilbo, BI",
+    "contact": ""
   },
   "eus":{
     "direccion": "Prim Kalea, 11, bajo, 48006 Bilbo, BI",

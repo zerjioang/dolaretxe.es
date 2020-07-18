@@ -13,27 +13,29 @@
 <script type="text/javascript">
 export default {
   name: "app",
-  metaInfo: {
-    title: "Bienvenido",
-    titleTemplate:
-      "%s | Dolaretxe, Escuela infantil Bilbao. Casco Viejo, Bilbao",
-    htmlAttrs: {
-      author: "zerjioang",
-      lang: "es",
-      amp: true
-    },
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        property: "og:title",
-        title: "Dolaretxe",
-        // following template options are identical
-        // template: '%s - My page',
-        template: chunk => `${chunk} - My page`,
-        vmid: "og:title"
-      }
-    ]
+  metaInfo() {
+    return {
+      title: this.$t("seo.title"),
+      titleTemplate:
+        "%s | Dolaretxe, Escuela infantil Bilbao. Casco Viejo, Bilbao",
+      htmlAttrs: {
+        author: "zerjioang",
+        lang: this.$t("seo.lang"),
+        amp: true
+      },
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          property: "og:title",
+          title: "Dolaretxe",
+          // following template options are identical
+          // template: '%s - My page',
+          template: chunk => `${chunk} - My page`,
+          vmid: "og:title"
+        }
+      ]
+    };
   },
   methods: {
     handler: function(e) {
@@ -72,14 +74,23 @@ export default {
 
 <i18n>
 {
-  "es":{
-
-  },
-  "en":{
-    
-  },
-  "eus":{
-    
-  }
+	"es": {
+		"seo": {
+			"title": "Bienvenido",
+			"lang": "es"
+		}
+	},
+	"en": {
+		"seo": {
+			"title": "Welcome",
+			"lang": "en"
+		}
+	},
+	"eus": {
+		"seo": {
+			"title": "Ongi etorri",
+			"lang": "eus"
+		}
+	}
 }
 </i18n>

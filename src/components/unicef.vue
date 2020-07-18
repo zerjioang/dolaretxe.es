@@ -32,7 +32,7 @@ export default {
     "title": "Compromiso UNICEF"
   },
   "en":{
-    "title": "Compromiso UNICEF"
+    "title": "Commitment with UNICEF"
   },
   "eus":{
     "title": "UNICEF-ekiko konpromisoa"

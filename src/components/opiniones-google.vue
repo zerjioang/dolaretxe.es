@@ -1,7 +1,7 @@
 <!--
 NOTA:
 
-para mantener la originalidad de las opiniones, no se han traducido
+para mantener la originalidad de las opiniones, estas no se han traducido
 -->
 <template>
   <section class="ftco-section testimony-section ftco-no-pt">
