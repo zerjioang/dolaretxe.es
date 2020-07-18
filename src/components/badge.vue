@@ -1,37 +1,30 @@
 <template>
-<div class="whiteCard text-center">
-  <img class="image" :src="ejgvImage" :alt="$t('descripcion')"/>
-  <p class="label">
-    {{$t('title')}}
+  <div class="whiteCard text-center">
+    <img class="image" :src="ejgvImage" :alt="$t('descripcion')" />
+    <p class="label">{{$t('title')}}</p>
     <p class="licenseNumber mt-4">{{$t('numero')}}</p>
-  </p>
-</div>
+  </div>
 </template>
 
 <script>
-
 export default {
-  name: 'badge-component',
-  props: {
-  },
-  mixins: [
-  ],
-  methods: {
-  },
+  name: "badge-component",
+  props: {},
+  mixins: [],
+  methods: {},
   data: () => {
     return {
-      ejgvImage: require('@/assets/images/ejgv.png')
-    }
+      ejgvImage: require("@/assets/images/ejgv.png")
+    };
   },
-  created(){
-    console.log("badge::created")
+  created() {
+    console.log("badge::created");
   },
-  mounted(){
-    console.log("badge::mounted")
+  mounted() {
+    console.log("badge::mounted");
   },
-  components:{
-  }
-}
+  components: {}
+};
 </script>
 
 <style scoped lang="css">
@@ -62,12 +55,12 @@ export default {
   width: 233px;
 }
 .bold {
-	font-weight: bold;
-	color: white;
+  font-weight: bold;
+  color: white;
 }
 .footer-img {
-	max-height: 100px;
-	margin: 5px;
+  max-height: 100px;
+  margin: 5px;
 }
 .label {
   font-size: 16px;
