@@ -393,12 +393,12 @@ export default {
                 "icon": "ion-md-restaurant",
                 "class": "bg-dlrtx-1",
                 "text": "Jantoki zerbitzua",
-                "subtitle": "profesionala"
+                "subtitle": "Profesionala"
             }
         ],
         "ludoteca_title": "Ludoteka",
-        "ludoteca_subtitle": "Eskola irekitzen dugu arratsaldero eta eguberrian, aste santuan.",
-        "ludoteca_subtitle_2": "Gainera ekaina, uztaila eta abuztuaren artean, 0-6 urteko umeentzako.",
+        "ludoteca_subtitle": "Eskola arratsaldero irekitzen dugu, baita aste santuan eta eguberrian ere.",
+        "ludoteca_subtitle_2": "Gainera ekaina, uztaila eta abuztuaren artean, 0-6 urteko umeentzako irekia dago.",
         "ludotecaList": [
             {
                 "id": 5,

@@ -68,7 +68,7 @@ h1 {
   background-size: cover;
   background: $df-bg-gray;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 .rating__card__quote {
   padding: 5px 0;

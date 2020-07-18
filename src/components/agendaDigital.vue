@@ -49,7 +49,7 @@ export default {
       "description": ""
   },
   "eus":{
-      "glue_text": "Gainera...",
+      "glue_text": "Eta gainera...",
       "title": "Haur agenda digitala",
       "description": "Eskolako eguneroko bizitzari buruzko informazio zehatza esku izateko."
   }

@@ -21,9 +21,7 @@
               <span class="icon-calendar mr-2"></span>
               {{$t('location')}}
             </p>
-            <p
-              class="disclaimer"
-            >{{$t("centro_autorizado")}}</p>
+            <p class="disclaimer">{{$t("centro_autorizado")}}</p>
             <badge class="mb-3" />
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row">
@@ -42,9 +40,7 @@
               <h2 class="mb-3" style="color:white;">{{$t('bienvenido_a_jugar')}}</h2>
 
               <blockquote class="blockquote" style="color:white;">
-                <p
-                  class="mb-0"
-                >"{{$t('quote_text')}}"</p>
+                <p class="mb-0">"{{$t('quote_text')}}"</p>
                 <footer class="blockquote-footer quote-author" style="color:white;">
                   Charles Dickens,
                   <cite title="Dolaretxe quote" class="quote-author">1854</cite>
@@ -55,6 +51,23 @@
           <!-- end: quote -->
 
           <!-- start: actividades list -->
+          <div
+            v-if="layout.covidMode"
+            class="col-md-3 align-self-stretch ftco-animate text-center"
+          >
+            <div
+              class="media block-6 services d-block card-activity"
+              :class="{'card-activity-none':!covidItem.square}"
+            >
+              <div class="icon">
+                <span :class="covidItem.icon"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading mb-3">{{covidItem.title}}</h3>
+                <p>{{covidItem.description}}</p>
+              </div>  
+            </div>
+          </div>
           <div
             v-for="actividad in actividades"
             :key="actividad.id"
@@ -70,7 +83,7 @@
               <div class="media-body">
                 <h3 class="heading mb-3">{{actividad.title}}</h3>
                 <p>{{actividad.description}}</p>
-              </div>
+              </div>  
             </div>
           </div>
           <!-- end: actividades list -->
@@ -78,7 +91,7 @@
       </div>
     </section>
 
-    <agendaDigital/>
+    <agendaDigital />
     <opiniones />
     <matriculaSection v-if="layout.matriculaAbierta" />
 
@@ -94,9 +107,7 @@
               <div>
                 <h2 class="mb-4">{{$t('title_visita_centro')}}</h2>
               </div>
-              <p
-                class="justified font-20"
-              >{{$t('description_centro')}}</p>
+              <p class="justified font-20">{{$t('description_centro')}}</p>
               <p>
                 <router-link
                   :to="{name: 'visitavirtual'}"
@@ -121,12 +132,8 @@
               <div>
                 <h2 class="mb-4">{{$t('servicios_title')}}</h2>
               </div>
-              <p class="pr-md-5 mr-md-5 justified font-20">
-                {{$t('servicios_description')}}
-              </p>
-              <p class="pr-md-5 mr-md-5 justified font-20">
-               {{$t('servicios_description_2')}}
-              </p>
+              <p class="pr-md-5 mr-md-5 justified font-20">{{$t('servicios_description')}}</p>
+              <p class="pr-md-5 mr-md-5 justified font-20">{{$t('servicios_description_2')}}</p>
               <p>
                 <router-link :to="{name:'jornadas'}" class="btn btn-primary">{{$t('ver_jornadas')}}</router-link>
               </p>
@@ -153,9 +160,7 @@
               <div>
                 <h2 class="mb-4">{{$t('metodologia_title')}}</h2>
               </div>
-              <p
-                class="justified font-20"
-              >{{$t('metodologia_description')}}</p>
+              <p class="justified font-20">{{$t('metodologia_description')}}</p>
               <p>
                 <router-link
                   :to="{name: 'escuela', hash: '#actividades'}"
@@ -180,9 +185,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text-center">
-              <p
-                class="contact-text font-20"
-              >{{$t('acercate_desc')}}</p>
+              <p class="contact-text font-20">{{$t('acercate_desc')}}</p>
               <router-link
                 class="btn dolar-gradient-orangred py-3 px-4 btn-contact"
                 :to="{name:'contact'}"
@@ -205,82 +208,24 @@ export default {
     msg: String
   },
   mixins: [template],
+  computed: {
+    actividades: function(){
+      return this.$t('actividades')
+    },
+    covidItem: function(){
+      return this.$t('covidItem')
+    }
+  },
   data: () => {
     return {
       layout: {
-        matriculaAbierta: process.env.VUE_APP_MATRICULA_ABIERTA == "true"
-      },
-      actividades: [
-        {
-          id: 1,
-          icon: "flaticon-like",
-          title: "Centro autorizado",
-          description:
-            "Autorizado por el Departamento de Educación del Gobierno Vasco",
-          square: false
-        },
-        {
-          id: 2,
-          icon: "flaticon-magic-wand",
-          title: "Zona de juegos",
-          description: "Con patio exterior vallado para jugar los dias de sol",
-          square: false
-        },
-        {
-          id: 3,
-          icon: "flaticon-calendar",
-          title: "+10 años",
-          description: "10 años de experiencia avalada por nuestros clientes.",
-          square: false
-        },
-        {
-          id: 4,
-          icon: "flaticon-diploma",
-          title: "Calidad",
-          description:
-            "Calidad en el servicio y colaboradores oficiales de UNICEF",
-          square: false
-        },
-        {
-          id: 5,
-          icon: "flaticon-time",
-          title: "Flexibilidad Horaria",
-          description: "Horarios de entrada y salida adaptables y flexibles",
-          square: false
-        },
-        {
-          id: 6,
-          icon: "flaticon-calendar-1",
-          title: "11 meses",
-          description: "Calendario escolar de hasta 11 mensualidades",
-          square: false
-        },
-        {
-          id: 7,
-          icon: "flaticon-worldwide",
-          title: "Trilingue",
-          description: "Educación en Castellano, Euskera e Ingles",
-          square: false
-        }
-      ]
+        matriculaAbierta: process.env.VUE_APP_MATRICULA_ABIERTA == "true",
+        covidMode: process.env.VUE_APP_CORONAVIRUS_MODE_ON == "true"
+      }
     };
   },
   created() {
     console.log("home::created");
-    if (process.env.VUE_APP_CORONAVIRUS_MODE_ON == "true") {
-      this.actividades.push({
-        id: 0,
-        icon: "icon-medkit",
-        title: "COVID-19",
-        description:
-          "Medidas de higiene y protección frente al COVID-19",
-        square: true
-      });
-      // ordenar el array por id
-      this.actividades.sort((a, b) => {
-        return a.id - b.id;
-      });
-    }
   },
   mounted() {
     console.log("home::mounted");
@@ -315,13 +260,7 @@ export default {
 }
 
 .card-activity p {
-  text-align: justify;
-}
-
-@media screen and (max-width: 768px) {
-  .card-activity p {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .google-stars {
@@ -477,7 +416,64 @@ export default {
 		"location": "Bilbao. Casco Viejo, Vizcaya",
 		"centro_autorizado": "Centro Autorizado por el Departamento de Educación del Gobierno Vasco",
 		"bienvenido_a_jugar": "Bienvenido a jugar",
-		"quote_text": "No puede existir trabajo eficaz ni satisfactorio sin juego; no puede existir pensamiento sólido ni saludable sin juego.",
+    "quote_text": "No puede existir trabajo eficaz ni satisfactorio sin juego; no puede existir pensamiento sólido ni saludable sin juego.",
+    "covidItem" : {
+        "id": 0,
+        "icon": "icon-medkit",
+        "title": "COVID-19",
+        "description": "Medidas de higiene y protección frente al COVID-19",
+        "square": true
+      },
+		"actividades": [{
+				"id": 1,
+				"icon": "flaticon-like",
+				"title": "Centro autorizado",
+				"description": "Autorizado por el Departamento de Educación del Gobierno Vasco",
+				"square": false
+			},
+			{
+				"id": 2,
+				"icon": "flaticon-magic-wand",
+				"title": "Zona de juegos",
+				"description": "Con patio exterior vallado para jugar los dias de sol",
+				"square": false
+			},
+			{
+				"id": 3,
+				"icon": "flaticon-calendar",
+				"title": "+10 años",
+				"description": "10 años de experiencia avalada por nuestros clientes.",
+				"square": false
+			},
+			{
+				"id": 4,
+				"icon": "flaticon-diploma",
+				"title": "Calidad",
+				"description": "Calidad en el servicio y colaboradores oficiales de UNICEF",
+				"square": false
+			},
+			{
+				"id": 5,
+				"icon": "flaticon-time",
+				"title": "Flexibilidad Horaria",
+				"description": "Horarios de entrada y salida adaptables y flexibles",
+				"square": false
+			},
+			{
+				"id": 6,
+				"icon": "flaticon-calendar-1",
+				"title": "11 meses",
+				"description": "Calendario escolar de hasta 11 mensualidades",
+				"square": false
+			},
+			{
+				"id": 7,
+				"icon": "flaticon-worldwide",
+				"title": "Trilingue",
+				"description": "Educación en Castellano, Euskera e Ingles",
+				"square": false
+			}
+		],
 		"title_visita_centro": "Visita nuestro centro!",
 		"description_centro": "Somos un experimentado centro, con más de 10 años de experiencia en Educación Infantil de 0 a 3 años en la calle Prim, a dos minutos de la Plaza Unamuno del Casco Viejo, Bilbao.",
 		"empezar_visita": "Empezar visita virtual",
@@ -518,6 +514,63 @@ export default {
 		"centro_autorizado": " Eusko Jaurlaritzako Hezkuntza Sailak baimenduta",
 		"bienvenido_a_jugar": "Ongi Etorri jolastera",
 		"quote_text": "Ez da posible behar bezalako lan erankigorrik egin jokurik ez badago; ezta pentsamendu sendo eta osasuntsurik ere.",
+    "covidItem" : {
+        "id": 0,
+        "icon": "icon-medkit",
+        "title": "COVID-19",
+        "description": "Higiene-neurriak eta COVID-19 aurkako babesak",
+        "square": true
+      },
+    "actividades": [{
+				"id": 1,
+				"icon": "flaticon-like",
+				"title": "Baimendutako zentroa",
+				"description": "Eusko Jaurlaritzako Hezkuntza Sailak baimendua",
+				"square": false
+			},
+			{
+				"id": 2,
+				"icon": "flaticon-magic-wand",
+				"title": "Jolastokia",
+				"description": "Kanpoko patioa hesituta, eguzki-egunetan jolasteko",
+				"square": false
+			},
+			{
+				"id": 3,
+				"icon": "flaticon-calendar",
+				"title": "+10 urte",
+				"description": "Gure bezeroek bermatutako 10 urteko esperientzia.",
+				"square": false
+			},
+			{
+				"id": 4,
+				"icon": "flaticon-diploma",
+				"title": "Kalitatea",
+				"description": "Zerbitzuaren kalitatea eta UNICEFen laguntzaile ofizialak",
+				"square": false
+			},
+			{
+				"id": 5,
+				"icon": "flaticon-time",
+				"title": "Ordutegi-malgutasuna",
+				"description": "Sartzeko eta irteteko ordutegi moldagarriak eta malguak",
+				"square": false
+			},
+			{
+				"id": 6,
+				"icon": "flaticon-calendar-1",
+				"title": "11 hilabete",
+				"description": "11 hileko eskola-egutegia",
+				"square": false
+			},
+			{
+				"id": 7,
+				"icon": "flaticon-worldwide",
+				"title": "Hirueledun",
+				"description": "Gaztelaniazko, euskarazko eta ingelesezko hezkuntza",
+				"square": false
+			}
+		],
 		"title_visita_centro": "Bisitatu gure zentroa!",
 		"description_centro": " 0-3 urte arteko Haur Hezkuntza Eskola berri bat gara, Prim kalean kokatuta, Bilboko Alde Zaharrean Unamuno enparantzatik bi minutura gaude. ",
 		"empezar_visita": "Bisita birtuala hasi",

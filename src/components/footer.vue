@@ -297,7 +297,7 @@ footer {
 		"menuitem_privacidad": "Pribatutasun Politika",
 		"menuitem_cookies": "Cookie-ei buruzko informazioa",
 		"direccion": "Escuela Infantil Haur Eskola. Prim Kalea, 11. Bajo. 48006 Bilbao. Bizkaia",
-		"copyright_rext": "Eskubide guztiak erreserbatuta."
+		"copyright_text": "Eskubide guztiak erreserbatuta."
 	}
 }
 </i18n>

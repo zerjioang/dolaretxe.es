@@ -1,327 +1,432 @@
 <template>
-   <div>
-      <pagetitle page="Escuela"/>
-      <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
-         <div class="container">
-            <div class="row no-gutters">
-               <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" :style="{'background-image': 'url(' + bgEscuela  + ')'}">
-               </div>
-               <div class="col-md-7 wrap-about py-md-5 ftco-animate">
-                  <div class="heading-section mb-5 pt-5 pl-md-5">
-                     <div>
-                        <h2 class="mb-4">Centro de Educación Infantil</h2>
-                     </div>
-                     <p class="justified">
-                        Somos un experimentado centro, con más de 10 años de experiencia en Educación Infantil de 0 a 3 años ubicado en la calle Prim, a tan solo dos minutos de la Plaza Unamuno del Casco Viejo de Bilbao.
-                     </p>
-                     <p class="justified">
-                        El proyecto responde a la necesidad actual de facilitar la conciliación de la vida familiar y la vida laboral de los residentes, comerciantes y trabajadores de la zona.
-                     </p>
-                     <p class="justified">
-                        Ofrecemos el modelo lingüístico bilingüe (euskera-castellano) con introducción al inglés.
-                     </p>
-                  </div>
-               </div>
+  <div>
+    <pagetitle :page="$t('pagetitle')" />
+    <section class="ftco-section ftco-no-pt ftco-no-pb mt-5">
+      <div class="container">
+        <div class="row no-gutters">
+          <div
+            class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+            :style="{'background-image': 'url(' + bgEscuela  + ')'}"
+          ></div>
+          <div class="col-md-7 wrap-about py-md-5 ftco-animate">
+            <div class="heading-section mb-5 pt-5 pl-md-5">
+              <div>
+                <h2 class="mb-4">{{$t('subtitle')}}</h2>
+              </div>
+              <p
+                v-for="sentence in $t('descriptionList')"
+                :key="sentence"
+                class="justified"
+              >{{sentence}}</p>
             </div>
-         </div>
-      </section>
-      <br>
-      <section class="ftco-section ftco-no-pt ftco-no-pb">
-         <div class="container">
-            <div class="row no-gutters">
-               <div class="col-md-7 wrap-about py-md-5 ftco-animate">
-                  <div class="heading-section mb-5 pt-5 pl-md-5">
-                     <div>
-                        <h2 class="mb-4">El equipo</h2>
-                     </div>
-                     <h5>Aprendizaje y desarrollo</h5>
-                     <p class="pr-md-5 mr-md-5 justified">
-                        <strong>Dolaretxe</strong> nace con el propósito de que los niños aprendan y se desarrollen de forma integral en un entorno familiar y estimulante.
-                        <br>
-                        Nuestro equipo docente se concentra en la motivación de los pequeños usando el juego como medio para favorecer el aprendizaje, la creatividad y el desarrollo individual de cada uno de los niños a través de sus propios estímulos e intereses.
-                     </p>
-                     <h5>Niños por aula</h5>
-                     <p class="pr-md-5 mr-md-5 justified">
-                        El número de niños por aula cumple con los ratios establecidos por el Departamento de Educación del Gobierno Vasco:
-                        <br>
-                     <ul>
-                        <li>
-                           8 niños en el aula de 0-1 años.
-                        </li>
-                        <li>
-                           13 niños en el aula de 1-2 años.
-                        </li>
-                        <li>
-                           18 niños en el aula de 2 a 3 años.
-                        </li>
-                     </ul>
-                     </p>
-                     <h5>El equipo docente</h5>
-                     <p class="pr-md-5 mr-md-5 justified">
-                        El equipo de Dolaretxe está formado por 8 personas, 2 educadoras por aula. El equipo lleva trabajando de forma conjunta desde la inauguración del centro en el año 2010.
-                     </p>
-                  </div>
-               </div>
-               <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" v-bind:style="{ backgroundImage: 'url(' + bgEquipo + ')' }">
-               </div>
-            </div>
-         </div>
-      </section>
-      
-      <div class="ftco-animate fadeInUp ftco-animated align-items-center text-center img-pad">
-        <div class="img-full" v-bind:style="{ backgroundImage: 'url(' + bgInstalaciones + ')' }" style="min-height: 500px;">
+          </div>
         </div>
       </div>
-      
-
-      <section class="ftco-section ftco-no-pt ftco-no-pb">
-         <div class="container">
-            <div class="row no-gutters">
-               <div class="col-md-12 wrap-about ftco-animate">
-                  <div class="heading-section pl-md-5">
-
-                     <div>
-                        <h2 class="mb-4">Instalaciones</h2>
-                     </div>
-                     <h5>Instalaciones de alta calidad</h5>
-                     <p class="justified">
-                        Hemos diseñado un centro educativo amplio, luminoso y seguro para que los niños crezcan en un entorno de alta calidad. En la Escuela Infantil Dolaretxe contamos con <strong>220m2</strong> de instalaciones y un patio de juegos de <strong>300m2</strong> de uso exclusivo. Disponemos de 4 aulas diferencias por edades. La distribución del espacio es el siguiente:                        
-                     </p>
-                     <div class="row">
-                       <div class="col-xs-6 col-md-4 col-lg-4">
-                        <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox text="1 aula de 0-1 años" icon="flaticon-user-2" colorClass="bg-dlrtx-1"/>
-                        </div>
-                        <p>El aula cuenta con un área específica para el descanso de los menores y otra para la higiene.</p>
-                       </div>
-                       <div class="col-xs-6 col-md-4 col-lg-4">
-                        <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox text="2 aulas de 1-2 años" icon="flaticon-user-4" colorClass="bg-dlrtx-2"/>
-                        </div>
-                        <p>El aula cuenta con un área específica para el descanso y un baño dentro de la propia clase.</p>
-                       </div>
-                       <div class="col-xs-6 col-md-4 col-lg-4">
-                        <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox text="1 aula de 2-3 años" icon="flaticon-user-6" colorClass="bg-dlrtx-3"/>
-                        </div>
-                        <p>El aula cuenta con un área específica para el descanso y un baño dentro de la propia clase.</p>
-                       </div>
-                     </div>
-                     <h5>Espacios especiales</h5>
-                     <div class="row">
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="una sala de usos múltiples" icon="flaticon-television" colorClass="bg-dlrtx-3"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="espacio de preparacion alimentos" icon="flaticon-television" colorClass="bg-dlrtx-3"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="patio exterior privado y vallado" icon="flaticon-television" colorClass="bg-dlrtx-3"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="300m2 de zona de juego" icon="flaticon-television" colorClass="bg-dlrtx-3"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="espacio cubierto para carritos" icon="flaticon-television" colorClass="bg-dlrtx-3"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="diferenciación de espacios" icon="flaticon-television" colorClass="bg-dlrtx-3"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="entrada y salida sólo peatonal" icon="flaticon-television" colorClass="bg-dlrtx-3"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="localización lejos de carreteras" icon="flaticon-television" colorClass="bg-dlrtx-3"/>
-                         </div>
-                       </div>
-                     </div>
-                     <p class="justified">
-                        Ademas, contamos con:
-                     <ul>
-                        <li>La escuela infantil contamos con un espacio diferenciado para las labores de gestión y administración y de uso para el personal: recepción, despacho, sala de reuniones, vestuario, almacén y cuarto baño.</li>
-                        <li>En Dolaretxe disponemos de un acceso independiente desde el exterior que se realiza a través de una plaza pública garantizando la seguridad de los niños en la salida del centro.</li>
-                     </ul>
-                     </p>
-                     <h5>¡Visita Virtual!</h5>
-                     <p class="justified">
-                        En Dolaretxe ofrecemos unas instalaciones modernas dotadas de un amplio patio exterior donde los niños podrán disfrutar y aprender jugando tutelados por educadores afectuosos y pacientes.
-                     </p>
-                     <div style="padding: 5px;">
-                       <router-link class="btn btn-primary" to="visitavirtual">Empezar visita virtual</router-link>
-                     </div>
-                  </div>
-               </div>
+    </section>
+    <br />
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-7 wrap-about py-md-5 ftco-animate">
+            <div class="heading-section mb-5 pt-5 pl-md-5">
+              <div>
+                <h2 class="mb-4">{{$t('team_title')}}</h2>
+              </div>
+              <h5>{{$t('team_subtitle')}}</h5>
+              <p class="pr-md-5 mr-md-5 justified">
+                Dolaretxe nace con el propósito de que los niños aprendan y se desarrollen de forma integral en un entorno familiar y estimulante.
+                <br />Nuestro equipo docente se concentra en la motivación de los pequeños usando el juego como medio para favorecer el aprendizaje, la creatividad y el desarrollo individual de cada uno de los niños a través de sus propios estímulos e intereses.
+              </p>
+              <h5>Niños por aula</h5>
+              <p
+                class="pr-md-5 mr-md-5 justified"
+              >El número de niños por aula cumple con los ratios establecidos por el Departamento de Educación del Gobierno Vasco:</p>
+              <br />
+              <ul>
+                <li>8 niños en el aula de 0-1 años.</li>
+                <li>13 niños en el aula de 1-2 años.</li>
+                <li>18 niños en el aula de 2 a 3 años.</li>
+              </ul>
+              <h5>El equipo docente</h5>
+              <p
+                class="pr-md-5 mr-md-5 justified"
+              >El equipo de Dolaretxe está formado por 8 personas, 2 educadoras por aula. El equipo lleva trabajando de forma conjunta desde la inauguración del centro en el año 2010.</p>
             </div>
-         </div>
-      </section>
-
-      <div class="img-full" v-bind:style="{ backgroundImage: 'url(' + bgObjetivos + ')' }" style="min-height: 500px;">
+          </div>
+          <div
+            class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+            v-bind:style="{ backgroundImage: 'url(' + bgEquipo + ')' }"
+          ></div>
+        </div>
       </div>
+    </section>
 
-      <section class="ftco-section ftco-no-pt ftco-no-pb">
-         <div class="container">
-            <div class="row no-gutters">
-               <div class="col-md-12 wrap-about ftco-animate">
-                  <div class="heading-section">
-                     <div>
-                        <h2>Objetivos</h2>
-                     </div>
-                     <div class="ftco-animate fadeInUp ftco-animated align-items-center text-center img-pad">
-                        
-                     </div>
-                     <p class="justified">
-                        En <strong>Dolaretxe</strong> contribuimos a generar un entorno familiar y seguro que favorezca la adquisición de las distintas competencias en cada una de las etapas evolutivas del niño.
-                     </p>
+    <div class="ftco-animate fadeInUp ftco-animated align-items-center text-center img-pad">
+      <div
+        class="img-full"
+        v-bind:style="{ backgroundImage: 'url(' + bgInstalaciones + ')' }"
+        style="min-height: 500px;"
+      ></div>
+    </div>
 
-                     <div class="row">
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="habilidades comunicativas" icon="flaticon-star" colorClass="bg-dlrtx-4"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="seguridad emocional" icon="flaticon-sign" colorClass="bg-dlrtx-4"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="convivencia y relaciones sociales" icon="flaticon-speaker-4" colorClass="bg-dlrtx-4"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="autonomía" icon="flaticon-zoom-in" colorClass="bg-dlrtx-4"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="respeto y curiosidad" icon="flaticon-zoom-in" colorClass="bg-dlrtx-4"/>
-                         </div>
-                       </div>
-                       <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                         <div class="justify-content-center counter-wrap ftco-animate">
-                          <featureBox class="box-especial" text="diversidad" icon="flaticon-share-2" colorClass="bg-dlrtx-4"/>
-                         </div>
-                       </div>
-                     </div>
-
-                     <div class="row">
-                       <div class="col-md-6">
-                            <p class="justified">
-                               Desarrollar habilidades comunicativas en diferentes lenguajes y formas de expresión para comprender y ser comprendido por los otros, expresar sus ideas, sentimientos, experiencias y deseos.
-                            </p>
-                            <p class="justified">
-                               Adquirir progresivamente una seguridad afectiva y emocional favorecido por este entorno familiar que les permita desarrollar sus capacidades de iniciativa y confianza en sí mismos.
-                            </p>
-                            <p class="justified">
-                               Establecer relaciones sociales en un ámbito cada vez más amplio y adquirir pautas elementales de convivencia y relación social, aprendiendo a articular progresivamente sus intereses y puntos de vista con los demás, respetando la diversidad y desarrollando actitudes de ayuda y cooperación.
-                            </p>
-                       </div>
-
-                       <div class="col-md-6">
-                         <p class="justified">
-                             Descubrir, conocer y controlar progresivamente el propio cuerpo para tomar conciencia de sus posibilidades de acción y expresión formándose una imagen positiva de sí mismos. De este modo lograrán cada vez mayor autonomía en sus actividades cotidianas adquiriendo hábitos básicos de salud y bienestar.
-                          </p>
-                          <p class="justified">
-                             Observar y explorar el entorno inmediato (familiar, natural y social) con una actitud de curiosidad, cuidado y respeto.
-                          </p>
-                          <p class="justified">
-                             Representar y recordar aspectos diversos de la realidad, vividos, conocidos o imaginados, y expresarlos mediante las posibilidades simbólicas que ofrecen el juego y otras formas de representación y expresión como el arte para comprender e interpretar el mundo que les rodea.
-                          </p>
-                       </div>
-                     </div>
-
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-12 wrap-about ftco-animate">
+            <div class="heading-section pl-md-5">
+              <div>
+                <h2 class="mb-4">Instalaciones</h2>
+              </div>
+              <h5>Instalaciones de alta calidad</h5>
+              <p class="justified">
+                Hemos diseñado un centro educativo amplio, luminoso y seguro para que los niños crezcan en un entorno de alta calidad. En la Escuela Infantil Dolaretxe contamos con
+                <strong>220m2</strong> de instalaciones y un patio de juegos de
+                <strong>300m2</strong> de uso exclusivo. Disponemos de 4 aulas diferencias por edades. La distribución del espacio es el siguiente:
+              </p>
+              <div class="row">
+                <div class="col-xs-6 col-md-4 col-lg-4">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      text="1 aula de 0-1 años"
+                      icon="flaticon-user-2"
+                      colorClass="bg-dlrtx-1"
+                    />
                   </div>
-               </div>
+                  <p>El aula cuenta con un área específica para el descanso de los menores y otra para la higiene.</p>
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-4">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      text="2 aulas de 1-2 años"
+                      icon="flaticon-user-4"
+                      colorClass="bg-dlrtx-2"
+                    />
+                  </div>
+                  <p>El aula cuenta con un área específica para el descanso y un baño dentro de la propia clase.</p>
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-4">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      text="1 aula de 2-3 años"
+                      icon="flaticon-user-6"
+                      colorClass="bg-dlrtx-3"
+                    />
+                  </div>
+                  <p>El aula cuenta con un área específica para el descanso y un baño dentro de la propia clase.</p>
+                </div>
+              </div>
+              <h5>Espacios especiales</h5>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      class="box-especial"
+                      text="una sala de usos múltiples"
+                      icon="flaticon-television"
+                      colorClass="bg-dlrtx-3"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      class="box-especial"
+                      text="espacio de preparacion alimentos"
+                      icon="flaticon-television"
+                      colorClass="bg-dlrtx-3"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      class="box-especial"
+                      text="patio exterior privado y vallado"
+                      icon="flaticon-television"
+                      colorClass="bg-dlrtx-3"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      class="box-especial"
+                      text="300m2 de zona de juego"
+                      icon="flaticon-television"
+                      colorClass="bg-dlrtx-3"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      class="box-especial"
+                      text="espacio cubierto para carritos"
+                      icon="flaticon-television"
+                      colorClass="bg-dlrtx-3"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      class="box-especial"
+                      text="diferenciación de espacios"
+                      icon="flaticon-television"
+                      colorClass="bg-dlrtx-3"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      class="box-especial"
+                      text="entrada y salida sólo peatonal"
+                      icon="flaticon-television"
+                      colorClass="bg-dlrtx-3"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      class="box-especial"
+                      text="localización lejos de carreteras"
+                      icon="flaticon-television"
+                      colorClass="bg-dlrtx-3"
+                    />
+                  </div>
+                </div>
+              </div>
+              <p class="justified">Ademas, contamos con:</p>
+              <ul>
+                <li>La escuela infantil contamos con un espacio diferenciado para las labores de gestión y administración y de uso para el personal: recepción, despacho, sala de reuniones, vestuario, almacén y cuarto baño.</li>
+                <li>En Dolaretxe disponemos de un acceso independiente desde el exterior que se realiza a través de una plaza pública garantizando la seguridad de los niños en la salida del centro.</li>
+              </ul>
+
+              <h5>¡Visita Virtual!</h5>
+              <p
+                class="justified"
+              >En Dolaretxe ofrecemos unas instalaciones modernas dotadas de un amplio patio exterior donde los niños podrán disfrutar y aprender jugando tutelados por educadores afectuosos y pacientes.</p>
+              <div style="padding: 5px;">
+                <router-link class="btn btn-primary" to="visitavirtual">Empezar visita virtual</router-link>
+              </div>
             </div>
-         </div>
-      </section>
-      <sectionActividades id="actividades"/>
-      <sectionUnicef id="unicef"/>
-   </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="img-full"
+      v-bind:style="{ backgroundImage: 'url(' + bgObjetivos + ')' }"
+      style="min-height: 500px;"
+    ></div>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-12 wrap-about ftco-animate">
+            <div class="heading-section">
+              <div>
+                <h2>{{$t('objetivos_title')}}</h2>
+              </div>
+              <div
+                class="ftco-animate fadeInUp ftco-animated align-items-center text-center img-pad"
+              ></div>
+              <p class="justified">{{$t('objetivos_desc')}}</p>
+
+              <div class="row">
+                <div
+                  v-for="item in $t('objetivos_list')"
+                  :key="item.text"
+                  class="col-12 col-sm-6 col-md-4 col-lg-4"
+                >
+                  <div class="justify-content-center counter-wrap ftco-animate">
+                    <featureBox
+                      class="box-especial"
+                      :text="item.text"
+                      :icon="item.icon"
+                      :colorClass="item.color"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <p
+                    v-for="sentence in $t('objetivos_list_1')"
+                    :key="sentence"
+                    class="justified"
+                  >{{sentence}}</p>
+                </div>
+
+                <div class="col-md-6">
+                  <p
+                    v-for="sentence in $t('objetivos_list_2')"
+                    :key="sentence"
+                    class="justified"
+                  >{{sentence}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <sectionActividades id="actividades" />
+    <sectionUnicef id="unicef" />
+  </div>
 </template>
 
 <script>
+import template from "@/mixins/template";
 
-import template from '@/mixins/template'
-
-const bgEscuela = require('@/assets/images/escuela/01.jpg');
-const bgEquipo = require('@/assets/images/escuela/02.jpg');
-const bgInstalaciones = require('@/assets/images/escuela/04.jpg');
-const bgObjetivos = require('@/assets/images/escuela/03.jpg');
+const bgEscuela = require("@/assets/images/escuela/01.jpg");
+const bgEquipo = require("@/assets/images/escuela/02.jpg");
+const bgInstalaciones = require("@/assets/images/escuela/04.jpg");
+const bgObjetivos = require("@/assets/images/escuela/03.jpg");
 
 export default {
-  name: 'escuela-component',
+  name: "escuela-component",
   extends: template,
-  methods: {
-  },
+  methods: {},
   data: () => {
     return {
       bgEscuela,
       bgEquipo,
       bgInstalaciones,
-      bgObjetivos,
-    }
+      bgObjetivos
+    };
   },
-  created(){
-    console.log("escuela::created")
+  created() {
+    console.log("escuela::created");
   },
-  mounted(){
-    console.log("escuela::mounted")
+  mounted() {
+    console.log("escuela::mounted");
     this.jQueryInit();
   },
-  components:{
-    featureBox: () => import('@/components/featureBox'),
-    sectionUnicef: () => import('@/components/sections/section-unicef'),
-    pagetitle: ()=> import('@/components/pagetitle'),
-    sectionActividades: () => import("@/components/actividades"),
+  components: {
+    featureBox: () => import("@/components/featureBox"),
+    sectionUnicef: () => import("@/components/sections/section-unicef"),
+    pagetitle: () => import("@/components/pagetitle"),
+    sectionActividades: () => import("@/components/actividades")
   }
-}
+};
 </script>
 
 <style type="text/css" scoped="true">
-	.img-pad {
-		padding-top: 10px;
-		padding-bottom: 30px;
-	}
-  .box-especial {
-    min-height: 210px;
-  }
-  .img-full {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+.img-pad {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.box-especial {
+  min-height: 210px;
+}
+.img-full {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 </style>
 
 <i18n>
 {
-  "es":{
-
-  },
-  "en":{
-    
-  },
-  "eus":{
-    
-  }
+	"es": {
+		"pagetitle": "Escuela",
+		"subtitle": "Centro de Educación Infantil",
+		"descriptionList": [
+			"Somos un experimentado centro, con más de 10 años de experiencia en Educación Infantil de 0 a 3 años ubicado en la calle Prim, a tan solo dos minutos de la Plaza Unamuno del Casco Viejo de Bilbao.",
+			"El proyecto responde a la necesidad actual de facilitar la conciliación de la vida familiar y la vida laboral de los residentes, comerciantes y trabajadores de la zona.",
+			"Ofrecemos el modelo lingüístico bilingüe (euskera-castellano) con introducción al inglés."
+      ],
+      "team_title": "El equipo",
+      "team_subtitle": "Aprendizaje y desarrollo",
+      "objetivos_title": "Objetivos",
+      "objetivos_desc": "En Dolaretxe contribuimos a generar un entorno familiar y seguro que favorezca la adquisición de las distintas competencias en cada una de las etapas evolutivas del niño.",
+      "objetivos_list": [
+         {
+            "text": "habilidades comunicativas",
+            "icon": "flaticon-star",
+            "color": "bg-dlrtx-4"
+         },
+         {
+            "text": "seguridad emocional",
+            "icon": "flaticon-sign",
+            "color": "bg-dlrtx-4"
+         },
+         {
+            "text": "convivencia y relaciones sociales",
+            "icon": "flaticon-speaker-4",
+            "color": "bg-dlrtx-4"
+         },
+         {
+            "text": "autonomía",
+            "icon": "flaticon-zoom-in",
+            "color": "bg-dlrtx-4"
+         },
+         {
+            "text": "respeto y curiosidad",
+            "icon": "flaticon-zoom-in",
+            "color": "bg-dlrtx-4"
+         },
+         {
+            "text": "diversidad",
+            "icon": "flaticon-share-2",
+            "color": "bg-dlrtx-4"
+         }
+      ],
+      "objetivos_list_1": [
+         "Desarrollar habilidades comunicativas en diferentes lenguajes y formas de expresión para comprender y ser comprendido por los otros, expresar sus ideas, sentimientos, experiencias y deseos.",
+			"Adquirir progresivamente una seguridad afectiva y emocional favorecido por este entorno familiar que les permita desarrollar sus capacidades de iniciativa y confianza en sí mismos. ",
+			"Establecer relaciones sociales en un ámbito cada vez más amplio y adquirir pautas elementales de convivencia y relación social, aprendiendo a articular progresivamente sus intereses y puntos de vista con los demás, respetando la diversidad y desarrollando actitudes de ayuda y cooperación."
+      ],
+      "objetivos_list_2": [
+         "Descubrir, conocer y controlar progresivamente el propio cuerpo para tomar conciencia de sus posibilidades de acción y expresión formándose una imagen positiva de sí mismos. De este modo lograrán cada vez mayor autonomía en sus actividades cotidianas adquiriendo hábitos básicos de salud y bienestar.",
+			"Observar y explorar el entorno inmediato (familiar, natural y social) con una actitud de curiosidad, cuidado y respeto.",
+			"Representar y recordar aspectos diversos de la realidad, vividos, conocidos o imaginados, y expresarlos mediante las posibilidades simbólicas que ofrecen el juego y otras formas de representación y expresión como el arte para comprender e interpretar el mundo que les rodea."
+      ]
+	},
+	"en": {
+		"pagetitle": "",
+		"subtitle": "",
+		"descriptionList": [
+			"",
+			"",
+			""
+      ],
+      "team_title": "",
+      "team_subtitle": "",
+      "objetivos_title": "",
+      "objetivos_desc": "",
+      "objetivos_list_1": [],
+      "objetivos_list_2": []
+	},
+	"eus": {
+		"pagetitle": "Eskola",
+		"subtitle": "Haur Hezkuntza Eskola",
+		"descriptionList": [
+			"0-3 urte arteko Haur Hezkuntza Eskola berri bat gara, Prim kalean kokatuta, Bilboko Alde Zaharreko Unamuno enparantza bi minutura dugu.",
+			"Inguruko langile, merkatari eta bertakoen bizitza familiarraren egungo beharrizanak erraztera gatoz.",
+			"Hizkuntza aldetik eredu elebiduna eskaintzen dugu (euskera-gaztelania), baita ingeleserako lehen pausuak ere."
+      ],
+      "team_title": "Taldea",
+      "team_subtitle": "Ikasketa eta garapena",
+      "objetivos_title": "Helburuak",
+      "objetivos_desc": " Dolaretxe Haur Hezkuntza Eskolan giro ezaguna eta segurua sortzen laguntzen dugu, honek mesede egiten bait dio umeari hezkuntza aroan zehar hainbat gaitasunak bereganatzeko",
+      "objetivos_list_1": [
+         "Komunikazio gaitasunak eta adierazpen moduak garatzea hizkuntza ezberdinetan ekar ulermena lortzeko, berezko ideiak, sentimenduak, esperientziak eta grinak espresatzeko gai izatea ere.",
+			"Etengabeko segurtasun emozional eta afektiboa lortzea giro ezagun honen laguntzaz, umeek beraien ekimenerako gaitasunak eta segurtasunak garatzen trebeak izan dezatela.",
+			"Harreman sozialak ezartzea gero eta zabalagoa den ingurune batean, giza-harremanerako eta bizikidetzarako eredu elementalak erdiestea, besteenganako ikuspuntuak eta interesak antolatzen ikastea etengabe, dibertsitatea errespetatuz, eta kooperazio eta laguntza portaerak garatuz."
+      ],
+      "objetivos_list_2": [
+         "Bakoitzaren gorputzaz konturatzea, ezagutzea eta jabetzea etengabe, bere eragin eta espresioen aukerak gogoan izateko bakoitzak bere buruaren irudi positibo bat osatuz. Era honetan, gero eta autonomia handiago bat lortzea eguneroko aktibitateetan oinarrizko osasun eta ongizate ohiturak bereganatuz.",
+			"Ingurune gertuena ikustea eta miatzea (familiarra, naturala, gizartearena) errespetu, arreta eta jakinminezko jarrera batekin.",
+			"Errealitatearen itxura ezberdinak irudikatzea, gogoratzea eta espresatzea (bizi izanak, ezagunak ala imaginatuak), jokoak eskaintzen dituen aukera sinbolikoen bitartez edota beste errepresentazio eta espresio eren bitartez, artea besteak beste, norberak bere inguruko mundua ulertzeko eta interpretatzeko."
+      ]
+	}
 }
 </i18n>
