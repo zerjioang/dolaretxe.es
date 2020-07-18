@@ -1,17 +1,15 @@
 <template>
   <div>
-    <pagetitle page="Galería" />
+    <pagetitle :page="$t('pagetitle')" />
     <section class="ftco-section ftco-no-pt ftco-no-pb">
       <div class="container">
         <div class="row no-gutters">
           <div class="col-md-12 ftco-animate mt-5 mb-5">
             <div class="heading-section">
               <div>
-                <h2>Instalaciones y actividades</h2>
+                <h2>{{$t('title')}}</h2>
               </div>
-              <p
-                class="justified"
-              >A continuación mostramos las imagenes del día a día en Dolaretxe donde se pueden contemplar las instalaciones y las distintas actividades y emociones vividas por los más pequeños en la escuela</p>
+              <p class="justified">{{$t('description')}}</p>
             </div>
             <!-- end: heading section -->
           </div>
@@ -24,7 +22,7 @@
       <section class="ftco-section ftco-no-pt ftco-no-pb">
         <div class="container">
           <div class="row no-gutters">
-            <h3>{{block.location}}</h3>
+            <h3>{{$t('galeria')[block.id].location}}</h3>
           </div>
         </div>
       </section>
@@ -225,32 +223,26 @@ export default {
       galeria: [
         {
           id: 0,
-          location: "Hora del patio",
           images: patioList
         },
         {
           id: 1,
-          location: "Rosa",
           images: rosaList
         },
         {
           id: 2,
-          location: "Celeste",
           images: celesteList
         },
         {
           id: 3,
-          location: "Verde",
           images: verdeList
         },
         {
           id: 4,
-          location: "Azul",
           images: azulList
         },
         {
           id: 5,
-          location: "Nuestros protagonistas",
           images: protasList
         }
       ]
@@ -322,13 +314,79 @@ function generateImageList(path, extension, size) {
 <i18n>
 {
   "es":{
-
+    "pagetitle": "Galería",
+    "title": "Instalaciones y actividades",
+    "description": "A continuación mostramos las imagenes del día a día en Dolaretxe donde se pueden contemplar las instalaciones y las distintas actividades y emociones vividas por los más pequeños en la escuela.",
+    "galeria": [
+        {
+          "location": "Hora del patio"
+        },
+        {
+          "location": "Rosa"
+        },
+        {
+          "location": "Celeste"
+        },
+        {
+          "location": "Verde"
+        },
+        {
+          "location": "Azul"
+        },
+        {
+          "location": "Nuestros protagonistas"
+        }
+      ]
   },
   "en":{
-    
+    "pagetitle": "Gallery",
+    "title": "",
+    "description": "",
+    "galeria": [
+        {
+          "location": ""
+        },
+        {
+          "location": ""
+        },
+        {
+          "location": ""
+        },
+        {
+          "location": ""
+        },
+        {
+          "location": ""
+        },
+        {
+          "location": ""
+        }
+      ]
   },
   "eus":{
-    
+    "pagetitle": "Argazkiak",
+    "title": "Instalazioak eta jarduerak",
+    "description": "Ondoren, Dolaretxeko eguneroko irudiak erakutsiko ditugu. Bertan, instalazioak, jarduerak eta haurrek eskolan bizi izan dituzten emozioak ikus daitezke.",
+    "galeria": [
+        {
+          "location": "Patio ordua"
+        },
+        {
+          "location": "Gela Arrosa"
+        },
+        {
+          "location": "Gela Urdin Argia"
+        },
+        {
+          "location": "Gela Berdea"
+        },
+        {
+          "location": "Gela Urdiña"
+        },
+        {
+          "location": "Gure protagonistak"
+        }
+      ]
   }
 }
 </i18n>
