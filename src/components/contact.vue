@@ -125,6 +125,7 @@
                   frameborder="0"
                   style="border:0;"
                   allowfullscreen
+                  aria-hidden="false"
                 ></iframe>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 ftco-animate">
@@ -143,7 +144,6 @@
                   style="border:0;"
                   allowfullscreen
                   aria-hidden="false"
-                  tabindex="0"
                 ></iframe>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 ftco-animate">
@@ -161,6 +161,7 @@
                   frameborder="0"
                   style="border:0;"
                   allowfullscreen
+                  aria-hidden="false"
                 ></iframe>
               </div>
             </div>
@@ -421,7 +422,7 @@ iframe {
 				"id": 0,
 				"icon": "flaticon-document",
 				"class": "bg-dlrtx-1",
-				"text": "Matrikulazio fitxa osatua"
+				"text": "Dolaretxen matrikulazio fitxa osatua"
 			},
 			{
 				"id": 1,
@@ -433,13 +434,13 @@ iframe {
 				"id": 2,
 				"icon": "flaticon-user",
 				"class": "bg-dlrtx-3",
-				"text": "Gurasoen NANaren kopia"
+				"text": "Gurasoen NAN dokumentuaren kopia"
 			},
 			{
 				"id": 3,
 				"icon": "flaticon-user-1",
 				"class": "bg-dlrtx-4",
-				"text": "Familia-liburuaren kopia"
+				"text": "Familia-liburuaren dokumentuaren kopia"
 			}
 		]
 	}

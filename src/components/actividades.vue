@@ -305,7 +305,7 @@ li {
       "Antzezpen jokuak sustatzen ditugu (mozorroak, antzerkia) umeek bere irudimenezko botere kreatiboa suspertzeko pertsonai edo paper bat bereganatuz. Era honetan, jokoan arrazoimena eta logika landuko dute umeek, norgehiagoka, erronka eta egoera berriei aurre egingo bait diote, auzi hoiei irtenbide bat bilatuz."
 		],
 		"desarrollo-list-text": [
-			"Garapen fisiko",
+			"Garapen fisikoa",
 			"Adimenaren garapena",
 			"Garapen afektiboa",
 			"Garapen soziala"
