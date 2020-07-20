@@ -81,7 +81,6 @@ export default {
           "https://www.google.com/maps/embed?pb=!4v1576770955105!6m8!1m7!1sCAoSLEFGMVFpcFBYRXF5b2xIU0FJNk90SUpiQl9tOXAtYzR3eV8zdVZ0a2s4N0ZU!2m2!1d43.2584959767037!2d-2.918657983878802!3f320!4f10!5f0.7820865974627469",
           "https://www.google.com/maps/embed?pb=!4v1576771010786!6m8!1m7!1sCAoSLEFGMVFpcFB6TWFzM1Y3eUdpOU5qc3NScUk3R2dlUk1ZdVJlcFdEQ0VQeWZk!2m2!1d43.258518481675!2d-2.918764222095547!3f0!4f0!5f0.7820865974627469",
           "https://www.google.com/maps/embed?pb=!4v1576771023325!6m8!1m7!1sCAoSLEFGMVFpcFBxRkdWLWw2ZUNRR20zbTlOVUNEUUNhVkMtRWFJckJSdEVoRGxi!2m2!1d43.25856163682872!2d-2.91897644817368!3f20!4f10!5f0.7820865974627469",
-          "https://www.google.com/maps/embed?pb=!4v1576771050479!6m8!1m7!1sCAoSLEFGMVFpcFA0MWF4TjZzVW1VZEIzQm41bEl1Y3U5R2FuZVlQc1ZmVV95NHB3!2m2!1d43.25863359832675!2d-2.918486078011711!3f120!4f10!5f0.7820865974627469",
           "https://www.google.com/maps/embed?pb=!4v1576771070287!6m8!1m7!1sCAoSLEFGMVFpcE9YY2JGUlEwZWlYRGJRd3UtNEliR3dfcGxqUkpyWWZuN1ZUeW9o!2m2!1d43.25858590398227!2d-2.918497284425712!3f180!4f10!5f0.7820865974627469"
         ]
       }
@@ -119,7 +118,6 @@ export default {
 			"Aula de usos múltiples",
 			"Patio",
 			"Entrada",
-			"Clase Verde",
 			"Clase Celeste"
 		]
 	},
@@ -136,8 +134,7 @@ export default {
 			"Class 3",
 			"Class 4",
 			"Class 5",
-			"Class 6",
-			"Class 8"
+			"Class 6"
 		]
 	},
 	"eus": {
@@ -153,7 +150,6 @@ export default {
 			"Erabilera anitzeko gela",
 			"Patioa",
 			"Sarrera",
-			"Gela Berdea",
 			"Gela Urdin Argia"
 		]
 	}

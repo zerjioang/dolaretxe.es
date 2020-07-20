@@ -256,7 +256,7 @@ export default {
             "Entrada: De 7:30h a 9:45h",
             "Salidas: De 13:15h a 13:30h",
             "Salidas: 15:15h a 15:30h",
-            "Salidas: 16:45h a 17:00h"
+            "Salidas: 16:30h a 17:00h"
         ],
         "horarios_subtitle_2": "Además, disponemos de un lugar cubierto para dejar los carros en la escuela.",
         "comida_title": "Comida",
@@ -375,7 +375,7 @@ export default {
             "Sarrera: De 7:30tik 9:45era",
             "Irteera: De 13:15etatik 13:30era",
             "Irteera: 15:15etatik 15:30era",
-            "Irteera: 16:45etatik 17:00etara"
+            "Irteera: 16:30etatik 17:00etara"
         ],
         "horarios_subtitle_2": "Umeen gurdiak egunean zehar gordetzeko aterpea badago.",
         "comida_title": "Janaria",
