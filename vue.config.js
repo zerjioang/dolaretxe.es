@@ -63,6 +63,13 @@ module.exports = {
       maskIcon: 'favicon/safari-pinned-tab.svg',
       msTileImage: 'favicon/msapplication-icon-144x144.png',
     },
+    workboxPluginMode: 'GenerateSW',
+    workboxOptions: {
+      // ...other Workbox options..
+      exclude: [
+        /index\.html$/,
+      ]
+    }
   },
   pluginOptions: {
     i18n: {
