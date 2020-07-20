@@ -2,7 +2,7 @@ const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
-  publicPath: '/dolaretxe.es',
+  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/dolaretxe.es',
   outputDir: 'dist',
   runtimeCompiler: true,
   productionSourceMap: false,
