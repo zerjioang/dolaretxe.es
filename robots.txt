@@ -1,9 +1,5 @@
 User-agent: *
-Disallow: /
-
-User-agent: *
-Allow: /*/*.htm
-Allow: /.well-known/apple-app-site-association
+Allow: /
 
 User-agent: e-SocietyRobot
 Disallow: /
