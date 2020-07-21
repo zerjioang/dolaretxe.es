@@ -105,21 +105,21 @@ export default {
     "desc1":"Estas de enhorabuena!",
     "desc2": "El plazo de matriculación para este curso todavia esta abierto! Date prisa y contáctanos y te informaremos de las posibilidades y cómo reservar tu plaza.",
     "fin": "Finalización del plazo:",
-    "contact": "Contacta con nosotros"
+    "contact": "Contáctanos"
   },
   "en":{
     "title":"Matrícula abierta",
     "desc1":"Estas de enhorabuena!",
     "desc2": "El plazo de matriculación para este curso todavia esta abierto! Date prisa y contáctanos y te informaremos de las posibilidades y cómo reservar tu plaza.",
     "fin": "Finalización del plazo:",
-    "contact": "Contacta con nosotros"
+    "contact": "Contact us"
   },
   "eus":{
     "title":"Matrikula irekia",
     "desc1":"Zorionak!",
     "desc2": "Ikastaro honetarako matrikulazio epea oraindik zabalik dago! Azkar ibili eta gurekin harremanetan jar zaitez, zure plaza erreserbatzeko aukeren berri emango dizugu.",
     "fin": "Epea amaitzea:",
-    "contact": "Gurekin harremanetan jarri"
+    "contact": "Harremanetan jarri"
   }
 }
 </i18n>
