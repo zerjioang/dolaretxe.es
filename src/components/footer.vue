@@ -259,7 +259,7 @@ footer {
 		"menuitem_privacidad": "Pólitica de privacidad",
 		"menuitem_cookies": "Información sobre Cookies",
 		"direccion": "Escuela Infantil. Calle Prim, 11. Bajo. 48006 Bilbao. Bizkaia",
-		"copyright_rext": "Todos los derechos reservados."
+		"copyright_text": "Todos los derechos reservados."
 	},
 	"en": {
 		"cookie_text": "",
@@ -278,7 +278,7 @@ footer {
 		"menuitem_privacidad": "",
 		"menuitem_cookies": "",
 		"direccion": "",
-		"copyright_rext": ""
+		"copyright_text": ""
 	},
 	"eus": {
 		"cookie_text": "Norberaren eta hirugarrenen cookie-ak erabiltzen ditugu gure zerbitzuak hobetzeko. Nabigatzen jarraitzen baduzu, zure erabilera onartzen duzula uste dugu. Konfigurazioa alda dezakezu zure nabigatzailearen konfigurazioaren bidez",
