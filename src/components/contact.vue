@@ -410,7 +410,7 @@ iframe {
 		"reservas_desc": "Matrikulazio eta plaza erreserba on-line egiteko honako agiri hauek bidali behar dira hurrengo posta elektronikora:",
 		"reservas_docs": ".",
 		"maps_title": "Nola iritsi",
-		"maps_desc": "Dolaretxe Haur Eskolara iristeko modurik onena ezagutu, MetroBilbao-tik, oinez edo autoz.",
+		"maps_desc": "Dolaretxe Haur Eskolara iristeko modurik onena ezagutu, Metro Bilbao-tik, oinez edo autoz.",
 		"title_map_1": "Unamuno metroko irteeratik",
 		"title_map_2": "Begoñako igogailutik",
 		"title_map_3": "Prim kaletik Unamuno kalerantz",
