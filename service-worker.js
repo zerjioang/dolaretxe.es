@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.143670c3ba73533f25db2666d91e5363.js"
+  "/precache-manifest.5550d4726a79f8d8240e1a09e87f5647.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "dolaretxe.es"});
