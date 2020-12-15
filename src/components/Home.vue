@@ -24,8 +24,9 @@
             <p class="disclaimer">{{$t("centro_autorizado")}}</p>
             <badge class="mb-3" />
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row">
-            <mapCta />
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row"
+             v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/landing/01.jpg') + ')' }"
+	  >
           </div>
         </div>
       </div>
@@ -100,8 +101,9 @@
         <div class="row no-gutters">
           <div
             class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-            v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/landing/01.jpg') + ')' }"
-          ></div>
+	    <mapCta />
+           >
+	   </div>
           <div class="col-md-7 wrap-about py-md-5 ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
               <div>
