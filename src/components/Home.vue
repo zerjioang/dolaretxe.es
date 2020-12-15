@@ -7,8 +7,7 @@
           class="row no-gutters slider-text align-items-center justify-content-start hero-center"
           data-scrollax-parent="true"
         >
-          <div :style="{'background-image':'url(/img/01.87944593.jpg)'}"
-            class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row ftco-animate"
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row ftco-animate"
             data-scrollax=" properties: { translateY: '70%' }"
           >
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
