@@ -23,12 +23,11 @@
             </p>
             <p class="disclaimer">{{$t("centro_autorizado")}}</p>
             <badge class="mb-3" />
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row"
-             v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/landing/01.jpg') + ')' }"
-	  >
-          </div>
-        </div>
+         </div>
+	</div>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row"
+	v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/landing/01.jpg') + ')' }"  >
+	</div>
       </div>
     </div>
 
