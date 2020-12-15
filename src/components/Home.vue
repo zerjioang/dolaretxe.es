@@ -24,8 +24,9 @@
             <p class="disclaimer">{{$t("centro_autorizado")}}</p>
             <badge class="mb-3" />
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row">
-            <mapCta />
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hero-row ftco-animate">
+            <div class="header-img" v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/landing/01.jpg') + ')' }">
+          </div>
           </div>
         </div>
       </div>
@@ -98,11 +99,10 @@
     <section class="ftco-section pt-5 ftco-no-pb">
       <div class="container">
         <div class="row no-gutters">
-          <div
-            class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-            v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/landing/01.jpg') + ')' }"
-          ></div>
-          <div class="col-md-7 wrap-about py-md-5 ftco-animate">
+          <div class="col-md-6">
+          <mapCta />
+          </div>
+          <div class="col-md-6 wrap-about ftco-animate">
             <div class="heading-section mb-5 pt-5 pl-md-5">
               <div>
                 <h2 class="mb-4">{{$t('title_visita_centro')}}</h2>
@@ -408,6 +408,21 @@ export default {
     max-width: 1640px;
   }
 }
+.header-img {
+  min-height: 485px;
+  background-repeat: no-repeat;
+  height: auto;
+  max-height: 800px;
+  border-radius: 11px;
+  border-style: solid;
+  border-color: #b09cb2;
+  border-width: 7px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, rgb(249, 144, 26) 0%, rgb(246, 71, 75) 50%, rgb(184, 121, 174) 100%);
+ }
 </style>
 
 <i18n>
